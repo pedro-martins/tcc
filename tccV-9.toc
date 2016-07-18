@@ -1,0 +1,21 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\c c\~ao}}{3}
+\contentsline {section}{\numberline {1.1}Motiva\c c\~ao}{6}
+\contentsline {chapter}{\numberline {2}\MakeUppercase {Objetivos}}{7}
+\contentsline {section}{\numberline {2.1}Objetivos gerais}{7}
+\contentsline {section}{\numberline {2.2}Objetivos espec\IeC {\'\i }ficos}{7}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Fundamenta\c c\~ao}}{9}
+\contentsline {section}{\numberline {3.1}Computa\c c\~ao em Nuvem}{9}
+\contentsline {subsection}{\numberline {3.1.1}Caracter\IeC {\'\i }sticas}{9}
+\contentsline {subsection}{\numberline {3.1.2}Modelos de servi\c co}{10}
+\contentsline {section}{\numberline {3.2}Virtualiza\c c\~ao}{10}
+\contentsline {subsection}{\numberline {3.2.1}Vantagens e desvantagens da virtualiza\c c\~ao}{11}
+\contentsline {subsection}{\numberline {3.2.2}Tipos de virtualiza\c c\~ao}{11}
+\contentsline {subsection}{\numberline {3.2.3}Virtualizadores}{13}
+\contentsline {section}{\numberline {3.3}Orquestra\c c\~ao de ambientes de computa\c c\~ao em nuvem}{14}
+\contentsline {subsection}{\numberline {3.3.1}Ferramentas de orquestra\c c\~ao}{15}
+\contentsline {section}{\numberline {3.4}Monitoramento de ambientes de computa\c c\~ao em nuvem}{16}
+\contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de ferramentas de monitoramento na nuvem}{16}
+\contentsline {subsection}{\numberline {3.4.2}Ferramentas de monitoramento}{19}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {Trabalhos relacionados}}{23}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{25}

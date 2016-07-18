@@ -1,0 +1,379 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Aceto et al. 2013]{aceto2013cloud}
+\abntrefinfo{Aceto et al.}{ACETO et al.}{2013}
+{ACETO, G. et al. Cloud monitoring: A survey.
+\textbf{Computer Networks}, Elsevier, v.~57, n.~9, p. 2093--2115, 2013.}
+
+\bibitem[Aceto et al. 2012]{aceto2012cloud}
+\abntrefinfo{Aceto et al.}{ACETO et al.}{2012}
+{ACETO, G. et al. Cloud monitoring: Definitions, issues and future directions.
+\textbf{CLOUDNET}, v.~12, p. 63--67, 2012.}
+
+\bibitem[Apache 2015]{apache2015}
+\abntrefinfo{Apache}{APACHE}{2015a}
+{APACHE. \textbf{Apache}. 2015.
+Dispon{\'\i}vel em: $<$http://apache.org/$>$.}
+
+\bibitem[Apache 2015]{cloudstack2015}
+\abntrefinfo{Apache}{APACHE}{2015b}
+{APACHE, f. \textbf{CloudStack}. 2015.
+Dispon{\'\i}vel em: $<$http://cloudstack.apache.org/$>$.}
+
+\bibitem[Armbrust et al. 2010]{armbrust2010view}
+\abntrefinfo{Armbrust et al.}{ARMBRUST et al.}{2010}
+{ARMBRUST, M. et al. A view of cloud computing.
+\textbf{Communications of the ACM}, ACM, v.~53, n.~4, p. 50--58, 2010.}
+
+\bibitem[Ben et al. 2010]{virtualization2010}
+\abntrefinfo{Ben et al.}{BEN et al.}{2010}
+{BEN, A. et al. \textbf{System x Virtualization Strategies}. [s.n.], 2010.
+  Dispon{\'\i}vel em: $<$https://lenovopress.com/redp4480$>$.}
+
+\bibitem[Caron et al. 2012]{caron2012auto}
+\abntrefinfo{Caron et al.}{CARON et al.}{2012}
+{CARON, E. et al. Auto-scaling, load balancing and monitoring in commercial and
+  open-source clouds.
+2012.}
+
+\bibitem[Clayman, Galis e Mamatas 2010]{clayman2010monitoring}
+\abntrefinfo{Clayman, Galis e Mamatas}{CLAYMAN; GALIS; MAMATAS}{2010}
+{CLAYMAN, S.; GALIS, A.; MAMATAS, L. Monitoring virtual networks with lattice.
+  In:  IEEE. \textbf{Network Operations and Management Symposium Workshops
+  (NOMS Wksps), 2010 IEEE/IFIP}. [S.l.], 2010. p. 239--246.}
+
+\bibitem[CloudStackZenPack 2015]{CSzenPack2015}
+\abntrefinfo{CloudStackZenPack}{CLOUDSTACKZENPACK}{2015}
+{CLOUDSTACKZENPACK. \textbf{Zenoss}. 2015.
+Dispon{\'\i}vel em:
+  $<$https://github.com/zenoss/ZenPacks.zenoss.CloudStack$>$.}
+
+\bibitem[Containers. 2015]{lxc2015}
+\abntrefinfo{Containers.}{CONTAINERS.}{2015}
+{CONTAINERS., L. \textbf{LXC}. 2015.
+Dispon{\'\i}vel em: $<$https://linuxcontainers.org/lxc/introduction/$>$.}
+
+\bibitem[Corporation 2015]{IA32}
+\abntrefinfo{Corporation}{CORPORATION}{2015a}
+{CORPORATION, I. \textbf{IA 32}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf$>$.}
+
+\bibitem[Corporation 2015]{x8664}
+\abntrefinfo{Corporation}{CORPORATION}{2015b}
+{CORPORATION, I. \textbf{x8664}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html$>$.}
+
+\bibitem[Doshi 2015]{IA64}
+\abntrefinfo{Doshi}{DOSHI}{2015}
+{DOSHI, G. \textbf{IA 64}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.csee.umbc.edu/portal/help/architecture/idfisa.pdf$>$.}
+
+\bibitem[Forum 2015]{cloudForum2015}
+\abntrefinfo{Forum}{FORUM}{2015}
+{FORUM, C.~I. \textbf{UK Cloud Adoption Trends for 2015 InsightBrief}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://cloudindustryforum.org/downloads/whitepapers/UK-Cloud-Adoption-Trends-for-2015-InsightBrief.pdf$>$.}
+
+\bibitem[Hall 2012]{hall2012opportunities}
+\abntrefinfo{Hall}{HALL}{2012}
+{HALL, P. Opportunities for csps in enterprise-grade public cloud computing.
+\textbf{OVUM, May}, 2012.}
+
+\bibitem[Hasselmeyer e d'Heureuse 2010]{hasselmeyer2010towards}
+\abntrefinfo{Hasselmeyer e d'Heureuse}{HASSELMEYER; D'HEUREUSE}{2010}
+{HASSELMEYER, P.; D'HEUREUSE, N. Towards holistic multi-tenant monitoring for
+  virtual data centers. In:  IEEE. \textbf{Network Operations and Management
+  Symposium Workshops (NOMS Wksps), 2010 IEEE/IFIP}. [S.l.], 2010. p.
+  350--356.}
+
+\bibitem[HP 2015]{eucalyptus2015}
+\abntrefinfo{HP}{HP}{2015a}
+{HP. \textbf{Eucalyptus}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www8.hp.com/us/en/cloud/helion-eucalyptus-overview.html$>$.}
+
+\bibitem[HP 2015]{hp2015}
+\abntrefinfo{HP}{HP}{2015b}
+{HP. \textbf{HP}. 2015.
+Dispon{\'\i}vel em: $<$http://www.hp.com/$>$.}
+
+\bibitem[IBM 2015]{POWERPC}
+\abntrefinfo{IBM}{IBM}{2015}
+{IBM. \textbf{Power PC}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.ibm.com/developerworks/systems/library/es-archguide-v2.html$>$.}
+
+\bibitem[Icinga 2015]{icinga2015}
+\abntrefinfo{Icinga}{ICINGA}{2015}
+{ICINGA. \textbf{Icinga}. 2015.
+Dispon{\'\i}vel em: $<$https://www.icinga.org/$>$.}
+
+\bibitem[IcingaOpenStackGit 2015]{icingaOpenstack2015}
+\abntrefinfo{IcingaOpenStackGit}{ICINGAOPENSTACKGIT}{2015}
+{ICINGAOPENSTACKGIT. \textbf{OpenStack-Icinga}. 2015.
+Dispon{\'\i}vel em: $<$https://github.com/hpcloud/icinga$>$.}
+
+\bibitem[Inc. 2015]{xenProject2015}
+\abntrefinfo{Inc.}{INC.}{2015}
+{INC., C.~S. \textbf{Xen Project Software Overview}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.xenproject.org/wiki/Xen{\_}Overview$>$.}
+
+\bibitem[inc. 2015]{oracle2015}
+\abntrefinfo{inc.}{INC.}{2015}
+{INC., O. \textbf{ORACLE}. 2015.
+Dispon{\'\i}vel em: $<$http://www.oracle.com/$>$.}
+
+\bibitem[Intel 2015]{IPMI2015}
+\abntrefinfo{Intel}{INTEL}{2015}
+{INTEL. \textbf{IPMI}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.intel.com/content/www/us/en/servers/ipmi/ipmi-home.html$>$.}
+
+\bibitem[Katsaros, Kubert e Gallizo 2011]{katsaros2011building}
+\abntrefinfo{Katsaros, Kubert e Gallizo}{KATSAROS; KUBERT; GALLIZO}{2011}
+{KATSAROS, G.; KUBERT, R.; GALLIZO, G. Building a service-oriented monitoring
+  framework with rest and nagios. In:  IEEE. \textbf{Services Computing (SCC),
+  2011 IEEE International Conference on}. [S.l.], 2011. p. 426--431.}
+
+\bibitem[Kephart e Chess 2003]{kephart2003vision}
+\abntrefinfo{Kephart e Chess}{KEPHART; CHESS}{2003}
+{KEPHART, J.~O.; CHESS, D.~M. The vision of autonomic computing.
+\textbf{Computer}, IEEE, v.~36, n.~1, p. 41--50, 2003.}
+
+\bibitem[Laprie 2008]{laprie2008dependability}
+\abntrefinfo{Laprie}{LAPRIE}{2008}
+{LAPRIE, J.-C. From dependability to resilience. In:  CITESEER. \textbf{38th
+  IEEE/IFIP Int. Conf. On Dependable Systems and Networks}. [S.l.], 2008. p.
+  G8--G9.}
+
+\bibitem[Linux-KVM 2015]{kvm2015}
+\abntrefinfo{Linux-KVM}{LINUX-KVM}{2015}
+{LINUX-KVM. \textbf{KVM}. 2015.
+Dispon{\'\i}vel em: $<$http://www.linux-kvm.org/page/Main{\_}Page$>$.}
+
+\bibitem[MazeGen 2007]{x86}
+\abntrefinfo{MazeGen}{MAZEGEN}{2007}
+{MAZEGEN. \textbf{x86}. 2007.
+Dispon{\'\i}vel em:
+  $<$http://x86asm.net/articles/x86-64-tour-of-intel-manuals/$>$.}
+
+\bibitem[Mell e Grance 2011]{mell2011nist}
+\abntrefinfo{Mell e Grance}{MELL; GRANCE}{2011}
+{MELL, P.; GRANCE, T. The nist definition of cloud computing.
+Computer Security Division, Information Technology Laboratory, National
+  Institute of Standards and Technology Gaithersburg, 2011.}
+
+\bibitem[Menasc{\'e} 2005]{menasce2005virtualization}
+\abntrefinfo{Menasc{\'e}}{MENASC{\'E}}{2005}
+{MENASC{\'E}, D.~A. Virtualization: Concepts, applications, and performance
+  modeling. In:  \textbf{Int. CMG Conference}. [S.l.: s.n.], 2005. p.
+  407--414.}
+
+\bibitem[Microsoft 2013]{nfs2015}
+\abntrefinfo{Microsoft}{MICROSOFT}{2013}
+{MICROSOFT. \textbf{NFS}. 2013.
+Dispon{\'\i}vel em:
+  $<$https://technet.microsoft.com/en-us/library/jj592688.aspx$>$.}
+
+\bibitem[Microsoft 2015]{hyper-v2015}
+\abntrefinfo{Microsoft}{MICROSOFT}{2015a}
+{MICROSOFT. \textbf{Hyper-V}. 2015.
+Dispon{\'\i}vel em: $<$http://hyperv.veeam.com/what-is-hyper-v-technology/$>$.}
+
+\bibitem[Microsoft 2015]{iscsi2015}
+\abntrefinfo{Microsoft}{MICROSOFT}{2015b}
+{MICROSOFT. \textbf{iSCSI}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://windows.microsoft.com/pt-br/windows-vista/what-is-internet-small-computer-system-interface-iscsi$>$.}
+
+\bibitem[Nagios 2015]{nagios2015}
+\abntrefinfo{Nagios}{NAGIOS}{2015}
+{NAGIOS. \textbf{Nagios}. 2015.
+Dispon{\'\i}vel em:
+  $<$https://assets.nagios.com/downloads/nagioscore/docs/nagioscore-3-en.pdf$>$.}
+
+\bibitem[Nagios. 2015]{CSnagios2015}
+\abntrefinfo{Nagios.}{NAGIOS.}{2015a}
+{NAGIOS. \textbf{Nagios-CloudStack}. 2015.
+Dispon{\'\i}vel em:
+  $<$https://exchange.nagios.org/directory/Plugins/Cloud/nagios-2Dcloudstack/details$>$.}
+
+\bibitem[Nagios. 2015]{OSnagios2015}
+\abntrefinfo{Nagios.}{NAGIOS.}{2015b}
+{NAGIOS. \textbf{Nagios-OpenStack}. 2015.
+Dispon{\'\i}vel em:
+  $<$https://exchange.nagios.org/directory/Plugins/Cloud/openstack-infrastructure-monitoring/details$>$.}
+
+\bibitem[Net-SNMP 2015]{snmp2015}
+\abntrefinfo{Net-SNMP}{NET-SNMP}{2015}
+{NET-SNMP. \textbf{SNMP}. 2015.
+Dispon{\'\i}vel em: $<$http://www.net-snmp.org/$>$.}
+
+\bibitem[OpenStack 2015]{openstack2015}
+\abntrefinfo{OpenStack}{OPENSTACK}{2015}
+{OPENSTACK. \textbf{OpenStack}. 2015.
+Dispon{\'\i}vel em: $<$http://docs.openstack.org/index.html$>$.}
+
+\bibitem[OpenStackZenPack 2015]{OSzenPack2015}
+\abntrefinfo{OpenStackZenPack}{OPENSTACKZENPACK}{2015}
+{OPENSTACKZENPACK. \textbf{Zenoss}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://wiki.zenoss.org/ZenPack:OpenStack{\_}(Provider{\_}View)$>$.}
+
+\bibitem[Oracle. 2015]{virtualbox2015}
+\abntrefinfo{Oracle.}{ORACLE.}{2015}
+{ORACLE. \textbf{VirtualBox}. 2015.
+Dispon{\'\i}vel em: $<$https://www.virtualbox.org/wiki/Documentation$>$.}
+
+\bibitem[Popek e Goldberg 1974]{popek1974formal}
+\abntrefinfo{Popek e Goldberg}{POPEK; GOLDBERG}{1974}
+{POPEK, G.~J.; GOLDBERG, R.~P. Formal requirements for virtualizable third
+  generation architectures.
+\textbf{Communications of the ACM}, ACM, v.~17, n.~7, p. 412--421, 1974.}
+
+\bibitem[Project 2015]{nimbus2015}
+\abntrefinfo{Project}{PROJECT}{2015}
+{PROJECT, N. \textbf{Nimbus}. 2015.
+Dispon{\'\i}vel em: $<$http://www.nimbusproject.org/$>$.}
+
+\bibitem[QEMU 2015]{qemu2015}
+\abntrefinfo{QEMU}{QEMU}{2015}
+{QEMU. \textbf{QEMU}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.qemu.org/Main{\_}Page$>$.}
+
+\bibitem[RedHat 2015]{redhat2015}
+\abntrefinfo{RedHat}{REDHAT}{2015}
+{REDHAT. \textbf{RedHatVirtualization}. 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.redhat.com/en/technologies/virtualization/enterprise-virtualization$>$.}
+
+\bibitem[Sahoo, Mohapatra e Lath 2010]{sahoo2010virtualization}
+\abntrefinfo{Sahoo, Mohapatra e Lath}{SAHOO; MOHAPATRA; LATH}{2010}
+{SAHOO, J.; MOHAPATRA, S.; LATH, R. Virtualization: A survey on concepts,
+  taxonomy and associated security issues. In:  IEEE. \textbf{Computer and
+  Network Technology (ICCNT), 2010 Second International Conference on}. [S.l.],
+  2010. p. 222--226.}
+
+\bibitem[Shao et al. 2010]{shao2010runtime}
+\abntrefinfo{Shao et al.}{SHAO et al.}{2010}
+{SHAO, J. et al. A runtime model based monitoring approach for cloud. In:
+  IEEE. \textbf{Cloud Computing (CLOUD), 2010 IEEE 3rd International Conference
+  on}. [S.l.], 2010. p. 313--320.}
+
+\bibitem[Shirey 2007]{shirey2007internet}
+\abntrefinfo{Shirey}{SHIREY}{2007}
+{SHIREY, R.~W. Internet security glossary, version 2.
+2007.}
+
+\bibitem[Singh, Sood e Sharma 2011]{singh2011cm}
+\abntrefinfo{Singh, Sood e Sharma}{SINGH; SOOD; SHARMA}{2011}
+{SINGH, G.; SOOD, S.; SHARMA, A. Cm-measurement facets for cloud performance.
+\textbf{International Journal of Computer Applications}, International Journal
+  of Computer Applications, 244 5 th Avenue,\# 1526, New York, NY 10001, USA
+  India, v.~23, n.~3, p. 37--42, 2011.}
+
+\bibitem[Systems 2015]{citrix2015}
+\abntrefinfo{Systems}{SYSTEMS}{2015a}
+{SYSTEMS, C. \textbf{Citrix}. 2015.
+Dispon{\'\i}vel em: $<$http://www.citrix.com/$>$.}
+
+\bibitem[Systems 2015]{xenProject2015dom0}
+\abntrefinfo{Systems}{SYSTEMS}{2015b}
+{SYSTEMS, C. \textbf{Xen Dom0}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.xenproject.org/wiki/Dom0$>$.}
+
+\bibitem[Systems 2015]{xenProject2015domu}
+\abntrefinfo{Systems}{SYSTEMS}{2015c}
+{SYSTEMS, C. \textbf{Xen DomU}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.xenproject.org/wiki/DomU$>$.}
+
+\bibitem[Systems 2015]{xenProject2015xapi}
+\abntrefinfo{Systems}{SYSTEMS}{2015d}
+{SYSTEMS, C. \textbf{Xen XAPI}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.xenproject.org/wiki/XAPI$>$.}
+
+\bibitem[Systems 2015]{xenProject2015xl}
+\abntrefinfo{Systems}{SYSTEMS}{2015e}
+{SYSTEMS, C. \textbf{Xen XL}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.xenproject.org/wiki/XL$>$.}
+
+\bibitem[Urgaonkar, Shenoy e Roscoe 2002]{urgaonkar2002resource}
+\abntrefinfo{Urgaonkar, Shenoy e Roscoe}{URGAONKAR; SHENOY; ROSCOE}{2002}
+{URGAONKAR, B.; SHENOY, P.; ROSCOE, T. Resource overbooking and application
+  profiling in shared hosting platforms.
+\textbf{ACM SIGOPS Operating Systems Review}, ACM, v.~36, n.~SI, p. 239--254,
+  2002.}
+
+\bibitem[Viratanapanu et al. 2010]{viratanapanu2010demand}
+\abntrefinfo{Viratanapanu et al.}{VIRATANAPANU et al.}{2010}
+{VIRATANAPANU, A. et al. On demand fine grain resource monitoring system for
+  server consolidation. In:  IEEE. \textbf{Kaleidoscope: Beyond the
+  Internet?-Innovations for Future Networks and Services, 2010 ITU-T}. [S.l.],
+  2010. p.~1--8.}
+
+\bibitem[VMware 2007]{vmware2007}
+\abntrefinfo{VMware}{VMWARE}{2007}
+{VMWARE. \textbf{Understanding Full Virtualization, ParaVirtualization, and
+  Hardware Assist.} 2007.
+Dispon{\'\i}vel em: $<$http://www.vmware.com/resources/techresources/1008$>$.}
+
+\bibitem[VMware 2015]{esxi2015}
+\abntrefinfo{VMware}{VMWARE}{2015a}
+{VMWARE. \textbf{ESXI}. 2015.
+Dispon{\'\i}vel em: $<$http://www.vmware.com/products/esxi-and-esx/$>$.}
+
+\bibitem[VMware 2015]{vCenter2015}
+\abntrefinfo{VMware}{VMWARE}{2015b}
+{VMWARE. \textbf{vCenter}. 2015.
+Dispon{\'\i}vel em: $<$http://www.vmware.com/br/products/vcenter-server/$>$.}
+
+\bibitem[VMware 2015]{vmware2015}
+\abntrefinfo{VMware}{VMWARE}{2015c}
+{VMWARE. \textbf{VMware}. 2015.
+Dispon{\'\i}vel em: $<$http://www.vmware.com$>$.}
+
+\bibitem[Wang et al. 2011]{wang2011flexible}
+\abntrefinfo{Wang et al.}{WANG et al.}{2011}
+{WANG, C. et al. A flexible architecture integrating monitoring and analytics
+  for managing large-scale data centers. In:  ACM. \textbf{Proceedings of the
+  8th ACM international conference on Autonomic computing}. [S.l.], 2011. p.
+  141--150.}
+
+\bibitem[Weing{\"a}rtner, Br{\"a}scher e Westphall 2015]{weingartner2015cloud}
+\abntrefinfo{Weing{\"a}rtner, Br{\"a}scher e Westphall}{WEING{\"A}RTNER;
+  BR{\"A}SCHER; WESTPHALL}{2015}
+{WEING{\"A}RTNER, R.; BR{\"A}SCHER, G.~B.; WESTPHALL, C.~B. Cloud resource
+  management: A survey on forecasting and profiling models.
+\textbf{Journal of Network and Computer Applications}, Elsevier, v.~47, p.
+  99--106, 2015.}
+
+\bibitem[ZABBIX 2015]{zabbix2015}
+\abntrefinfo{ZABBIX}{ZABBIX}{2015}
+{ZABBIX. \textbf{ZABBIX}. 2015.
+Dispon{\'\i}vel em: $<$http://www.zabbix.com/product.php$>$.}
+
+\bibitem[Zabbix-Cloudstack 2015]{zabbix-cloudstack2015}
+\abntrefinfo{Zabbix-Cloudstack}{ZABBIX-CLOUDSTACK}{2015}
+{ZABBIX-CLOUDSTACK. \textbf{Zabbix-Cloudstack}. 2015.
+Dispon{\'\i}vel em: $<$https://github.com/ke4qqq/zabbix-cloudstack$>$.}
+
+\bibitem[ZabbixAgentAdoption 2015]{zabbix-openstack2015}
+\abntrefinfo{ZabbixAgentAdoption}{ZABBIXAGENTADOPTION}{2015}
+{ZABBIXAGENTADOPTION. \textbf{Zabbix agent adoption}. 2015.
+Dispon{\'\i}vel em:
+  $<$https://wiki.openstack.org/wiki/Zabbix-agent-adoption$>$.}
+
+\bibitem[Zenoss 2015]{zenoss2015}
+\abntrefinfo{Zenoss}{ZENOSS}{2015}
+{ZENOSS. \textbf{Zenoss Wiki}. 2015.
+Dispon{\'\i}vel em: $<$http://wiki.zenoss.org/Main{\_}Page$>$.}
+
+\end{thebibliography}

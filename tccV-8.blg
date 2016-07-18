@@ -1,0 +1,168 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tccV-8.aux
+The style file: ufscThesis/ufsc-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: abnt-options.bib
+Database file #2: bibliografia.bib
+Warning--entry type for "lxc2015" isn't style-file defined
+--line 21 of file bibliografia.bib
+Warning--entry type for "CSnagios2015" isn't style-file defined
+--line 28 of file bibliografia.bib
+Warning--entry type for "OSnagios2015" isn't style-file defined
+--line 34 of file bibliografia.bib
+Warning--entry type for "oracle2015" isn't style-file defined
+--line 40 of file bibliografia.bib
+Warning--entry type for "virtualbox2015" isn't style-file defined
+--line 46 of file bibliografia.bib
+Warning--entry type for "xenProject2015" isn't style-file defined
+--line 53 of file bibliografia.bib
+Warning--entry type for "zenoss2015" isn't style-file defined
+--line 59 of file bibliografia.bib
+Warning--entry type for "vCenter2015" isn't style-file defined
+--line 72 of file bibliografia.bib
+Warning--entry type for "icinga2015" isn't style-file defined
+--line 78 of file bibliografia.bib
+Warning--entry type for "snmp2015" isn't style-file defined
+--line 84 of file bibliografia.bib
+Warning--entry type for "zabbix2015" isn't style-file defined
+--line 90 of file bibliografia.bib
+Warning--entry type for "IPMI2015" isn't style-file defined
+--line 96 of file bibliografia.bib
+Warning--entry type for "hyper-v2015" isn't style-file defined
+--line 102 of file bibliografia.bib
+Warning--entry type for "hp2015" isn't style-file defined
+--line 108 of file bibliografia.bib
+Warning--entry type for "icingaOpenstack2015" isn't style-file defined
+--line 114 of file bibliografia.bib
+Warning--entry type for "zabbix-cloudstack2015" isn't style-file defined
+--line 120 of file bibliografia.bib
+Warning--entry type for "zabbix-openstack2015" isn't style-file defined
+--line 126 of file bibliografia.bib
+Warning--entry type for "nimbus2015" isn't style-file defined
+--line 133 of file bibliografia.bib
+Warning--entry type for "OSzenPack2015" isn't style-file defined
+--line 140 of file bibliografia.bib
+Warning--entry type for "CSzenPack2015" isn't style-file defined
+--line 146 of file bibliografia.bib
+Warning--entry type for "cloudstack2015" isn't style-file defined
+--line 152 of file bibliografia.bib
+Warning--entry type for "eucalyptus2015" isn't style-file defined
+--line 158 of file bibliografia.bib
+Warning--entry type for "nagios2015" isn't style-file defined
+--line 164 of file bibliografia.bib
+Warning--entry type for "citrix2015" isn't style-file defined
+--line 170 of file bibliografia.bib
+Warning--entry type for "redhat2015" isn't style-file defined
+--line 176 of file bibliografia.bib
+Warning--entry type for "kvm2015" isn't style-file defined
+--line 182 of file bibliografia.bib
+Warning--entry type for "nfs2015" isn't style-file defined
+--line 188 of file bibliografia.bib
+Warning--entry type for "iscsi2015" isn't style-file defined
+--line 194 of file bibliografia.bib
+Warning--entry type for "esxi2015" isn't style-file defined
+--line 201 of file bibliografia.bib
+Warning--entry type for "vmware2015" isn't style-file defined
+--line 207 of file bibliografia.bib
+Warning--entry type for "openstack2015" isn't style-file defined
+--line 213 of file bibliografia.bib
+Warning--entry type for "apache2015" isn't style-file defined
+--line 219 of file bibliografia.bib
+Repeated entry---line 350 of file bibliografia.bib
+ : @inproceedings{clayman2010monitoring
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 364 of file bibliografia.bib
+ : @article{singh2011cm
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "cloudForum2015" isn't style-file defined
+--line 430 of file bibliografia.bib
+Repeated entry---line 436 of file bibliografia.bib
+ : @wiki{xenProject2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "x86" isn't style-file defined
+--line 442 of file bibliografia.bib
+Warning--entry type for "x8664" isn't style-file defined
+--line 448 of file bibliografia.bib
+Warning--entry type for "IA32" isn't style-file defined
+--line 454 of file bibliografia.bib
+Warning--entry type for "IA64" isn't style-file defined
+--line 460 of file bibliografia.bib
+Warning--entry type for "POWERPC" isn't style-file defined
+--line 466 of file bibliografia.bib
+Warning--entry type for "vmware2007" isn't style-file defined
+--line 525 of file bibliografia.bib
+Warning--entry type for "xenProject2015domu" isn't style-file defined
+--line 533 of file bibliografia.bib
+Warning--entry type for "xenProject2015dom0" isn't style-file defined
+--line 539 of file bibliografia.bib
+Warning--entry type for "xenProject2015xapi" isn't style-file defined
+--line 545 of file bibliografia.bib
+Warning--entry type for "xenProject2015xl" isn't style-file defined
+--line 551 of file bibliografia.bib
+Warning--entry type for "qemu2015" isn't style-file defined
+--line 557 of file bibliografia.bib
+Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
+Warning--I didn't find a database entry for "abnt-url-package=html"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 68 entries,
+            6480 wiz_defined-function locations,
+            1452 strings with 17085 characters,
+and the built_in function-call counts, 47340 in all, are:
+= -- 3748
+> -- 1490
+< -- 39
++ -- 594
+- -- 466
+* -- 3190
+:= -- 6582
+add.period$ -- 269
+call.type$ -- 69
+change.case$ -- 551
+chr.to.int$ -- 80
+cite$ -- 66
+duplicate$ -- 2064
+empty$ -- 4105
+format.name$ -- 2200
+if$ -- 11452
+int.to.chr$ -- 12
+int.to.str$ -- 0
+missing$ -- 1077
+newline$ -- 328
+num.names$ -- 330
+pop$ -- 1454
+preamble$ -- 1
+purify$ -- 236
+quote$ -- 0
+skip$ -- 2856
+stack$ -- 1
+substring$ -- 1774
+swap$ -- 839
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1
+warning$ -- 0
+while$ -- 449
+width$ -- 0
+write$ -- 986
+(There were 3 error messages)

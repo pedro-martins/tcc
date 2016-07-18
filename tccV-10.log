@@ -1,0 +1,671 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  18 JUL 2016 14:48
+entering extended mode
+**./tccV-10.tex
+(tccV-10.tex
+LaTeX2e <2016/03/31> patch level 1
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(ufscThesis.cls
+Document Class: ufscThesis 
+(abnt.cls (cvs-id.def)
+Document Class: abnt 2004/11/02 v1.27.2.1 Classe abnt (NBR6024, NBR6027, NBR602
+8, NBR14724)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count82
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count83
+\c@collectmore=\count84
+\doublecol@number=\count85
+\multicoltolerance=\count86
+\multicolpretolerance=\count87
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip44
+\multicolbaselineskip=\skip45
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen109
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count88
+\c@finalcolumnbadness=\count89
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count90
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count91
+\c@chapter=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\bibindent=\dimen113
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\ABNTanapindent=\skip48
+\ABNTsignwidth=\skip49
+\ABNTsignthickness=\skip50
+\ABNTsignskip=\skip51
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(ufscThesis/BUUFSCthesis.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count103
+\U@D=\dimen122
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ansinew.def"
+File: ansinew.def 2015/03/17 v1.2c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box52
+\UL@hyphenbox=\box53
+\UL@skip=\skip52
+\UL@hook=\toks18
+\UL@height=\dimen123
+\UL@pe=\count104
+\UL@pixel=\dimen124
+\ULC@box=\box54
+Package: ulem 2012/05/18
+\ULdepth=\dimen125
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip53
+\subfigcapskip=\skip54
+\subfigcaptopadj=\dimen126
+\subfigbottomskip=\skip55
+\subfigcapmargin=\dimen127
+\subfiglabelskip=\skip56
+\c@subfigure=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@lotdepth=\count108
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip57
+\subfig@bottom=\skip58
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (abntcite.sty (cvs-id.def)
+Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
+ (abntex-abrev.sty (cvs-id.def)
+Package: abntex-abrev 2003/10/13 v1.3 Abreviacoes
+ (nbr10522-1988.def (cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
+88)
+)
+(abntex-abrev-pt_BR.def (cvs-id.def)
+File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traduca
+o de termos en_US/pt_BR
+)) (nbr10520-2002.def (cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002
+)
+)
+\minimumbiblabelwidth=\skip59
+\ABCIauxlen=\skip60
+\c@ABCIaux=\count109
+\c@ABCImax=\count110
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+\biblabelsep=\skip61
+LaTeX Info: Redefining \newblock on input line 562.
+LaTeX Info: Redefining \cite on input line 589.
+\ABCItoken=\toks19
+))
+\espacosumario=\skip62
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2016/06/17 v0.06h Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count111
+))
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/06/02 v1.1d Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count112
+\lst@gtempboxa=\box55
+\lst@token=\toks20
+\lst@length=\count113
+\lst@currlwidth=\dimen130
+\lst@column=\count114
+\lst@pos=\count115
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count116
+\lst@lineno=\count117
+\lst@maxwidth=\dimen133
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box56
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen134
+\extrarowheight=\dimen135
+\NC@list=\toks21
+\extratabsurround=\skip63
+\backup@length=\skip64
+)
+
+LaTeX Warning: Unused global option(s):
+    [cleardoublepage=plain].
+
+(tccV-10.aux)
+\openout1 = `tccV-10.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a5paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 307.28978pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 497.92325pt, 42.67912pt)
+* \paperwidth=421.10078pt
+* \paperheight=597.50787pt
+* \textwidth=307.28978pt
+* \textheight=497.92325pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-57.42455pt
+* \headheight=19.91684pt
+* \headsep=22.14322pt
+* \topskip=10.0pt
+* \footskip=19.91684pt
+* \marginparwidth=47.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen136
+\scratchbox=\box57
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen137
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks23
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@lstlisting=\count126
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 74.
+ [0
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
+
+]
+Overfull \hbox (7.39111pt too wide) in paragraph at lines 75--75
+\OT1/cmr/m/n/9 rina: Prof. Dr. Car-los Bec-ker Westphall 
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+
+ []
+
+
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 75--76
+[]
+ []
+
+[2] [3
+
+] [4]
+Overfull \hbox (2.4885pt too wide) in paragraph at lines 80--80
+[]\OT1/cmr/m/n/10 Atualmente as fer-ra-men-tas de or-ques-trac~ao de am-bi-en-
+tes de com-putac~ao
+ []
+
+[5
+
+
+] [6
+
+]
+Overfull \hbox (6.54414pt too wide) in paragraph at lines 81--81
+[]\OT1/cmr/m/n/10 Cloud com-pu-ting or-ches-tra-tion to-ols such as Apa-che Clo
+udS-tack, OpenS-
+ []
+
+
+Overfull \hbox (12.49898pt too wide) in paragraph at lines 81--81
+[]\OT1/cmr/bx/n/10 Keywords: \OT1/cmr/m/n/10 Cloud com-pu-ting. Au-to-no-mous m
+o-ni-to-ring. Apa-che CloudS-
+ []
+
+[7
+
+] [8
+
+] (tccV-10.lof)
+\tf@lof=\write3
+\openout3 = `tccV-10.lof'.
+
+ [9] [10
+
+] (tccV-10.lot)
+\tf@lot=\write4
+\openout4 = `tccV-10.lot'.
+
+ [11] [12
+
+] (tccV-10.las)
+\tf@las=\write5
+\openout5 = `tccV-10.las'.
+
+ [13]
+[14
+
+] (tccV-10.toc
+Overfull \hbox (12.17865pt too wide) in paragraph at lines 15--15
+ [][] []\OT1/cmr/m/n/10 ORQUESTRA[][]AO DE AM-BI-EN-TES DE COMPUTA[][]AO 
+ []
+
+
+Overfull \hbox (21.48424pt too wide) in paragraph at lines 17--17
+ [][] []\OT1/cmr/m/n/10 MONITORAMENTO DE AM-BI-EN-TES DE COMPUTA[][]AO 
+ []
+
+)
+\tf@toc=\write6
+\openout6 = `tccV-10.toc'.
+
+ [15] [16
+
+]
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
+ [17
+
+] [18]
+Overfull \hbox (1.57195pt too wide) in paragraph at lines 122--123
+\OT1/cmr/m/n/10 mai-o-ria n~ao re-a-li-zam ou re-a-li-zam mas n~ao ar-ma-ze-nam
+ de modo historico
+ []
+
+[19] [20]
+Cap\'{\i }tulo 2.
+
+Overfull \hbox (2.1274pt too wide) in paragraph at lines 148--149
+\OT1/cmr/m/n/10 de um am-bi-ente de nu-vem que forneca in-fra-es-tru-tura como
+ servico; 
+ []
+
+[21
+
+] [22
+
+]
+Cap\'{\i }tulo 3.
+[23]
+Overfull \hbox (3.73851pt too wide) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/10 Software como servico: o pro-ve-dor de nu-vem for-nece uma a
+plicac~ao
+ []
+
+
+Overfull \hbox (4.9885pt too wide) in paragraph at lines 183--184
+\OT1/cmr/m/n/10 mas para o usuario de-sen-vol-ver e hos-pe-dar suas proprias 
+aplicac~oes.
+ []
+
+[24] [25] [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Overfull \hbox (2.51988pt too wide) in paragraph at lines 239--240
+\OT1/cmr/m/n/10 gra-tuito de codigo aberto su-por-tado pela Ca-no-ni-cal (\OT1
+/cmr/m/n/8 CA-NO-NI-CAL\OT1/cmr/m/n/10 , 2015).
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 258.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 258.
+[28]
+Overfull \hbox (25.81454pt too wide) in paragraph at lines 287--294
+ [][] 
+ []
+
+[29] [30]
+Overfull \hbox (0.74158pt too wide) in paragraph at lines 327--328
+\OT1/cmr/m/n/10 ficac~oes sig-ni-fi-ca-ti-vas deste (\OT1/cmr/m/n/8 KAT-SA-ROS
+; KU-BERT; GAL-LIZO\OT1/cmr/m/n/10 , 2011); 
+ []
+
+
+Overfull \hbox (5.29419pt too wide) in paragraph at lines 328--329
+[]\OT1/cmr/m/n/10 Confiabilidade: uma fer-ra-menta de mo-ni-to-ra-mento e dita
+ confiavel,
+ []
+
+[31] [32] [33]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.38576pt too wide) in paragraph at lines 402--403
+[]\OT1/cmr/m/n/10 Dentre as fer-ra-men-tas ana-li-sa-das, to-das su-por-tam mo-
+ni-to-ra-mento
+ []
+
+[34] [35] [36
+
+]
+Cap\'{\i }tulo 4.
+[37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 436.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+[40]
+Cap\'{\i }tulo 5.
+[41
+
+] <figuras/ferramentaOrquestracao.png, id=145, 199.24437pt x 104.39pt>
+File: figuras/ferramentaOrquestracao.png Graphic file (type png)
+
+<use figuras/ferramentaOrquestracao.png>
+Package pdftex.def Info: figuras/ferramentaOrquestracao.png used on input line 
+485.
+(pdftex.def)             Requested size: 199.24388pt x 104.38972pt.
+
+<figuras/ambienteComPlataforma.png, id=147, 186.19562pt x 240.9pt>
+File: figuras/ambienteComPlataforma.png Graphic file (type png)
+
+<use figuras/ambienteComPlataforma.png>
+Package pdftex.def Info: figuras/ambienteComPlataforma.png used on input line 5
+12.
+(pdftex.def)             Requested size: 186.19516pt x 240.8994pt.
+ [42 <./figuras/ferramentaOrquestracao.png>] <figuras/componenteMonitoramento.p
+ng, id=152, 192.21812pt x 152.57pt>
+File: figuras/componenteMonitoramento.png Graphic file (type png)
+
+<use figuras/componenteMonitoramento.png>
+Package pdftex.def Info: figuras/componenteMonitoramento.png used on input line
+ 521.
+(pdftex.def)             Requested size: 192.21764pt x 152.56963pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(tccV-10.bbl [43 <./figuras/ambienteComPlataforma.png>] [44 <./figuras/componen
+teMonitoramento.png>]
+Overfull \hbox (55.93324pt too wide) in paragraph at lines 83--87
+\OML/cmm/m/it/10 <$\OT1/cmr/m/n/10 http://www.intel.com/content/dam/www/public/
+us/en/documents/manuals/64- 
+ []
+
+[45
+
+]
+Overfull \hbox (3.09966pt too wide) in paragraph at lines 90--94
+\OML/cmm/m/it/10 <$\OT1/cmr/m/n/10 http://www.intel.com/content/www/us/en/proce
+ssors/architectures- 
+ []
+
+[46] [47] [48] [49])
++-------------------------------------------------------------------+
+| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
+|                  http://abntex.codigolivre.org.br                 |
++-------------------------------------------------------------------+
+[50] (tccV-10.aux) )
+(\end occurred when \ifnum on line 76 was incomplete) 
+Here is how much of TeX's memory you used:
+ 5630 strings out of 493335
+ 81408 string characters out of 3139231
+ 168839 words of memory out of 3000000
+ 9020 multiletter control sequences out of 15000+200000
+ 6522 words of font info for 24 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,12n,32p,1113b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on tccV-10.pdf (52 pages, 360975 bytes).
+PDF statistics:
+ 205 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

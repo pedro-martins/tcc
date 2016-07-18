@@ -1,0 +1,148 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tccV-7.aux
+The style file: ufscThesis/ufsc-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: abnt-options.bib
+Database file #2: bibliografia.bib
+Warning--entry type for "xenProject2015" isn't style-file defined
+--line 20 of file bibliografia.bib
+Warning--entry type for "vCenter2015" isn't style-file defined
+--line 32 of file bibliografia.bib
+Warning--entry type for "icinga2015" isn't style-file defined
+--line 38 of file bibliografia.bib
+Warning--entry type for "snmp2015" isn't style-file defined
+--line 44 of file bibliografia.bib
+Warning--entry type for "zabbix2015" isn't style-file defined
+--line 50 of file bibliografia.bib
+Warning--entry type for "IPMI2015" isn't style-file defined
+--line 56 of file bibliografia.bib
+Warning--entry type for "hyper-v2015" isn't style-file defined
+--line 62 of file bibliografia.bib
+Warning--entry type for "hp2015" isn't style-file defined
+--line 68 of file bibliografia.bib
+Warning--entry type for "nimbus2015" isn't style-file defined
+--line 74 of file bibliografia.bib
+Warning--entry type for "zenPack2015" isn't style-file defined
+--line 80 of file bibliografia.bib
+Warning--entry type for "cloudstack2015" isn't style-file defined
+--line 86 of file bibliografia.bib
+Warning--entry type for "eucalyptus2015" isn't style-file defined
+--line 92 of file bibliografia.bib
+Warning--entry type for "nagios2015" isn't style-file defined
+--line 98 of file bibliografia.bib
+Warning--entry type for "citrix2015" isn't style-file defined
+--line 104 of file bibliografia.bib
+Warning--entry type for "redhat2015" isn't style-file defined
+--line 110 of file bibliografia.bib
+Warning--entry type for "kvm2015" isn't style-file defined
+--line 116 of file bibliografia.bib
+Warning--entry type for "nfs2015" isn't style-file defined
+--line 122 of file bibliografia.bib
+Warning--entry type for "iscsi2015" isn't style-file defined
+--line 128 of file bibliografia.bib
+Warning--entry type for "esxi2015" isn't style-file defined
+--line 135 of file bibliografia.bib
+Warning--entry type for "vmware2015" isn't style-file defined
+--line 141 of file bibliografia.bib
+Warning--entry type for "openstack2015" isn't style-file defined
+--line 147 of file bibliografia.bib
+Warning--entry type for "apache2015" isn't style-file defined
+--line 153 of file bibliografia.bib
+Repeated entry---line 284 of file bibliografia.bib
+ : @inproceedings{clayman2010monitoring
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 298 of file bibliografia.bib
+ : @article{singh2011cm
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "cloudForum2015" isn't style-file defined
+--line 364 of file bibliografia.bib
+Repeated entry---line 370 of file bibliografia.bib
+ : @wiki{xenProject2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "x86" isn't style-file defined
+--line 376 of file bibliografia.bib
+Warning--entry type for "x8664" isn't style-file defined
+--line 382 of file bibliografia.bib
+Warning--entry type for "IA32" isn't style-file defined
+--line 388 of file bibliografia.bib
+Warning--entry type for "IA64" isn't style-file defined
+--line 394 of file bibliografia.bib
+Warning--entry type for "POWERPC" isn't style-file defined
+--line 400 of file bibliografia.bib
+Warning--entry type for "vmware2007" isn't style-file defined
+--line 459 of file bibliografia.bib
+Warning--entry type for "xenProject2015domu" isn't style-file defined
+--line 467 of file bibliografia.bib
+Warning--entry type for "xenProject2015dom0" isn't style-file defined
+--line 473 of file bibliografia.bib
+Warning--entry type for "xenProject2015xapi" isn't style-file defined
+--line 479 of file bibliografia.bib
+Warning--entry type for "xenProject2015xl" isn't style-file defined
+--line 485 of file bibliografia.bib
+Warning--entry type for "qemu2015" isn't style-file defined
+--line 491 of file bibliografia.bib
+Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
+Warning--I didn't find a database entry for "abnt-url-package=html"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 58 entries,
+            6480 wiz_defined-function locations,
+            1412 strings with 16161 characters,
+and the built_in function-call counts, 41446 in all, are:
+= -- 3280
+> -- 1340
+< -- 39
++ -- 543
+- -- 416
+* -- 2830
+:= -- 5732
+add.period$ -- 229
+call.type$ -- 59
+change.case$ -- 491
+chr.to.int$ -- 71
+cite$ -- 56
+duplicate$ -- 1814
+empty$ -- 3535
+format.name$ -- 1970
+if$ -- 10014
+int.to.chr$ -- 11
+int.to.str$ -- 0
+missing$ -- 927
+newline$ -- 278
+num.names$ -- 280
+pop$ -- 1254
+preamble$ -- 1
+purify$ -- 206
+quote$ -- 0
+skip$ -- 2477
+stack$ -- 1
+substring$ -- 1566
+swap$ -- 759
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1
+warning$ -- 0
+while$ -- 389
+width$ -- 0
+write$ -- 846
+(There were 3 error messages)

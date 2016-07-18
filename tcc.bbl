@@ -1,0 +1,97 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Armbrust et al. 2010]{armbrust2010view}
+\abntrefinfo{Armbrust et al.}{ARMBRUST et al.}{2010}
+{ARMBRUST, M. et al. A view of cloud computing.
+\textbf{Communications of the ACM}, ACM, v.~53, n.~4, p. 50--58, 2010.}
+
+\bibitem[Clayman, Galis e Mamatas 2010]{clayman2010monitoring}
+\abntrefinfo{Clayman, Galis e Mamatas}{CLAYMAN; GALIS; MAMATAS}{2010}
+{CLAYMAN, S.; GALIS, A.; MAMATAS, L. Monitoring virtual networks with lattice.
+  In:  IEEE. \textbf{Network Operations and Management Symposium Workshops
+  (NOMS Wksps), 2010 IEEE/IFIP}. [S.l.], 2010. p. 239--246.}
+
+\bibitem[Hall 2012]{hall2012opportunities}
+\abntrefinfo{Hall}{HALL}{2012}
+{HALL, P. Opportunities for csps in enterprise-grade public cloud computing.
+\textbf{OVUM, May}, 2012.}
+
+\bibitem[Kephart e Chess 2003]{kephart2003vision}
+\abntrefinfo{Kephart e Chess}{KEPHART; CHESS}{2003}
+{KEPHART, J.~O.; CHESS, D.~M. The vision of autonomic computing.
+\textbf{Computer}, IEEE, v.~36, n.~1, p. 41--50, 2003.}
+
+\bibitem[Mell e Grance 2011]{mell2011nist}
+\abntrefinfo{Mell e Grance}{MELL; GRANCE}{2011}
+{MELL, P.; GRANCE, T. The nist definition of cloud computing.
+Computer Security Division, Information Technology Laboratory, National
+  Institute of Standards and Technology Gaithersburg, 2011.}
+
+\bibitem[Mian, Martin e Vazquez-Poletti 2013]{mian2013provisioning}
+\abntrefinfo{Mian, Martin e Vazquez-Poletti}{MIAN; MARTIN;
+  VAZQUEZ-POLETTI}{2013}
+{MIAN, R.; MARTIN, P.; VAZQUEZ-POLETTI, J.~L. Provisioning data analytic
+  workloads in a cloud.
+\textbf{Future Generation Computer Systems}, Elsevier, v.~29, n.~6, p.
+  1452--1458, 2013.}
+
+\bibitem[Popek e Goldberg 1974]{popek1974formal}
+\abntrefinfo{Popek e Goldberg}{POPEK; GOLDBERG}{1974}
+{POPEK, G.~J.; GOLDBERG, R.~P. Formal requirements for virtualizable third
+  generation architectures.
+\textbf{Communications of the ACM}, ACM, v.~17, n.~7, p. 412--421, 1974.}
+
+\bibitem[Sahoo, Mohapatra e Lath 2010]{sahoo2010virtualization}
+\abntrefinfo{Sahoo, Mohapatra e Lath}{SAHOO; MOHAPATRA; LATH}{2010}
+{SAHOO, J.; MOHAPATRA, S.; LATH, R. Virtualization: A survey on concepts,
+  taxonomy and associated security issues. In:  IEEE. \textbf{Computer and
+  Network Technology (ICCNT), 2010 Second International Conference on}. [S.l.],
+  2010. p. 222--226.}
+
+\bibitem[Shao et al. 2010]{shao2010runtime}
+\abntrefinfo{Shao et al.}{SHAO et al.}{2010}
+{SHAO, J. et al. A runtime model based monitoring approach for cloud. In:
+  IEEE. \textbf{Cloud Computing (CLOUD), 2010 IEEE 3rd International Conference
+  on}. [S.l.], 2010. p. 313--320.}
+
+\bibitem[Singh, Sood e Sharma 2011]{singh2011cm}
+\abntrefinfo{Singh, Sood e Sharma}{SINGH; SOOD; SHARMA}{2011}
+{SINGH, G.; SOOD, S.; SHARMA, A. Cm-measurement facets for cloud performance.
+\textbf{International Journal of Computer Applications}, International Journal
+  of Computer Applications, 244 5 th Avenue,\# 1526, New York, NY 10001, USA
+  India, v.~23, n.~3, p. 37--42, 2011.}
+
+\bibitem[Soltesz et al. 2007]{soltesz2007container}
+\abntrefinfo{Soltesz et al.}{SOLTESZ et al.}{2007}
+{SOLTESZ, S. et al. Container-based operating system virtualization: a
+  scalable, high-performance alternative to hypervisors. In:  ACM. \textbf{ACM
+  SIGOPS Operating Systems Review}. [S.l.], 2007. v.~41, n.~3, p. 275--287.}
+
+\bibitem[Urgaonkar, Shenoy e Roscoe 2002]{urgaonkar2002resource}
+\abntrefinfo{Urgaonkar, Shenoy e Roscoe}{URGAONKAR; SHENOY; ROSCOE}{2002}
+{URGAONKAR, B.; SHENOY, P.; ROSCOE, T. Resource overbooking and application
+  profiling in shared hosting platforms.
+\textbf{ACM SIGOPS Operating Systems Review}, ACM, v.~36, n.~SI, p. 239--254,
+  2002.}
+
+\bibitem[Viratanapanu et al. 2010]{viratanapanu2010demand}
+\abntrefinfo{Viratanapanu et al.}{VIRATANAPANU et al.}{2010}
+{VIRATANAPANU, A. et al. On demand fine grain resource monitoring system for
+  server consolidation. In:  IEEE. \textbf{Kaleidoscope: Beyond the
+  Internet?-Innovations for Future Networks and Services, 2010 ITU-T}. [S.l.],
+  2010. p.~1--8.}
+
+\bibitem[Weing{\"a}rtner, Br{\"a}scher e Westphall 2015]{weingartner2015cloud}
+\abntrefinfo{Weing{\"a}rtner, Br{\"a}scher e Westphall}{WEING{\"A}RTNER;
+  BR{\"A}SCHER; WESTPHALL}{2015}
+{WEING{\"A}RTNER, R.; BR{\"A}SCHER, G.~B.; WESTPHALL, C.~B. Cloud resource
+  management: A survey on forecasting and profiling models.
+\textbf{Journal of Network and Computer Applications}, Elsevier, v.~47, p.
+  99--106, 2015.}
+
+\end{thebibliography}
