@@ -16,6 +16,7 @@
 \usepackage{graphicx} % Possibilita o uso de figuras e gráficos
 \usepackage{color}    % Possibilita o uso de cores no documento
 \usepackage{listings}
+\usepackage{float}
 %----------------------------------------------------------------------
 % Comandos criados pelo usuário
 \newcommand{\afazer}[1]{{\color{red}{#1}}} % Para destacar uma parte a ser trabalhada
@@ -136,12 +137,12 @@
 	
 	Motivado pela carência de ferramentas de monitoramento  pouco intrusivas, autônomas, com foco apenas na infraestrutura de ambientes de computação em nuvem, compatível com as ferramentas de orquestração atuais e de fácil instalação. Surgiu o interesse no projeto de uma abordagem que supra a necessidade de monitoramento da infraestrutura da nuvem. Capacitando assim, que ferramentas como CloudStack, possam fornecer todo o suporte para o monitoramento da infraestrutura do ambiente de nuvem sem interferência nos serviços por ela já fornecidos de modo autônomo e sem configurações adicionais.     
 	
-	\chapter{Objetivos}
+	\section{Objetivos}
 	Este capítulo irá tratar dos objetivos que este trabalho pretende alcançar.
-	\section{Objetivos gerais}
+	\subsection{Objetivos gerais}
 	
 	Este trabalho busca analisar o tema de monitoramento de ambientes de computação em nuvem e elementos autônomos, para poder então propor um modelo de monitoramento autônomo para ambientes de computação em nuvem que fornecem infraestrutura como serviço.
-	\section{Objetivos específicos}
+	\subsection{Objetivos específicos}
 	
 	\begin{itemize}
 		\item Levantar trabalhos relacionados e fazer um estudo sobre monitoramento de ambientes de computação em nuvem;
@@ -505,7 +506,7 @@
 	captura poderá a coletar uma ou mais variáveis do ambiente, poderão haver múltiplas instâncias do mesmo serviço no ambiente, monitorando
 	o mesmo conjunto de métricas de servidores e máquinas virtuais diferentes, assim como também poderão haver diferentes serviços que	monitoram conjuntos de métricas distintos.
 	
-		\begin{figure}[h]
+		\begin{figure}[H]
 			
 			
 			\centering
@@ -514,7 +515,7 @@
 			\caption{Ambiente de computação em nuvem com a plataforma de monitoramento}
 		\end{figure}
 		
-		\begin{figure}[h]
+		\begin{figure}[H]
 			
 			
 			\centering
@@ -523,9 +524,93 @@
 			\caption{Componente de monitoramento}
 		\end{figure}
 		
+		Após ter obtido os dados, os serviços do componente de monitoramento realizam o envio dos mesmos para um repositório de armazenamento através do componente de armazenamento. Os dados obtidos
+		serão organizados no formato \textit{JavaScript Object Notation} (JSON), um exemplo dos dados coletados pode ser encontrado nas Figuras 4 e 5. Como ilustrado nas Figuras 4 e 5, cada JSON contem 6 propriedades:
 		
+		\begin{enumerate}
+			\item \textit{resourceType} - o tipo de recurso coletado;
+			\item \textit{resourceUsage} - o quanto deste tipo de recurso a máquina virtual está usando no momento da coleta;
+			\item \textit{virtualMachineName} - o identificador da máquina virtual monitorada;
+			\item \textit{timestamp} - a data em que ocorreu a coleta;
+			\item \textit{host} - o servidor cuja máquina virtual esta sendo executada;
+			\item \textit{cluster} - o cluster onde o servidor da máquina virtual se encontra.
+		\end{enumerate}
 		
+		\begin{figure}[H]
+			
+			
+			\centering
+			\includegraphics[scale=0.8]{figuras/json1} % leia abaixo
+			\label{figura:json1}
+			\caption{Exemplo de JSON gerado através de dados coletados relativos ao uso de cpu.}
+		\end{figure}
 		
+		\begin{figure}[H]
+			
+			
+			\centering
+			\includegraphics[scale=0.8]{figuras/json2} % leia abaixo
+			\label{figura:json2}
+			\caption{Exemplo de JSON gerado através de dados coletados relativos ao uso de memória.}
+		\end{figure}
+		
+		\subsubsection{Serviço de captura de dados}
+		
+		O serviço de captura de dados irá conter uma aplicação que através da API do virtualizador obtém as métricas de consumo ou alocação de recursos para as máquinas virtuais e desempenho dos servidores físicos como ilustrado na Figura 6. Deste modo, o serviço de captura de dados garante que não seja necessário a injeção de qualquer tipo de código nas máquinas virtuais dos usuários ao mesmo tempo em que caso algum novo dispositivo de hardware seja inserido no servidor, este possa ser monitorado por algum serviço de monitoramento existente no ambiente, pois esse dispositivo só poderá ser usado após ser reconhecido pelo virtualizador, que por sua vez irá disponibilizar o acesso aos recursos do dispositivo através da sua API. 
+		
+		O serviço de captura de dados deverá se cadastrar na plataforma de monitoramento	disponibilizando as métricas que este suporta. O serviço de captura de dados também deverá verificar se o servidor que foi designado para ser	monitorado está ativo (isto deverá ser feito toda vez que o serviço for	coletar as métricas do servidor); se o servidor não estiver disponível, o serviço deverá remover esse servidor da sua lista de servidores para monitorar. Além do cadastro, o serviço de captura de dados deverá disponibilizar os seguintes endpoints que irão dar forma a seguinte Uniform Resource Locator (URL), em português, localizador padrão de recursos \textit{''http://ip-serviço:8080/$<$endpoint$>$''}:
+		
+		\begin{itemize}
+			\item \textit{timeSpent} - retorna o tempo médio que o serviço leva para coletar os dados de cada servidor que ele é responsável;
+			\item \textit{hosts} - retorna todos os servidores monitorados pelo serviço;
+			\item \textit{addHost/host} - adiciona um servidor para ser monitorado pelo serviço;
+			\item \textit{removeHost} - remove um servidor qualquer da lista de servidores monitorados pelo serviço;
+			\item \textit{setDataRetriveInterval/value} - altera o valor do intervalo entre coletas de dados;
+			\item \textit{getDataRetriveInterval} - retorna o valor do intervalo entre coletas de dados.
+		\end{itemize}
+		
+		\begin{figure}[H]
+			
+			
+			\centering
+			\includegraphics[scale=1]{figuras/servicoCaptura} % leia abaixo
+			\label{figura:servicoCaptura}
+			\caption{Exemplo de um serviço de captura de dados}
+		\end{figure}
+		
+		\subsection{Componente de armazenamento Ocomponente}
+		
+		Ocomponente de armazenamento será constituído de uma aplicação e uma base de dados como como ilustrado na Figura 7. Este componente realiza o armazenamento e gerência dos dados oriundos do monitoramento através de uma aplicação que recebe requisições HTTP (Hypertext Transfer Protocol), em português, protocolo de transferência de hipertexto, contendo um JSON com as informações sobre uma máquina virtual ou servidor para persistir no banco de dados. Além disso, a aplicação disponibiliza métodos para consultar informações sobre o ambiente monitorado, como: recursos utilizados por máquinas virtuais, recursos alocados e utilizados dos servidores físicos, percentual de recursos ociosos em um cluster e outros. 
+		
+		Ambientes de computação em nuvem possuem milhares de máquinas virtuais, servidores e outros componentes como dispositivos de rede e armazenamento. Deste modo, como modelo de banco de dados será utilizado uma base de dados não relacional orientada a documentos, visto que esses tipos de banco de dados possuem um desempenho melhor em leitura e escrita num grandes volumes de dados como apresentado em \cite{li2013performance}. Para a modelagem do banco de dados não relacional foi criado um modelo \textit{Enhanced Entity-Relantionship}
+		(EER), em português, entidade relacional estendido, ilustrado na Figura 8. O modelo definem 7 entidades:
+		
+		\begin{enumerate}
+			\item \textit{Host} - entidade que irá conter informações relativas a um servidor;
+			\item \textit{VM} - entidade que irá armazenar informações de máquinas virtuais;
+			\item \textit{HostResource} - esta entidade que armazena dados relativos ao monitoramento de servidores;
+			\item \textit{VMResource} - esta entidade irá armazenar os dados obtidos ao monitorar máquinas virtuais;
+			\item \textit{ServiceRegistry} - entidade responsável por armazenar o registro de cada tipo de serviço de captura de dados da plataforma;
+			\item \textit{HostActivity} - entidade que irá armazenar um histórico de atividades dos servidores, se foram ligados ou desligados e quando isto ocorreu;
+			\item \textit{ServiceSupport} - esta entidade armazena as características dos	serviços, os virtualizadores e métricas que eles suportam;
+		\end{enumerate}
+		
+		\begin{figure}[h]
+			
+			
+			\centering
+			\includegraphics[scale=1]{figuras/armazenamento} % leia abaixo
+			\label{figura:armazenamento}
+			\caption{Componente de armazenamento de dados}
+		\end{figure}
+		
+		\begin{figure}[h]
+			
+			
+			\includegraphics[scale=0.9]{figuras/modeloRelacional} % leia abaixo
+			\label{figura:modeloRelacional}
+			\caption{Modelo do banco de dados}
+		\end{figure}
 	
 	\bibliographystyle{ufscThesis/ufsc-alf}
 	\bibliography{bibliografia}

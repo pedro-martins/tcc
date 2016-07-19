@@ -3,117 +3,117 @@ The style file: ufscThesis/ufsc-alf.bst
 Database file #1: abnt-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "lxc2015" isn't style-file defined
---line 42 of file bibliografia.bib
+--line 51 of file bibliografia.bib
 Warning--entry type for "sigar2015" isn't style-file defined
---line 49 of file bibliografia.bib
+--line 58 of file bibliografia.bib
 Warning--entry type for "postgre2015" isn't style-file defined
---line 64 of file bibliografia.bib
+--line 73 of file bibliografia.bib
 Warning--entry type for "globus2015" isn't style-file defined
---line 72 of file bibliografia.bib
+--line 81 of file bibliografia.bib
 Warning--entry type for "canonical2015" isn't style-file defined
---line 79 of file bibliografia.bib
+--line 88 of file bibliografia.bib
 Warning--entry type for "tccgabriel2015" isn't style-file defined
---line 86 of file bibliografia.bib
+--line 95 of file bibliografia.bib
 Warning--entry type for "CSnagios2015" isn't style-file defined
---line 93 of file bibliografia.bib
+--line 102 of file bibliografia.bib
 Warning--entry type for "OSnagios2015" isn't style-file defined
---line 100 of file bibliografia.bib
+--line 109 of file bibliografia.bib
 Warning--entry type for "oracle2015" isn't style-file defined
---line 107 of file bibliografia.bib
+--line 116 of file bibliografia.bib
 Warning--entry type for "virtualbox2015" isn't style-file defined
---line 114 of file bibliografia.bib
+--line 123 of file bibliografia.bib
 Warning--entry type for "xenProject2015" isn't style-file defined
---line 122 of file bibliografia.bib
+--line 131 of file bibliografia.bib
 Warning--entry type for "zenoss2015" isn't style-file defined
---line 129 of file bibliografia.bib
+--line 138 of file bibliografia.bib
 Warning--entry type for "vCenter2015" isn't style-file defined
---line 144 of file bibliografia.bib
+--line 153 of file bibliografia.bib
 Warning--entry type for "icinga2015" isn't style-file defined
---line 151 of file bibliografia.bib
+--line 160 of file bibliografia.bib
 Warning--entry type for "snmp2015" isn't style-file defined
---line 158 of file bibliografia.bib
+--line 167 of file bibliografia.bib
 Warning--entry type for "zabbix2015" isn't style-file defined
---line 165 of file bibliografia.bib
+--line 174 of file bibliografia.bib
 Warning--entry type for "IPMI2015" isn't style-file defined
---line 172 of file bibliografia.bib
+--line 181 of file bibliografia.bib
 Warning--entry type for "hyper-v2015" isn't style-file defined
---line 179 of file bibliografia.bib
+--line 188 of file bibliografia.bib
 Warning--entry type for "hp2015" isn't style-file defined
---line 186 of file bibliografia.bib
+--line 195 of file bibliografia.bib
 Warning--entry type for "icingaOpenstack2015" isn't style-file defined
---line 193 of file bibliografia.bib
+--line 202 of file bibliografia.bib
 Warning--entry type for "zabbix-cloudstack2015" isn't style-file defined
---line 200 of file bibliografia.bib
+--line 209 of file bibliografia.bib
 Warning--entry type for "zabbix-openstack2015" isn't style-file defined
---line 207 of file bibliografia.bib
+--line 216 of file bibliografia.bib
 Warning--entry type for "nimbus2015" isn't style-file defined
---line 215 of file bibliografia.bib
+--line 224 of file bibliografia.bib
 Warning--entry type for "OSzenPack2015" isn't style-file defined
---line 223 of file bibliografia.bib
+--line 232 of file bibliografia.bib
 Warning--entry type for "CSzenPack2015" isn't style-file defined
---line 230 of file bibliografia.bib
+--line 239 of file bibliografia.bib
 Warning--entry type for "cloudstack2015" isn't style-file defined
---line 236 of file bibliografia.bib
+--line 245 of file bibliografia.bib
 Warning--entry type for "eucalyptus2015" isn't style-file defined
---line 243 of file bibliografia.bib
+--line 252 of file bibliografia.bib
 Warning--entry type for "nagios2015" isn't style-file defined
---line 250 of file bibliografia.bib
+--line 259 of file bibliografia.bib
 Warning--entry type for "citrix2015" isn't style-file defined
---line 257 of file bibliografia.bib
+--line 266 of file bibliografia.bib
 Warning--entry type for "redhat2015" isn't style-file defined
---line 264 of file bibliografia.bib
+--line 273 of file bibliografia.bib
 Warning--entry type for "kvm2015" isn't style-file defined
---line 271 of file bibliografia.bib
+--line 280 of file bibliografia.bib
 Warning--entry type for "nfs2015" isn't style-file defined
---line 278 of file bibliografia.bib
+--line 287 of file bibliografia.bib
 Warning--entry type for "iscsi2015" isn't style-file defined
---line 285 of file bibliografia.bib
+--line 294 of file bibliografia.bib
 Warning--entry type for "esxi2015" isn't style-file defined
---line 293 of file bibliografia.bib
+--line 302 of file bibliografia.bib
 Warning--entry type for "vmware2015" isn't style-file defined
---line 300 of file bibliografia.bib
+--line 309 of file bibliografia.bib
 Warning--entry type for "openstack2015" isn't style-file defined
---line 307 of file bibliografia.bib
+--line 316 of file bibliografia.bib
 Warning--entry type for "apache2015" isn't style-file defined
---line 314 of file bibliografia.bib
-Repeated entry---line 446 of file bibliografia.bib
+--line 323 of file bibliografia.bib
+Repeated entry---line 455 of file bibliografia.bib
  : @inproceedings{clayman2010monitoring
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 460 of file bibliografia.bib
+Repeated entry---line 469 of file bibliografia.bib
  : @article{singh2011cm
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 498 of file bibliografia.bib
+Repeated entry---line 507 of file bibliografia.bib
  : @inproceedings{shao2010runtime
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 532 of file bibliografia.bib
+Repeated entry---line 541 of file bibliografia.bib
  : @wiki{xenProject2015
  :                     ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "x86" isn't style-file defined
---line 539 of file bibliografia.bib
+--line 548 of file bibliografia.bib
 Warning--entry type for "x8664" isn't style-file defined
---line 546 of file bibliografia.bib
+--line 555 of file bibliografia.bib
 Warning--entry type for "IA32" isn't style-file defined
---line 553 of file bibliografia.bib
+--line 562 of file bibliografia.bib
 Warning--entry type for "IA64" isn't style-file defined
---line 560 of file bibliografia.bib
+--line 569 of file bibliografia.bib
 Warning--entry type for "POWERPC" isn't style-file defined
---line 567 of file bibliografia.bib
+--line 576 of file bibliografia.bib
 Warning--entry type for "vmware2007" isn't style-file defined
---line 627 of file bibliografia.bib
-Warning--entry type for "xenProject2015domu" isn't style-file defined
 --line 636 of file bibliografia.bib
+Warning--entry type for "xenProject2015domu" isn't style-file defined
+--line 645 of file bibliografia.bib
 Warning--entry type for "xenProject2015dom0" isn't style-file defined
---line 643 of file bibliografia.bib
+--line 652 of file bibliografia.bib
 Warning--entry type for "xenProject2015xapi" isn't style-file defined
---line 650 of file bibliografia.bib
+--line 659 of file bibliografia.bib
 Warning--entry type for "xenProject2015xl" isn't style-file defined
---line 657 of file bibliografia.bib
+--line 666 of file bibliografia.bib
 Warning--entry type for "qemu2015" isn't style-file defined
---line 664 of file bibliografia.bib
+--line 673 of file bibliografia.bib
 Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
 Warning--I didn't find a database entry for "abnt-url-package=html"
 +---------------------------------------------------------+
