@@ -16,6 +16,7 @@
 \usepackage{graphicx} % Possibilita o uso de figuras e gráficos
 \usepackage{color}    % Possibilita o uso de cores no documento
 \usepackage{listings}
+\usepackage{algorithm2e}
 \usepackage{float}
 %----------------------------------------------------------------------
 % Comandos criados pelo usuário
@@ -612,6 +613,220 @@
 			\caption{Modelo do banco de dados}
 		\end{figure}
 	
+	\subsection{Componente de Configuração}
+	
+	O componente de configuração é composto por dois agentes apresentados na Figura 9. O agente de configuração determina a frequência de coleta de dados dos serviços de captura. Ele contém uma lista com	todos os serviços disponíveis no ambiente e fará requisições periódicas para o serviço de armazenamento a fim de obter métricas do ambiente para poder definir melhores configurações de intervalo de monitoramento para cada serviço de captura de dados. O procedimento que o agente irá a usar para a melhoria da configuração dos serviços é descrito no Algoritmo 1.
+	
+	\begin{figure}[h]
+		
+		
+		\includegraphics[scale=1]{figuras/componenteConfiguracao} % leia abaixo
+		\label{figura:componenteConfiguracao}
+		\caption{Componente de configuração dos serviços de monitoramento}
+	\end{figure}
+	
+	O Algoritmo 1 tem como objetivo melhorar o intervalo de funcionamento de cada serviço de coleta de dados, fazendo uso da variação dos dados coletados por esses serviços. Esta variação consiste na relação	entre os valores das métricas obtidos em diferentes períodos, se esta variação for grande, significa que as máquinas virtuais dos servidores monitorados por esse serviço estão sofrendo mais variações, deste modo seria mais interessante que o serviço passe a coletar os dados	destas máquinas virtuais mais frequentemente para conseguir obter dados mais condizentes com seu estado. Do mesmo modo, se a variação for pequena, significa que as máquinas virtuais monitoradas por esse serviço estão com um comportamento estável. Assim, o serviço de captura pode levar mais tempo para realizar a coleta dos dados dessas máquinas virtuais, reduzindo os custos com processamento, coleta e armazenamento de dados.
+	
+	Descrição de cada variável e função presentes no Algoritmo 1:
+	
+	\begin{itemize}
+		\item \textit{servicoArmazenamento}[Linha: 1] - uma referência para o serviço responsável por realizar a persistência e consulta de dados no repositório da plataforma de monitoramento;
+		\item \textit{servicosConhecidos}[Linhas: 1 e 4] - uma lista contendo todas as instâncias dos serviços de captura de dados existentes na plataforma de monitoramento;
+		\item \textit{servico}[Linhas: 4,5,6,11,12 e 13] - uma instância de um serviço	de captura de dados qualquer;
+		\item \textit{listaJson1 e listaJson2} [Linhas: 5,6,7 e 8] - listas de JSONs que armazenam todos os JSONs referentes as máquinas virtuais monitoradas num determinado período;
+		\item \textit{servidores}[Linhas: 5 e 6] - variável contendo os servidores em que o serviço atua;
+		\item \textbf{dataAtual}()[Linhas: 2 e 3] - função que irá retornar o momento	corrente;
+		\item \textit{período}[Linhas: 2 e 3] - variável que irá conter um tempo que será subtraído da data atual para gerar uma data no passado. O
+		período pode ser configurado pelo administrador do sistema;
+		\item \textbf{consultar}()[Linhas: 5 e 6] - método que irá retornar uma lista de JSON contendo todos os dados do banco de dados cujo atributo servidor esteja contido na lista de servidores e que as datas estejam dentro do intervalo de dados calculado com o uso do parâmetro período;
+		\item \textbf{separarPorMetrica}()[Linhas: 7 e 8] - método que irá retornar uma lista de lista de JSON onde cada elemento é uma sublista
+		da lista de JSONs passada por parâmetro para o método, os elementos dessa sublista terão todos a mesma métrica e não poderão haver sublistas distintas contendo a mesma métrica;
+		\item \textbf{obterMedias}()[Linhas: 9 e 10] - método que retorna um conjunto onde cada elemento é a média aritmética de todos as valores
+		de uma métrica contida na lista de valores de métricas passada
+		por parâmetro;
+		\item \textit{mediasDeMetricas1}[Linhas: 9 e 12] - array que contem a média dos valores de cada tipo de métrica coletada num passado próximo;
+		\item \textit{mediasDeMetricas2}[Linhas: 10 e 12] - array que contem a média dos valores de cada tipo de métrica coletadas num momento presente;
+		\item \textbf{obterFrequencia}()[Linha: 11] - método que retorna a frequência com que um serviço de captura de dados está coletando os dados;
+		\item \textbf{coefFreq}[Linhas: 12 e 13] - valor ao qual será multiplicada a frequência de coleta de um serviço de captura de dados para tornar o serviço mais eficiente;
+		\item \textbf{coeficienteDeFrequencia}()[Linha: 12] - método que calcula o coeficiente de frequência utilizando como base a Função 4.1;
+		\item \textbf{frequênciaInicial}()[Linha: 13] - método que retorna a frequência inicialmente definida no serviço de captura de dados;
+		\item \textbf{nMetricas}()[Linha: 12] - método que retorna o número de métricas capturadas por um serviço de captura de dados;
+		\item \textbf{definirFrequenciaDeCapturaDeDados}()[Linha: 13] - altera o valor da frequência de captura de dados do serviço de captura de dados usando a Fórmula 4.3 com os parâmetros passados.
+	\end{itemize}
+	
+	\begin{center}
+		\hspace*{-1cm}
+		\includegraphics[scale=.6]{figuras/algoritmo1}  % leia abaixo
+		\label{alg:algorithm1}
+	\end{center}
+	
+	Para realizar o ajuste da frequência foram definidas três Fórmulas
+	4.1, 4.2 e 4.3. 
+	
+	A Fórmula 4.1 receberá três valores, sendo eles:
+	
+	\begin{itemize}
+		\item \textit{A e B} - vetores de médias de métricas obtidas em diferentes
+		períodos;
+		\item \textit{h} - número de métricas monitoradas pelo serviço;
+		\item \textit{i} - índice de iterações, valor que inicia em um (1) e sofrerá acréscimo de uma (1) unidade a cada iteração do produtório,
+		podendo atingir um valor máximo de \textit{h}.
+	\end{itemize}
+	
+	A Fórmula 4.1 é constituída de um produtório sobre a Fórmula
+	4.2, passando o valor do i-ésimo elemento dos vetores \textit{A} e \textit{B} para a Fórmula 4.2 em cada iteração, ao final, teremos um valor \textit{y} onde $0 \leq
+	y \leq 2$. A escolhe deste limite 2 foi tomada para evitar que o período
+	entre uma coleta e outra aumente rapidamente, possibilitando assim que várias avaliações do ambiente sejam feitas antes de chegar em longos períodos entre cada coleta de dados, uma forma de evitar configurações	radicais.
+	
+	\begin{center}
+		\hspace*{0cm}
+		\includegraphics[scale=0.6]{figuras/formula1}  % leia abaixo
+		\label{alg:formula1}
+	\end{center}
+	
+	A Fórmula 4.2 receberá 3 valores, sendo eles:
+	
+	\begin{itemize}
+		\item \textit{a} e \textit{b} - médias de uma métrica obtidas em diferentes períodos;
+		\item \textit{h} - número de métricas monitoradas pelo serviço.
+	\end{itemize}
+	
+	\begin{center}
+		\hspace*{1.2cm}
+		\includegraphics[scale=0.6]{figuras/formula3}  % leia abaixo
+		\label{alg:formula3}
+	\end{center}
+	
+	A Fórmula 4.3 receberá 2 valores, sendo eles:
+	
+	\begin{itemize}
+		\item \textit{x} - coeficiente de frequência de captura de dados derivado com a Fórmula 4.1;
+		\item \textit{y} - intervalo de captura de dados inicialmente definida.
+	\end{itemize}
+	
+	A Fórmula 4.3 calcula de fato a frequência de captura de dados do serviço usando a variável \textit{x}, que é obtido na Fórmula 4.1, e a variável
+	\textit{y} que é configurada pelo administrador da plataforma. Esta fórmula resulta num valor que pode ser até cem vezes maior ou até duas vezes
+	menor que o valor de \textit{y}, ou seja, com essa fórmula, o intervalo $\delta$ entre cada captura de dados de um serviço pode variar de $y/2 \leq \delta \leq 100 ? y$. Vale lembrar que esta fórmula usa como valor de entrada o coeficiente calculado na Fórmula 4.1, que como mencionado, pode
+	escalar em no máximo duas vezes e com um mínimo não definido. Com isso, esta fórmula tende a ter um comportamento onde o limite inferior não varia tanto do valor inicial porém pode ser rapidamente alcançado, enquanto o limite superior pode chegar a valores cem vezes maiores que o valor inicial porém numa velocidade menor.
+	
+	\begin{center}
+		\hspace*{-0.3cm}
+		\includegraphics[scale=0.6]{figuras/formula2}  % leia abaixo
+		\label{alg:formula2}
+	\end{center}
+	
+	Além do agente de configuração da frequência de coleta de dados
+	dos serviços de captura, o componente de configuração possui também um agente de distribuição de servidores para serviços de captura de dados. Este agente é responsável por verificar a carga de cada serviço	e com base nessa carga, decidir quais servidores serão monitorados por	cada serviço. Esta carga será uma relação entre o tempo que o servição leva para obter as métricas de um servidor e suas máquinas virtuais e o intervalo de tempo em que este serviço deve disponibilizar as métricas obtidas. O procedimento que o agente de distribuição de servidores para serviços de captura de dados irá usar está descrito no Algoritmo 2.
+	
+	O Algoritmo 2 tem como objetivo distribuir melhor as cargas do monitoramento dos servidores entre os serviços de captura de dados disponíveis e, quando for necessário este agente irá instanciar mais
+	serviços de captura de dados. Para realizar tal procedimento o Algoritmo 2 tem como entrada uma lista com os serviços de captura de dados disponíveis no ambiente e outra lista com os servidores sem monitoramento [Linha: 1], esta lista de servidores sem monitoramento irá inicializar vazia e será preenchida a medida que os servidores são removidos da lista de servidor a ser monitorado dos serviços de captura de dados. Exceto na inicialização da plataforma, neste momento todos os servidores estarão sem monitoramento, logo esta lista estará cheia e o tempo de captura dos serviços serão todos 0, a lista de serviços conhecidos será preenchida no momento que os serviços de captura realizam seu cadastro na plataforma. As métricas que deverão ser monitoradas	de cada servidor na inicialização do sistema, serão configuradas pelo administrador na base de dados da aplicação. Portando o administrador deverá ter ciência das métricas suportadas pelos serviços de captura de dado disponíveis para evitar que servidores não sejam monitorados.
+		
+	O algoritmo percorre cada serviço de captura de dados recolhendo informações sobre o tempo médio que o serviço está levando	para realizar a captura de suas métricas e a frequência de captura configurada no mesmo, com esses 2 valores, o algoritmo pode identificar serviços sobrecarregados ou com pouca carga [Linhas 3 a 17]; no caso	de pouca carga, será adicionado um novo servidor sem monitoramento (caso exista) para o serviço de captura de dados passar a monitorar	[Linhas 9 a 16].
+	
+	Caso o serviço de captura de dados esteja sobrecarregado, será então removido 1 servidor de sua lista de servidores a serem monitorados [Linhas 6 a 8]. Um serviço é definido como sobrecarregado quando o tempo médio para realizar a captura das métricas é superior a frequência com que o serviço deve capturar os dados, o serviço é definido com pouca carga caso este tempo médio de captura seja inferior a metade da frequência com que o serviço irá capturar os dados.
+	
+	Definidos os serviços de captura de dados disponíveis, o próximo passo do algoritmo será a migrar os servidores de serviços disponíveis menos saturados para serviços disponíveis equivalentes mais saturados	[Linhas 19 a 27]. Esta ação irá a permitir esvaziar alguns serviços e aproveitar ao máximo a capacidade de processamento de outros serviços, podendo assim remover os serviços vazios da plataforma como é feito adiante.
+	
+	Após realizar o balanceamento dos serviços de monitoramento, se ainda existirem servidores não monitorados e não existirem serviços de captura vagos, será então instanciado um novo serviço de captura de	dados para suprir os servidores sem monitoramento. O procedimento acaba quando não existirem servidores sem monitoramento, monitorar um servidor inclui monitorar todas as máquinas virtuais existentes	naquele servidor [Linhas 28 a 34].	
+	
+	Quando não existirem mais servidores sem monitoramento, será verificado se existe algum serviço de captura de dados sem monitorar nenhum servidor, caso exista, este será removido da plataforma [Linhas 35 a 40].
+		
+	Descrição de cada variável e métodos presentes no Algoritmo 2:
+	
+	\begin{itemize}
+		\item \textit{servicosConhecidos}[Linha: 1] - lista com todos os serviços de captura de dados existentes no ambiente;
+		\item \textit{servidoresNaoMonitorados}[Linha: 1] - lista onde cada elemento é o identificador de um servidor e as métricas desse servidor que	devem ser monitoradas;
+		\item \textit{servicosDisponiveis}[Linha: 2] - serviços que podem ser designados para monitorar algum servidor caso sejam compatíveis;
+		\item \textit{servico} - um serviço de captura de dados qualquer;
+		\item \textbf{obterTiposMetricasMonitoradas}()[Linha: 4] - método que
+		retorna uma lista com todas as métricas que o serviço de captura de dados monitora;
+		\item \textit{tempoGasto}[Linha: 5] - tempo em que um serviço de captura
+		de dados leva para obter o valor das métricas de todos os seus servidores e máquinas virtuais;
+		\item \textit{frequencia}[Linha: 6] - a frequência com que o serviço de captura
+		de dados realiza a coleta dos dados dos servidores e máquinas virtuais pelos quais ele é responsável;
+		\item \textbf{adicionar}()[Linha: 7] - função que adiciona um servidor e as métricas que devem ser monitoradas na lista de servidores não monitorados;
+		\item \textbf{removeServidor}()[Linha: 7] - método que remove e retorna um servidor da lista de servidores a monitorar de um serviço de captura de dados;
+		\item \textbf{procurarServidor}()[Linha: 10] - procura por um servidor na lista de servidores não monitorados que possa ser monitorado	pelo serviço passado por parâmetro, se encontrado, o servidor será removido da lista e retornado, senão será retornando vazio. Um servidor pode ser monitorado por um serviço se este serviço suporta algumas das métricas do antigo serviço que monitorava o servidor;
+		\item \textbf{adicionarServidor}()[Linha: 14] - adiciona um servidor passado por parâmetro na lista de servidores que serão monitorados pelo serviço de captura de dados;
+		\item \textbf{obterServicoEquivalente}()[Linha: 21] - método que retorna
+		um serviço que monitore métricas equivalentes a do serviço passado por parâmetro e que esteja dentro da lista de serviços também passada por parâmetro;
+		\item \textbf{transfereServidor}()[Linha: 23] - método que irá remover um servidor a ser monitorado do serviço menos carregado (com menor diferença entre o período em que os dados devem ser obtidos e o
+		tempo levado para obter os dados) e adicionar no mais carregado;
+		\item \textit{alterados}[Linha: 24]- lista contendo serviços disponíveis que já sofreram alterações na sua lista de servidores;
+		\item \textbf{obterServidorEmetricas}()[Linha: 29] - método que retorna um objeto servidor qualquer e as métricas que devem ser monitoradas
+		desse servidor;
+		\item \textbf{procurarServicos}()[Linha: 32] - função que irá procurar um conjunto de serviços cuja união das métricas monitoradas por esses serviços seja igual às métricas passadas por parâmetro. Se não existirem serviços suficientes para suprirem todas as métricas, novos serviços serão instanciados, isto garante que todas as métricas serão monitoradas. Os serviços retornados serão removidos da lista de serviços disponíveis mesmo que estes possam suportar mais um servidor para monitorar (o algoritmo considera que o serviço disponível tem capacidade para apenas mais um servidor), se por ventura o serviço de captura ainda tiver capacidade para monitorar mais um servidor, este pode ser designado para monitorar mais um servidor na próxima vez que o algoritmo for executado;
+		\item \textbf{adicionarTodos}()[Linha: 33] - método que adiciona um servidor na lista de servidores a monitorar de um conjunto de serviços
+		de captura de dados, além de remover estes serviços da lista de
+		serviços disponíveis e o servidor da lista de servidores sem monitoramento;
+		\item \textbf{obterServidores}()[Linha: 36] - método que retorna uma lista com todos os servidores que um serviço de captura de dados monitora;
+		\item \textbf{destruir}() [Linha: 38]- método que destrói a instância de um serviço de captura de dados (este método é chamado quando o serviço não possui nenhum servidor para monitorar).
+	\end{itemize}
+	
+	\begin{center}
+		\hspace*{-1cm}
+		\includegraphics[scale=1]{figuras/algoritmo2}  % leia abaixo
+		\label{alg:algorithm2}
+	\end{center}
+	
+	O Algoritmo 2 não realiza um balanceamento em cada serviço analisando quantos servidores podem ser adicionados ou removidos, busca-se apenas a adição ou remoção de um servidor em cada serviço e conforme sucessivas execuções do algoritmo, os serviços tenderão a ficar distribuídos.
+	
+	\section{Fluxos de execução}
+	
+	A plataforma é constituída de 3 principais fluxos de interação
+	entre os seus componentes. (I) O fluxo de captura de dados que além
+	de obter os dados de cada máquina virtual, persiste os mesmos num repositório de dados; (II) fluxo de configuração de frequência de captura dos dados que irá melhorando a frequência com que cada serviço
+	do componente de monitoramento obtém os valores das métricas dos
+	servidores e suas máquinas virtuais; (III) o fluxo de distribuição de
+	servidores para serviços de captura de dados que irá decidir quais servidores serão monitorados por cada instância dos serviços de captura.
+	
+	No fluxo de captura de dados ilustrado na Figura 10, cada servi¸
+    ço do componente de monitoramento irá percorrer a sua lista de servidores e para cada servidor, irá capturar o uso de recursos de cada máquina virtual através da API do virtualizador ao mesmo tempo em que será mensurado o tempo utilizado para realizar tal coleta. Após realizar e temporizar as coletas, o componente de monitoramento então irá persistir as informações obtidas no componente de armazenamento.
+	Cada serviço do componente de monitoramento irá atuar em uma fatia
+	de tempo diferente, pois cada um possui sua própria frequência de
+	obtenção de dados.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{figuras/fluxoCaptura}  % leia abaixo
+		\label{fig:fluxoCaptura}
+		\caption{Fluxo de captura dos dados}
+	\end{figure}
+	
+	No fluxo de configura¸ao da frequência de captura dos dados	ilustrado na Figura 11, o componente de configura¸ao irá coletar os dados do ambiente relativos a 2 períodos diferentes, e com esses dados ele irá  redefinir a frequência com que cada serviço do componente de monitoramento deve coletar os dados dos servidores e máquinas virtuais, aumentando ou diminuindo a frequência de coleta dependendo da variação dos dados obtidos pelo serviço nesses 2 períodos distintos, conforme apresentado no Algoritmo 1.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{figuras/fluxoConf}  % leia abaixo
+		\label{fig:fluxoConf}
+		\caption{Fluxo de configuração da frequência de captura dos serviços do componente de monitoramento}
+	\end{figure}
+	
+	No fluxo de distribuição de servidores para serviços de captura	de dados apresentado na Figura 12, o componente de configuração irá percorrer todos os serviços do componente de monitoramento e irá consultar o tempo que o serviço leva para concluir sua tarefa de monitoramento e a frequência que a mesma deve ser realizada. Com essas
+	duas métricas, o componente de configuração define se este serviço está sobrecarregado, normal ou pouco carregado. Se o serviço estiver pouco carregado, o componente de configuração irá tentar alocar mais um servidor para o serviço monitorar. Se o serviço estiver sobrecarregado, o componente de configuração irá tentar migrar um servidor deste serviço para outro que realize o mesmo trabalho, caso não seja possível, o componente de configuração irá instanciar um novo serviço para realizar o	monitoramento deste servidor a ser migrado. Esse procedimento completo e em detalhes é descrito no Algoritmo 2.
+	
+	A proposta apresentada utiliza de uma arquitetura modularizada que permite que as funcionalidades da plataforma sejam totalmente independentes, tornando-a extensível e menos suscetível a falhas. A escolha deste tipo de arquitetura também permite a adição de novas funcionalidades para a plataforma de monitoramento em tempo de execução.
+	
+	Além disso, o uso de agentes para tratar das configurações da plataforma permite maior independência em relação a necessidade de intervenções de administradores para a gerência do sistema. Com isso
+	a responsabilidade de gerenciar e configurar a plataforma fica a cargo dos agentes e não de administradores humanos, possibilitando com que
+	o sistema se adapte ao ambiente em que ele se encontra.
+	
+	Outro ponto interessante é o fato da plataforma usar o protocolo
+	HTTP e a representação de objeto JSON para troca de mensagens, o que permite que a implementação dos serviços seja independente de linguagem de programação, ou seja, pode-se ter serviços em diferentes
+	linguagens de programação, como Java, C, Perl e outras. Isto torna
+	a plataforma receptível para qualquer tipo de extensão em qualquer
+	linguagem e hardware.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=1]{figuras/fluxoPersist}  % leia abaixo
+		\label{fig:fluxoPersist}
+		\caption{Fluxo de distribuição de servidores para serviços de captura de dados}
+	\end{figure}
+	
+	
+	
+		
 	\bibliographystyle{ufscThesis/ufsc-alf}
 	\bibliography{bibliografia}
 	

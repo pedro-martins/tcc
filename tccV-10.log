@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  19 JUL 2016 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  20 JUL 2016 14:44
 entering extended mode
 **./tccV-10.tex
 (tccV-10.tex
@@ -291,21 +291,70 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count120
+\algocf@hangindent=\skip63
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip64
+\skiplinenumber=\skip65
+\skiprule=\skip66
+\skiphlne=\skip67
+\skiptext=\skip68
+\skiplength=\skip69
+\algomargin=\skip70
+\skipalgocfslide=\skip71
+\algowidth=\dimen134
+\inoutsize=\dimen135
+\inoutindent=\dimen136
+\interspacetitleruled=\dimen137
+\interspacealgoruled=\dimen138
+\interspacetitleboxruled=\dimen139
+\algocf@ruledwidth=\skip72
+\algocf@inoutbox=\box57
+\algocf@inputbox=\box58
+\AlCapSkip=\skip73
+\AlCapHSkip=\skip74
+\algoskipindent=\skip75
+\algocf@nlbox=\box59
+\algocf@hangingbox=\box60
+\algocf@untilbox=\box61
+\algocf@skipuntil=\skip76
+\algocf@capbox=\box62
+\algoheightruledefault=\skip77
+\algoheightrule=\skip78
+\algotitleheightruledefault=\skip79
+\algotitleheightrule=\skip80
+\c@algocfline=\count121
+\c@algocfproc=\count122
+\c@algocf=\count123
+\algocf@algoframe=\box63
+\algocf@algobox=\box64
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count120
+\c@float@type=\count124
 \float@exts=\toks21
-\float@box=\box57
+\float@box=\box65
 \@float@everytoks=\toks22
-\@floatcapt=\box58
+\@floatcapt=\box66
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen134
-\extrarowheight=\dimen135
+\col@sep=\dimen140
+\extrarowheight=\dimen141
 \NC@list=\toks23
-\extratabsurround=\skip63
-\backup@length=\skip64
+\extratabsurround=\skip81
+\backup@length=\skip82
 )
 
 LaTeX Warning: Unused global option(s):
@@ -314,18 +363,18 @@ LaTeX Warning: Unused global option(s):
 (tccV-10.aux)
 \openout1 = `tccV-10.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -363,16 +412,16 @@ LaTeX Font Info:    ... okay on input line 71.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen136
-\scratchbox=\box59
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\scratchcounter=\count125
+\scratchdimen=\dimen142
+\scratchbox=\box67
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen137
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen143
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -416,35 +465,35 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count127
+\c@lstlisting=\count131
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
+(Font)              <7> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              <5> on input line 76.
  [0
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
 
 ]
-Overfull \hbox (7.39111pt too wide) in paragraph at lines 76--76
+Overfull \hbox (7.39111pt too wide) in paragraph at lines 77--77
 \OT1/cmr/m/n/9 rina: Prof. Dr. Car-los Bec-ker Westphall 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Overfull \hbox (3.33333pt too wide) in paragraph at lines 76--77
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 77--78
 []
  []
 
 [2] [3
 
 ] [4]
-Overfull \hbox (2.4885pt too wide) in paragraph at lines 81--81
+Overfull \hbox (2.4885pt too wide) in paragraph at lines 82--82
 []\OT1/cmr/m/n/10 Atualmente as fer-ra-men-tas de or-ques-trac~ao de am-bi-en-
 tes de com-putac~ao
  []
@@ -455,13 +504,13 @@ tes de com-putac~ao
 ] [6
 
 ]
-Overfull \hbox (6.54414pt too wide) in paragraph at lines 82--82
+Overfull \hbox (6.54414pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/m/n/10 Cloud com-pu-ting or-ches-tra-tion to-ols such as Apa-che Clo
 udS-tack, OpenS-
  []
 
 
-Overfull \hbox (12.49898pt too wide) in paragraph at lines 82--82
+Overfull \hbox (12.49898pt too wide) in paragraph at lines 83--83
 []\OT1/cmr/bx/n/10 Keywords: \OT1/cmr/m/n/10 Cloud com-pu-ting. Au-to-no-mous m
 o-ni-to-ring. Apa-che CloudS-
  []
@@ -470,7 +519,13 @@ o-ni-to-ring. Apa-che CloudS-
 
 ] [8
 
-] (tccV-10.lof)
+] (tccV-10.lof
+Overfull \hbox (8.73862pt too wide) in paragraph at lines 12--12
+[] \OT1/cmr/m/n/10 Fi-gura []Fluxo de con-fi-gurac~ao da frequ^encia de cap-tu
+ra dos servicos 
+ []
+
+)
 \tf@lof=\write3
 \openout3 = `tccV-10.lof'.
 
@@ -486,8 +541,7 @@ o-ni-to-ring. Apa-che CloudS-
 \tf@las=\write5
 \openout5 = `tccV-10.las'.
 
- [13]
-[14
+ [13] [14
 
 ] (tccV-10.toc
 Overfull \hbox (12.17865pt too wide) in paragraph at lines 15--15
@@ -507,17 +561,17 @@ Overfull \hbox (21.48424pt too wide) in paragraph at lines 17--17
 
 ]
 Cap\'{\i }tulo 1.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 100.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
  [17
 
 ] [18]
-Overfull \hbox (1.57195pt too wide) in paragraph at lines 123--124
+Overfull \hbox (1.57195pt too wide) in paragraph at lines 124--125
 \OT1/cmr/m/n/10 mai-o-ria n~ao re-a-li-zam ou re-a-li-zam mas n~ao ar-ma-ze-nam
  de modo historico
  []
@@ -526,7 +580,7 @@ Overfull \hbox (1.57195pt too wide) in paragraph at lines 123--124
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-Overfull \hbox (2.1274pt too wide) in paragraph at lines 149--150
+Overfull \hbox (2.1274pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/n/10 de um am-bi-ente de nu-vem que forneca in-fra-es-tru-tura como
  servico; 
  []
@@ -536,13 +590,13 @@ Overfull \hbox (2.1274pt too wide) in paragraph at lines 149--150
 ]
 Cap\'{\i }tulo 2.
 [23]
-Overfull \hbox (3.73851pt too wide) in paragraph at lines 182--183
+Overfull \hbox (3.73851pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/10 Software como servico: o pro-ve-dor de nu-vem for-nece uma a
 plicac~ao
  []
 
 
-Overfull \hbox (4.9885pt too wide) in paragraph at lines 184--185
+Overfull \hbox (4.9885pt too wide) in paragraph at lines 185--186
 \OT1/cmr/m/n/10 mas para o usuario de-sen-vol-ver e hos-pe-dar suas proprias 
 aplicac~oes.
  []
@@ -551,28 +605,28 @@ aplicac~oes.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Overfull \hbox (2.51988pt too wide) in paragraph at lines 240--241
+Overfull \hbox (2.51988pt too wide) in paragraph at lines 241--242
 \OT1/cmr/m/n/10 gra-tuito de codigo aberto su-por-tado pela Ca-no-ni-cal (\OT1
 /cmr/m/n/8 CA-NO-NI-CAL\OT1/cmr/m/n/10 , 2015).
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 259.
+(Font)              <9> on input line 260.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 259.
+(Font)              <6> on input line 260.
 [28]
-Overfull \hbox (25.81454pt too wide) in paragraph at lines 288--295
+Overfull \hbox (25.81454pt too wide) in paragraph at lines 289--296
  [][] 
  []
 
 [29] [30]
-Overfull \hbox (0.74158pt too wide) in paragraph at lines 328--329
+Overfull \hbox (0.74158pt too wide) in paragraph at lines 329--330
 \OT1/cmr/m/n/10 ficac~oes sig-ni-fi-ca-ti-vas deste (\OT1/cmr/m/n/8 KAT-SA-ROS
 ; KU-BERT; GAL-LIZO\OT1/cmr/m/n/10 , 2011); 
  []
 
 
-Overfull \hbox (5.29419pt too wide) in paragraph at lines 329--330
+Overfull \hbox (5.29419pt too wide) in paragraph at lines 330--331
 []\OT1/cmr/m/n/10 Confiabilidade: uma fer-ra-menta de mo-ni-to-ra-mento e dita
  confiavel,
  []
@@ -582,7 +636,7 @@ Overfull \hbox (5.29419pt too wide) in paragraph at lines 329--330
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.38576pt too wide) in paragraph at lines 403--404
+Overfull \hbox (3.38576pt too wide) in paragraph at lines 404--405
 []\OT1/cmr/m/n/10 Dentre as fer-ra-men-tas ana-li-sa-das, to-das su-por-tam mo-
 ni-to-ra-mento
  []
@@ -597,7 +651,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [38]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 437.
+               Default added (so using `tbp') on input line 438.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -612,7 +666,7 @@ File: figuras/ferramentaOrquestracao.png Graphic file (type png)
 
 <use figuras/ferramentaOrquestracao.png>
 Package pdftex.def Info: figuras/ferramentaOrquestracao.png used on input line 
-486.
+487.
 (pdftex.def)             Requested size: 199.24388pt x 104.38972pt.
 
 <figuras/ambienteComPlataforma.png, id=147, 186.19562pt x 240.9pt>
@@ -620,7 +674,7 @@ File: figuras/ambienteComPlataforma.png Graphic file (type png)
 
 <use figuras/ambienteComPlataforma.png>
 Package pdftex.def Info: figuras/ambienteComPlataforma.png used on input line 5
-13.
+14.
 (pdftex.def)             Requested size: 186.19516pt x 240.8994pt.
  [42 <./figuras/ferramentaOrquestracao.png>] <figuras/componenteMonitoramento.p
 ng, id=152, 192.21812pt x 152.57pt>
@@ -628,27 +682,27 @@ File: figuras/componenteMonitoramento.png Graphic file (type png)
 
 <use figuras/componenteMonitoramento.png>
 Package pdftex.def Info: figuras/componenteMonitoramento.png used on input line
- 522.
+ 523.
 (pdftex.def)             Requested size: 192.21764pt x 152.56963pt.
  [43 <./figuras/ambienteComPlataforma.png> <./figuras/componenteMonitoramento.p
 ng>]
 <figuras/json1.png, id=158, 396.48125pt x 78.2925pt>
 File: figuras/json1.png Graphic file (type png)
  <use figuras/json1.png>
-Package pdftex.def Info: figuras/json1.png used on input line 543.
+Package pdftex.def Info: figuras/json1.png used on input line 544.
 (pdftex.def)             Requested size: 317.18542pt x 62.63406pt.
 
-Overfull \hbox (9.89565pt too wide) in paragraph at lines 543--545
+Overfull \hbox (9.89565pt too wide) in paragraph at lines 544--546
  [][] 
  []
 
 <figuras/json2.png, id=159, 394.97563pt x 73.77562pt>
 File: figuras/json2.png Graphic file (type png)
  <use figuras/json2.png>
-Package pdftex.def Info: figuras/json2.png used on input line 552.
+Package pdftex.def Info: figuras/json2.png used on input line 553.
 (pdftex.def)             Requested size: 315.98093pt x 59.02055pt.
 
-Overfull \hbox (8.69115pt too wide) in paragraph at lines 552--554
+Overfull \hbox (8.69115pt too wide) in paragraph at lines 553--555
  [][] 
  []
 
@@ -657,16 +711,16 @@ Overfull \hbox (8.69115pt too wide) in paragraph at lines 552--554
 File: figuras/servicoCaptura.png Graphic file (type png)
 
 <use figuras/servicoCaptura.png>
-Package pdftex.def Info: figuras/servicoCaptura.png used on input line 576.
+Package pdftex.def Info: figuras/servicoCaptura.png used on input line 577.
 (pdftex.def)             Requested size: 174.15019pt x 91.34102pt.
  [45]
-Overfull \hbox (9.94128pt too wide) in paragraph at lines 583--584
+Overfull \hbox (9.94128pt too wide) in paragraph at lines 584--585
 []\OT1/cmr/m/n/10 Ocomponente de ar-ma-ze-na-mento sera cons-titudo de uma a
 plicac~ao
  []
 
 
-Overfull \hbox (13.69125pt too wide) in paragraph at lines 585--587
+Overfull \hbox (13.69125pt too wide) in paragraph at lines 586--588
 []\OT1/cmr/m/n/10 Ambientes de com-putac~ao em nu-vem pos-suem mi-lha-res de m
 aquinas
  []
@@ -676,31 +730,163 @@ Overfull \hbox (13.69125pt too wide) in paragraph at lines 585--587
 File: figuras/armazenamento.png Graphic file (type png)
 
 <use figuras/armazenamento.png>
-Package pdftex.def Info: figuras/armazenamento.png used on input line 602.
+Package pdftex.def Info: figuras/armazenamento.png used on input line 603.
 (pdftex.def)             Requested size: 135.00403pt x 95.85788pt.
 
 <figuras/modeloRelacional.png, id=174, 398.99063pt x 262.9825pt>
 File: figuras/modeloRelacional.png Graphic file (type png)
 
 <use figuras/modeloRelacional.png>
-Package pdftex.def Info: figuras/modeloRelacional.png used on input line 610.
+Package pdftex.def Info: figuras/modeloRelacional.png used on input line 611.
 (pdftex.def)             Requested size: 359.08824pt x 236.68205pt.
 
-Overfull \hbox (51.79846pt too wide) in paragraph at lines 610--612
+Overfull \hbox (51.79846pt too wide) in paragraph at lines 611--613
 [][]
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(tccV-10.bbl [47 <./figuras/armazenamento.png>] [48 <./figuras/modeloRelacional
-.png>]
+<figuras/componenteConfiguracao.png, id=175, 110.4125pt x 73.77562pt>
+File: figuras/componenteConfiguracao.png Graphic file (type png)
+
+<use figuras/componenteConfiguracao.png>
+Package pdftex.def Info: figuras/componenteConfiguracao.png used on input line 
+623.
+(pdftex.def)             Requested size: 110.41222pt x 73.77542pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47 <./figuras/armazenamento.png>] [48 <./figuras/modeloRelacional.png>]
+Overfull \hbox (2.46078pt too wide) in paragraph at lines 647--648
+\OT1/cmr/m/n/10 dos va-lo-res de cada tipo de metrica co-le-tada num pas-sado 
+proximo; 
+ []
+
+[49 <./figuras/componenteConfiguracao.png>]
+Overfull \hbox (1.05739pt too wide) in paragraph at lines 652--653
+[]\OT1/cmr/bx/n/10 frequ^enciaInicial\OT1/cmr/m/n/10 ()[Linha: 13] - metodo qu
+e re-torna a frequ^encia
+ []
+
+
+Overfull \hbox (8.23262pt too wide) in paragraph at lines 653--654
+[]\OT1/cmr/bx/n/10 nMetricas\OT1/cmr/m/n/10 ()[Linha: 12] - metodo que re-torn
+a o numero de metricas
+ []
+
+<figuras/algoritmo1.png, id=189, 574.145pt x 383.93437pt>
+File: figuras/algoritmo1.png Graphic file (type png)
+
+<use figuras/algoritmo1.png>
+Package pdftex.def Info: figuras/algoritmo1.png used on input line 659.
+(pdftex.def)             Requested size: 344.48965pt x 230.3624pt.
+
+Overfull \hbox (10.96935pt too wide) in paragraph at lines 658--661
+ |  [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Overfull \hbox (1.02455pt too wide) in paragraph at lines 663--665
+[]\OT1/cmr/m/n/10 Para re-a-li-zar o ajuste da frequ^encia fo-ram de-fi-ni-das 
+tr^es Formulas
+ []
+
+<figuras/formula1.png, id=193, 511.9125pt x 53.70062pt>
+File: figuras/formula1.png Graphic file (type png)
+
+<use figuras/formula1.png>
+Package pdftex.def Info: figuras/formula1.png used on input line 683.
+(pdftex.def)             Requested size: 307.14987pt x 32.22061pt.
+
+Overfull \hbox (2.0823pt too wide) in paragraph at lines 682--685
+ |  [] 
+ []
+
+[51 <./figuras/algoritmo1.png>]
+<figuras/formula3.png, id=198, 453.19313pt x 39.14626pt>
+File: figuras/formula3.png Graphic file (type png)
+
+<use figuras/formula3.png>
+Package pdftex.def Info: figuras/formula3.png used on input line 696.
+(pdftex.def)             Requested size: 271.91797pt x 23.48792pt.
+
+Overfull \hbox (0.99362pt too wide) in paragraph at lines 695--698
+ |  [] 
+ []
+
+<figuras/formula2.png, id=199, 523.9575pt x 38.1425pt>
+File: figuras/formula2.png Graphic file (type png)
+
+<use figuras/formula2.png>
+Package pdftex.def Info: figuras/formula2.png used on input line 714.
+(pdftex.def)             Requested size: 314.37692pt x 22.88567pt.
+
+Overfull \hbox (0.77345pt too wide) in paragraph at lines 713--716
+ |  [] 
+ []
+
+[52 <./figuras/formula1.png> <./figuras/formula3.png> <./figuras/formula2.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Overfull \hbox (1.73854pt too wide) in paragraph at lines 728--729
+\OT1/cmr/m/n/10 apro-vei-tar ao maximo a ca-pa-ci-dade de pro-ces-sa-mento de 
+ou-tros servicos,
+ []
+
+[54]
+Overfull \hbox (2.01625pt too wide) in paragraph at lines 751--753
+\OT1/cmr/m/n/10 sado por par^ametro e que es-teja den-tro da lista de servicos
+ tambem
+ []
+
+[55] <figuras/algoritmo2.png, id=216, 323.70938pt x 529.98pt>
+File: figuras/algoritmo2.png Graphic file (type png)
+
+<use figuras/algoritmo2.png>
+Package pdftex.def Info: figuras/algoritmo2.png used on input line 768.
+(pdftex.def)             Requested size: 323.70859pt x 529.97868pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Overfull \vbox (32.05544pt too high) has occurred while \output is active []
+
+
+[57 <./figuras/algoritmo2.png>]
+<figuras/fluxoCaptura.png, id=224, 398.48875pt x 115.43124pt>
+File: figuras/fluxoCaptura.png Graphic file (type png)
+
+<use figuras/fluxoCaptura.png>
+Package pdftex.def Info: figuras/fluxoCaptura.png used on input line 791.
+(pdftex.def)             Requested size: 278.94022pt x 80.80132pt.
+ [58 <./figuras/fluxoCaptura.png>]
+<figuras/fluxoConf.png, id=229, 395.4775pt x 143.53625pt>
+File: figuras/fluxoConf.png Graphic file (type png)
+
+<use figuras/fluxoConf.png>
+Package pdftex.def Info: figuras/fluxoConf.png used on input line 800.
+(pdftex.def)             Requested size: 276.83235pt x 100.47467pt.
+ [59 <./figuras/fluxoConf.png>]
+<figuras/fluxoPersist.png, id=235, 302.63063pt x 143.03438pt>
+File: figuras/fluxoPersist.png Graphic file (type png)
+
+<use figuras/fluxoPersist.png>
+Package pdftex.def Info: figuras/fluxoPersist.png used on input line 822.
+(pdftex.def)             Requested size: 302.62988pt x 143.03401pt.
+ (tccV-10.bbl [60 <./figuras/fluxoPersist.png>]
 Overfull \hbox (55.93324pt too wide) in paragraph at lines 83--87
 \OML/cmm/m/it/10 <$\OT1/cmr/m/n/10 http://www.intel.com/content/dam/www/public/
 us/en/documents/manuals/64- 
  []
 
-[49
+[61
 
 ]
 Overfull \hbox (3.09966pt too wide) in paragraph at lines 90--94
@@ -708,21 +894,25 @@ Overfull \hbox (3.09966pt too wide) in paragraph at lines 90--94
 ssors/architectures- 
  []
 
-[50] [51] [52] [53])
+[62] [63] [64] [65])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[54] (tccV-10.aux) )
-(\end occurred when \ifnum on line 77 was incomplete) 
+[66] (tccV-10.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1061 ({)
+### bottom level
+(\end occurred when \ifnum on line 78 was incomplete) 
 Here is how much of TeX's memory you used:
- 5723 strings out of 493335
- 83006 string characters out of 3139231
- 170345 words of memory out of 3000000
- 9104 multiletter control sequences out of 15000+200000
+ 6636 strings out of 493335
+ 98337 string characters out of 3139231
+ 197021 words of memory out of 3000000
+ 10001 multiletter control sequences out of 15000+200000
  6522 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,32p,1113b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,32p,1113b,2482s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
@@ -730,9 +920,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on tccV-10.pdf (56 pages, 592946 bytes).
+Output written on tccV-10.pdf (68 pages, 1297165 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 284 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

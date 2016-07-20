@@ -24,4 +24,6 @@
 \contentsline {subsection}{\numberline {4.2.1}Componente de Monitoramento}{42}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Servi\c co de captura de dados}{45}
 \contentsline {subsection}{\numberline {4.2.2}Componente de armazenamento Ocomponente}{46}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{49}
+\contentsline {subsection}{\numberline {4.2.3}Componente de Configura\c c\~ao}{47}
+\contentsline {section}{\numberline {4.3}Fluxos de execu\c c\~ao}{58}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{61}
