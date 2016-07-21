@@ -56,7 +56,7 @@
 \epigrafe{Texto da Epígrafe. Citação relativa ao tema do trabalho. É opcional. A epígrafe pode também aparecer na abertura de cada seção ou capítulo.}
 {(Autor da epígrafe, ano)}
 
-\textoResumo {Atualmente as ferramentas de orquestração de ambientes de computação em nuvem como Apache CloudStack, OpenStack e outras não possuem um módulo nativo de monitoramento do ambiente. Para monitorar o ambiente de computação em nuvem, são utilizadas normalmente extensões destas ferramentas ou outras aplicações como Nagios, Zenoss e outras que satisfazem parcialmente a necessidade de monitoramento. Contudo, estas ferramentas são incompletas ou possuem outros problemas como dados incorretos, violam as máquinas virtuais dos usuários (injetando scripts ou aplicações nas máquinas virtuais) além de possuírem um deficit de autonomia. Logo, os administradores do ambiente, precisam ficar monitorando constantemente o ambiente para conseguir configurar a ferramenta de monitoramento para se adequar ao ambiente monitorado. Esta proposta consiste em especificar e implementar uma plataforma autônoma para monitorar a infraestrutura de ambientes de computação em nuvem.
+\textoResumo {No cenário atual as ferramentas de orquestração de ambientes de computação em nuvem como Apache CloudStack, OpenStack e outras não possuem um módulo nativo de monitoramento do ambiente. Para monitorar o ambiente de computação em nuvem, são utilizadas normalmente extensões destas ferramentas ou outras aplicações como Nagios, Zenoss e outras que satisfazem parcialmente a necessidade de monitoramento. Contudo, estas ferramentas são incompletas ou possuem outros problemas como dados incorretos, violam as máquinas virtuais dos usuários (injetando scripts ou aplicações nas máquinas virtuais) além de possuírem uma deficiência de autonomia. Logo, os administradores do ambiente precisam ficar monitorando constantemente o ambiente para conseguir configurar a ferramenta de monitoramento para se adequar ao ambiente monitorado. Esta proposta consiste em especificar e implementar uma plataforma autônoma para monitorar a infraestrutura de ambientes de computação em nuvem.
 	Palavras-chave:}
 \palavrasChave {Computação em nuvem. Monitoramento autônomo. Apache CloudStack. Plataforma de monitoramento.}
 
@@ -94,9 +94,8 @@
 	Computação em nuvem vem sendo cada vez mais utilizada devido ao seu modelo permitir um melhor aproveitamento dos recursos de hardware e software, acarretando em redução de custos, melhor eficiência energética, elasticidade, flexibilidade e disponibilidade de recursos por demanda \cite{armbrust2010view} e \cite{singh2011cm}.
 	
 	Com o aumento da demanda por serviços prestados pela nuvem, há um constante crescimento da infraestrutura de modo a atender a demanda \cite{singh2011cm} e \cite{weingartner2015cloud}. O crescimento constante dos ambientes da nuvem acaba aumentando a complexidade de sua gerência tornando esta inviável de ser realizada por administradores sem auxilio de ferramentas apropriadas \cite{weingartner2015cloud}, \cite{hall2012opportunities} e \cite{urgaonkar2002resource}. 
-	\citeonline{kephart2003vision} apresentam um modelo de computação autônoma como uma solução para lidar com grandes ambientes computacionais heterogêneos e complexos como ambientes de computação em nuvem.
 	
-	\citeonline{kephart2003vision} definem um elemento autônomo constituinte de quatro (4) etapas, monitoramento, análise, planejamento e execução, onde cada etapa depende da anterior. Cada etapa é detalhada a seguir.
+	\citeonline{kephart2003vision} apresentam um modelo de computação autônoma como uma solução para lidar com grandes ambientes computacionais heterogêneos e complexos como ambientes de computação em nuvem.	Adicionalmente \citeonline{kephart2003vision} definem um elemento autônomo constituído de quatro (4) fases, monitoramento, análise, planejamento e execução, onde cada fase depende da anterior. Cada fase é detalhada a seguir.
 	\begin{itemize}
 		\item Monitoramento: durante este processo são coletadas informações sobre os recursos alocados e utilizados. Este processo é realizado periodicamente de modo a criar um histórico de alocação e uso de recursos;
 		\item Análise: após ter os dados coletados, são iniciados os processos de análise em busca de tendências de consumo e comportamento das cargas e problemas referentes a carga que competem por recursos no mesmo servidor físico;
@@ -106,11 +105,11 @@
 	
 	Os processos descritos anteriormente são executados constantemente, de modo que seja possível para o sistema de gerenciamento identificar o contexto em que se encontra e adaptar-se ao ambiente a ser gerenciado de modo a atender aos objetivos gerenciais.
 	
-	Uma das necessidades para se efetuar o monitoramento do uso de recursos de ambientes de nuvem se da para fins comerciais, como cobrança relativa a serviços prestados. O valor a ser cobrado pode ser acordado entre o usuário e o fornecedor de recursos da nuvem ou pode ser pré-definido pelo fornecedor \cite{aceto2012cloud}. Além disso, o monitoramento também pode ser usado para viabilizar técnicas de otimização e auxiliar numa melhor gerência dos ambientes de computação em nuvem. Para viabilizar tais otimizações é importante que o monitoramento forneça dados precisos e em tempo hábil sem afetar o funcionamento da nuvem \cite{aceto2012cloud} e \cite{viratanapanu2010demand}
+	Uma das necessidades para se efetuar o monitoramento do uso de recursos de ambientes de nuvem se dá para fins comerciais, como cobrança relativa a serviços prestados. O valor a ser cobrado pode ser acordado entre o usuário e o fornecedor de recursos da nuvem ou pode ser pré-definido pelo fornecedor \cite{aceto2012cloud}. Além disso, o monitoramento também pode ser usado para viabilizar técnicas de otimização e auxiliar numa melhor gerência dos ambientes de computação em nuvem. Para viabilizar tais otimizações é importante que o monitoramento forneça dados precisos e em tempo hábil sem afetar o funcionamento da nuvem \cite{aceto2012cloud} e \cite{viratanapanu2010demand}.
 	
 	O monitoramento em tempo real da nuvem é desafiador. Deve-se levar em conta o grande número de serviços e usuários,  que torna a nuvem um ambiente com um grande volume de informação para ser coletada e analisada \cite{shao2010runtime} e \cite{clayman2010monitoring}. 
 	
-	Outro fator que contribui para a complexidade de monitorar os ambientes de nuvem é a heterogeneidade dos seus componentes. Ambientes de nuvem são constituídos de diferentes clusters de servidores, cada um com seus respectivos processadores, memória, placa de rede, periféricos e virtualizadores. Deste modo, é necessário implementar meios para monitorar cada um desses elementos distintos \cite{shao2010runtime}. Além disso, os elementos que compõem o ambiente de computação em nuvem, podem estar dispersos geograficamente, o que gera a necessidade de ter um sistema de monitoramento distribuído, com nodos colhendo informações em cada elemento e enviando para um repositório de dados.
+	Outro fator que contribui para a complexidade de monitorar os ambientes de nuvem é a heterogeneidade dos seus componentes. Ambientes de nuvem são constituídos de diferentes clusters de servidores, cada um com seus respectivos processadores, memória, placa de rede, periféricos e virtualizadores. Deste modo, é necessário implementar meios para monitorar cada um desses elementos distintos \cite{shao2010runtime}. Os elementos que compõem o ambiente de computação em nuvem, podem estar dispersos geograficamente, o que gera a necessidade de ter um sistema de monitoramento distribuído, com nodos colhendo informações em cada elemento e enviando para um repositório de dados.
 	
 	O processo de monitoramento pode vir a sobrecarregar os recursos da nuvem se não for devidamente implantado, sendo este um dos principais desafios para o monitoramento dos recursos  \cite{shao2010runtime} e \cite{clayman2010monitoring}. Além disso, após implantado o sistema de monitoramento, qualquer modificação necessária deve ser feita sem a necessidade de desligar ou reiniciar o ambiente \cite{clayman2010monitoring}.
 	
@@ -121,31 +120,33 @@
 		\item {Perda de dados e/ou obtenção de dados corrompidos durante o processo de atualização dos componentes de monitoramento.}
 	\end{itemize}   
 	
-	Atualmente as ferramentas de orquestração de computação em nuvem (levantadas durante o desenvolvimento deste trabalho) em sua maioria não realizam ou realizam mas não armazenam de modo histórico os dados resultantes do monitoramento dos recursos utilizados. O que estas ferramentas costumam adotar é o monitoramento momentâneo do ambiente para indicar aos administradores o estado corrente deste, sem a criação de um histórico de uso dos recursos. 
+	Atualmente as ferramentas de orquestração de computação em nuvem (levantadas durante o desenvolvimento deste trabalho) em sua maioria, não realizam o monitoramento dos recursos utilizados ou realizam mas não armazenam de modo histórico os dados monitorados. O que estas ferramentas costumam adotar é o monitoramento momentâneo do ambiente para indicar aos administradores o estado corrente deste, sem a criação de um histórico de uso dos recursos. 
 	
-	Hoje em dia, existem ferramentas que realizam o monitoramento e podem ser acopladas a ferramentas de orquestração, porém são de difícil instalação e dependentes de APIs (Interface de programação de aplicações) de dos orquestradores que não são completas pois não permitem o monitoramento de uma série de recursos físicos e algumas costumam apresentar dados inconsistentes com o ambiente, além de ser mais uma camada de software para gerenciar.
+	Hoje em dia existem ferramentas que realizam o monitoramento e podem ser acopladas a ferramentas de orquestração. Porém são de difícil instalação e dependentes de \abreviatura{API}{\textit{Appication Programming Interface}} APIs (\textit{Appication Programming Interface}) de dos orquestradores que não são completas pois não permitem o monitoramento de uma série de recursos físicos. Algumas ferramentas de monitoramento costumam apresentar dados inconsistentes com o ambiente, além de ser mais uma camada de software para gerenciar.
 	
-	O Zenoss \cite{zenoss2015} é um exemplo de ferramenta de monitoramento que apresentam alguns problemas. No caso do Zenoss, e sua extensão para monitoramento do CloudStack \cite{cloudstack2015}, o CloudStack ZenPack \cite{CSzenPack2015}, existe um problema no monitoramento de uso de memória do servidor físico. A ferramenta faz uma requisição do uso de memória para o Xen \cite{xenProject2015} e projeta o retorno como se fosse o uso total de memória das máquinas virtuais alocadas no servidor. O problema é que esta requisição do Xen, retorna apenas o uso de memória relativo ao \textit{dom0}. Deste modo o Zenoss acaba fornecendo dados de apenas uma máquina virtual específica e não do servidor monitorado como um todo, o que pode levar a decisões inconsistentes no momento de gerenciamento e otimização dos ambientes.
+	O Zenoss \cite{zenoss2015} é um exemplo de ferramenta de monitoramento que apresentam alguns problemas. No caso do Zenoss, e sua extensão para monitoramento do Apache CloudStack \cite{cloudstack2015}, o CloudStack ZenPack \cite{CSzenPack2015}, existe um problema no monitoramento de uso de memória do servidor físico. A ferramenta faz uma requisição do uso de memória para o Xen \cite{xenProject2015} e projeta o retorno como se fosse o uso total de memória das máquinas virtuais alocadas no servidor. O problema é que esta requisição do Xen, retorna apenas o uso de memória relativo ao \textit{dom0}. Deste modo o Zenoss acaba fornecendo dados de apenas uma máquina virtual específica e não do servidor monitorado como um todo, o que pode levar a decisões inconsistentes no momento de gerenciamento e otimização dos ambientes.
 	
-	É necessário fazer uso de boas técnicas de manipulação de dados devido ao grande volume de informações que podem ser monitoradas em ambientes de nuvem. A ferramenta de monitoramento necessita ser o menos invasiva possível, ou seja, ser invisível para os usuários de ambientes de computação em nuvem. Além disso, deve-se tratar a precisão das informações capturadas, os dados fornecidos devem condizer com o ambiente monitorado \cite{aceto2012cloud}. Quanto mais rápida as informações sobre o estado do ambiente forem disponibilizadas, mais eficientemente se conseguirá administrá-lo.
+	É necessário fazer uso de boas técnicas de manipulação de dados devido ao grande volume de informações que podem ser monitoradas em ambientes de nuvem. Adicionalmente a ferramenta de monitoramento necessita ser o menos invasiva possível, ou seja, ser invisível para os usuários de ambientes de computação em nuvem. Além disso, deve-se tratar a precisão das informações capturadas, os dados fornecidos devem condizer com o ambiente monitorado \cite{aceto2012cloud}. Quanto mais rápidas as informações sobre o estado do ambiente forem disponibilizadas, mais eficientemente se conseguirá administrá-lo.
 	
 	\section{Motivação}
 	O monitoramento é de fundamental importância para ambientes de nuvem, pois proporciona um melhor entendimento do estado em que o ambiente se encontra, do estado das aplicações que estão hospedadas, do uso/disponibilidade de recursos físicos do ambiente e também para determinar se os acordos de prestação de serviço estão sendo devidamente cumpridos.
 	
 	Como apresentado em \cite{aceto2013cloud}, existe uma carência de autonomia nas ferramentas de monitoramento atuais. Assim, toda vez que novos recursos são inseridos no ambiente, deve-se informar às ferramentas que tais recursos devem ser monitorados, quando o ideal era a ferramenta detectar e passar a monitorar os recursos autonomamente.
 	
-	Outro ponto sobre as ferramentas atuais, é que a proposta delas em sua maioria, é monitorar desde a parte de aplicação até o nível de infraestrutura. Com isso, as ferramentas de monitoramento acabam se tornando complexas, com uma instalação complicada e consumindo mais recursos do ambiente do que se fossem específicas para apenas um modelo de serviço de nuvem.
+	Outro ponto sobre as ferramentas atuais, é que a proposta delas em sua maioria, é monitorar desde a camada de aplicação até o nível de infraestrutura. Com isso, as ferramentas de monitoramento acabam se tornando complexas, com uma instalação complicada e consumindo mais recursos do ambiente do que se fossem específicas para apenas um modelo de serviço de nuvem.
 	
-	Motivado pela carência de ferramentas de monitoramento  pouco intrusivas, autônomas, com foco apenas na infraestrutura de ambientes de computação em nuvem, compatível com as ferramentas de orquestração atuais e de fácil instalação. Surgiu o interesse no projeto de uma abordagem que supra a necessidade de monitoramento da infraestrutura da nuvem. Capacitando assim, que ferramentas como CloudStack, possam fornecer todo o suporte para o monitoramento da infraestrutura do ambiente de nuvem sem interferência nos serviços por ela já fornecidos de modo autônomo e sem configurações adicionais.     
+	Motivado pela carência de ferramentas de monitoramento  pouco intrusivas, autônomas, com foco apenas na infraestrutura de ambientes de computação em nuvem, compatível com as ferramentas de orquestração atuais e de fácil instalação. Surgiu o interesse no projeto de uma abordagem que supra a necessidade de monitoramento da infraestrutura da nuvem. Dessa forma ferramentas como Apache CloudStack, podem fornecer todo o suporte para o monitoramento da infraestrutura do ambiente de nuvem sem interferência nos serviços por ela já fornecidos de modo autônomo e,  sem configurações adicionais e dependência de administradores dos ambientes de nuvem.     
 	
 	\section{Objetivos}
-	Este capítulo irá tratar dos objetivos que este trabalho pretende alcançar.
-	\subsection{Objetivos gerais}
+	Esta seção irá tratar dos objetivos que este trabalho pretende alcançar.
+	\subsection{Objetivo geral}
 	
-	Este trabalho busca analisar o tema de monitoramento de ambientes de computação em nuvem e elementos autônomos, para poder então propor um modelo de monitoramento autônomo para ambientes de computação em nuvem que fornecem infraestrutura como serviço.
+	Este trabalho busca analisar o tema de monitoramento de ambientes de computação em nuvem e elementos autônomos. Com isso, será proposto um modelo de monitoramento autônomo para ambientes de computação em nuvem que fornecem infraestrutura como serviço.
 	\subsection{Objetivos específicos}
 	
+	Os objetivos específicos deste trabalho são:
 	\begin{itemize}
+		
 		\item Levantar trabalhos relacionados e fazer um estudo sobre monitoramento de ambientes de computação em nuvem;
 		\item Definir um modelo para realização de monitoramento autônomo de um ambiente de nuvem que forneça infraestrutura como serviço;
 		\item Criar um \textit{framework} a partir do modelo definido para viabilizar a implantação em ferramentas de orquestração de nuvem;
@@ -153,7 +154,20 @@
 		
 	\end{itemize}
 	
-	\chapter{Fundamentação}
+	\section{Organização do texto}
+	
+	O conteúdo deste trabalho é disposto nos seguintes capítulos:
+	
+	\begin{enumerate}
+		\item Introdução: apresentação do o trabalho, motivação da escolha do tema, definição dos objetivos e organização do texto;
+		\item Fundamentação Teórica: proporciona um conhecimento básico sobre conceitos e tecnologias utilizados para o desenvolvimento do trabalho;
+		\item Trabalhos relacionados: apresenta trabalhos cuja proposta seja semelhante à proposta apresentada;
+		\item Proposta: é apresentado o problema e uma solução com base nos trabalhos relacionados, Bibliografia científica e ferramentas existentes;
+		\item Implementação: capítulo que descreve como a proposta foi implementada;
+		\item Conclusão: encerra o trabalho apresentando as contribuições, resultados finais e levantamento de trabalhos futuros.
+	\end{enumerate}
+	
+	\chapter{Fundamentação Teórica}
 	Neste capítulo são apresentados os conceitos e tecnologias utilizadas para o desenvolvimento deste trabalho.
 	
 	
@@ -162,7 +176,7 @@
 	a recursos computacionais como servidores, armazenamento, aplicações e redes \cite{mell2011nist}. Estes recursos compartilhados podem ser rapidamente provisionados e liberados com um esforço mínimo de gestão ou interação com o provedor de serviços \cite{mell2011nist}.
 	
 	\subsection{Características}
-	Em \cite{mell2011nist} são definidas como caracteristicas básicas de um ambiente de computação em nuvem: 
+	Em \cite{mell2011nist} são definidas como características básicas de um ambiente de computação em nuvem: 
 	\begin{enumerate}{
 			\item Acesso aos recursos sob demanda - o usuário pode escolher quais serviços/componentes ele irá usar dentro do que é disponibilizado pela nuvem sem a necessidade de interação com administradores;
 			
@@ -170,7 +184,7 @@
 			
 			\item Recursos compartilhados - os recursos físicos da nuvem devem poder atender diferentes usuários simultaneamente;
 			
-			\item Elasticidade - conforme um usuário solicita mais recursos, a nuvem deve alocar mais recursos para este usuário evitando a degradação dos serviços prestados, assim como se um usuário deixar de usar recursos, a nuvem pode remover recursos excedentes;
+			\item Elasticidade - conforme um usuário solicita mais recursos, a nuvem deve alocar mais recursos para este usuário evitando a degradação dos serviços prestados, assim como se um usuário deixar de usar recursos, a nuvem pode remover recursos desnecessários;
 			
 			\item Monitoramento de serviços - a nuvem deve ser capaz de monitorar o uso de recursos por cada serviço, proporcionando transparência  aos fornecedores e usuários do serviço.}
 	\end{enumerate}
@@ -180,13 +194,13 @@
 	\begin{enumerate}
 		
 		
-		\item Software como serviço: o provedor de nuvem fornece uma aplicação final via rede para usuários. O usuário não tem controle algum sobre a infraestrutura que hospeda a aplicação ou da plataforma que a aplicação usa, ele apenas consegue usar a aplicação;
+		\item \textit{Software as a Service} (SaaS) \abreviatura{SaaS}{\textit{Software as a Service}}: o provedor de nuvem fornece uma aplicação final via rede para usuários. O usuário não tem controle algum sobre a infraestrutura que hospeda a aplicação ou da plataforma que a aplicação usa, ele apenas consegue usar a aplicação;
 		
-		\item Plataforma como serviço: são disponibilizadas diferentes plataformas para o usuário desenvolver e hospedar suas próprias aplicações. Neste nível o usuário tem controle total das aplicações, e pode configurar por completo a plataforma. O usuário não possui acesso a recursos do sistema operacional que hospeda a plataforma;
+		\item \textit{Platform as a Service} (PaaS) \abreviatura{PaaS}{\textit{Platform as a Service}}: são disponibilizadas diferentes plataformas para o usuário desenvolver e hospedar suas próprias aplicações. Neste nível o usuário tem controle total das aplicações, e pode configurar por completo a plataforma. O usuário não possui acesso a recursos do sistema operacional que hospeda a plataforma;
 		
-		\item Infraestrutura como serviço: a nuvem fornece toda a infraestrutura para o usuário, como processador, disco, memória e rede. Neste nível o usuário tem uma máquina virtual pronta para uso, ele define quais plataformas ele irá usar e quais aplicações ele irá executar em cada plataforma, porém o usuário não tem acesso e controle dos componentes físicos do ambiente.
+		\item \textit{Infrastructure as a Service} (IaaS) \abreviatura{IaaS}{\textit{Infrastructure as a Service}}: a nuvem fornece toda a infraestrutura para o usuário, como processador, disco, memória e rede. Neste nível o usuário tem uma máquina virtual pronta para uso, ele define quais plataformas ele irá usar e quais aplicações ele irá executar em cada plataforma, porém o usuário não tem acesso e controle dos componentes físicos do ambiente.
 		
-		Cada modelo de nuvem descrito acima visa um público diferente com diferentes propósitos, o software como serviço visa mais usuários de aplicações. O modelo de plataforma como serviço procura atender os  desenvolvedores que usarão as plataformas para hospedar suas aplicações. Em contra partida, o modelo de fornecimento de infraestrutura como serviço tem como foco empresas que desenvolvem serviços e os hospedam na infraestrutura de ambientes de computação em nuvem para minimizar seus custos com infraestrutura. Este trabalho tem como foco ambientes de nuvem computacional que atuam fornecendo infraestrutura como serviço.
+		Cada modelo de nuvem descrito visa um público diferente com diferentes propósitos, o software como serviço visa mais usuários de aplicações. O modelo de plataforma como serviço procura atender os  desenvolvedores que usarão as plataformas para hospedar suas aplicações. Em contrapartida, o modelo de fornecimento de infraestrutura como serviço tem como foco empresas que desenvolvem serviços e os hospedam na infraestrutura de ambientes de computação em nuvem para minimizar seus custos com infraestrutura. Este trabalho tem como foco ambientes de nuvem computacional que atuam fornecendo infraestrutura como serviço.
 	\end{enumerate}
 	
 	\section{Virtualização}
@@ -195,17 +209,17 @@
 	
 	A virtualização é um processo que foi primeiramente desenvolvido pela IBM com intuito de particionar um \textit{mainframe} com alta capacidade computacional \cite{sahoo2010virtualization}.
 	
-	O processo de virtualização consiste na existência de um virtualizador que gerencia sistemas operacionais convidados e intermedeia toda a comunicação entre hardware e esses sistemas \cite{menasce2005virtualization}. Sistemas operacionais convidados são executados sobre o virtualizador como se fossem aplicações em um sistema operacional qualquer. Portanto os sistemas operacionais convidados, não possuem acesso direto aos dispositivos físicos.
+	 O processo de virtualização consiste na existência de um virtualizador que gerencia sistemas operacionais convidados e intermedeia toda a comunicação entre hardware e esses sistemas \cite{menasce2005virtualization}. Sistemas operacionais convidados são executados sobre o virtualizador como se fossem aplicações em um sistema operacional qualquer. Portanto os sistemas operacionais convidados, não possuem acesso direto aos dispositivos físicos.
 	
 	
-	O uso da virtualização possibilita que os mesmos componentes de hardware suportem diferentes sistemas operacionais como sendo diversas unidades lógicas. Estas unidades lógicas em que o hardware é dividido são nomeadas de \textit{Virtual Machine} (VM), em português, máquina virtual. Os sistemas operacionais e aplicações dentro das máquinas virtuais enxergam esses ambientes como reais. Ao final do processo de virtualização, para o usuário final, ter uma máquina virtual ou uma máquina física não irá mudar sua experiência de uso do computador \cite{sahoo2010virtualization}.
+	O uso da virtualização possibilita que os mesmos componentes de hardware suportem diferentes sistemas operacionais como sendo diversas unidades lógicas. Estas unidades lógicas em que o hardware é dividido são nomeadas de \textit{Virtual Machine} (VM)\abreviatura{VM}{\textit{Virtual Machine}}, em português, máquina virtual. Os sistemas operacionais e aplicações dentro das máquinas virtuais detectam esses ambientes como reais. Ao final do processo de virtualização, para o usuário final, ter uma máquina virtual ou uma máquina física não irá mudar sua experiência de uso do computador \cite{sahoo2010virtualization}.
 	
 	\subsection{Vantagens e desvantagens da virtualização} 
 	
 	
 	A virtualização permite um melhor aproveitamento dos recursos de hardware disponíveis. Permite a alteração de peças de hardware sem a necessidade de parar o funcionamento das VMs por longos períodos, bastando migrar a VM para outro servidor físico. O custo alugar uma máquina virtual em um servidor de computação em nuvem é menor que manter uma máquina física equivalente. \cite{sahoo2010virtualization}. 
 	
-	Como problemas temos uma sobrecarga de processamento para gerenciar a inúmera quantidade de máquinas virtuais. O desenvolvimento de virtualizadores não é algo simples e é de grande importância ter redundância de hardwares pois se ocorrer defeito em um componente, todas as VMs vinculadas a tal componente serão penalizadas \cite{popek1974formal} .
+	Como problemas temos uma sobrecarga de processamento para gerenciar a inúmera quantidade de máquinas virtuais. Além disso o desenvolvimento de virtualizadores não é algo simples e é de grande importância ter redundância de hardwares pois se ocorrer defeito em um componente, todas as VMs vinculadas a tal componente serão penalizadas \cite{popek1974formal} .
 	
 	\subsection{Tipos de virtualização} 
 	
@@ -213,7 +227,7 @@
 	
 	\begin{itemize}
 		
-		\item{Virtualização por contêiner: este tipo de virtualização precisa de um sistema operacional base. Neste caso, o virtualizador irá criar instâncias virtuais do sistema operacional base, isoladas logicamente. Estas instâncias são nada mais que ponteiros para os endereços físicos das rotinas do sistema operacional base. Isto gera um problema que não existe nos outros tipos de virtualização, que é o fato de todas as aplicações das instâncias dividirem os mesmos endereços físicos para suas chamadas de sistema, com isso, se o sistema operacional base for sucetível a algum ataque, uma aplicação maliciosa pode danificar o sistema operacional base, e com isso, prejudicar todas as outras instâncias virtuais desse sistema. Esse tipo de virtualização consome menos memória que as demais, pois usa apenas uma instância física de sistema operacional. Neste tipo de virtualização, os clientes estão presos a criarem VMs exclusivamente do mesmo tipo do sistema operacional base;}
+		\item{Virtualização por contêiner: este tipo de virtualização precisa de um sistema operacional base. Neste caso, o virtualizador irá criar instâncias virtuais do sistema operacional base, isoladas logicamente. Estas instâncias são nada mais que ponteiros para os endereços físicos das rotinas do sistema operacional base. Isto gera um problema que não existe nos outros tipos de virtualização, que é o fato de todas as aplicações das instâncias dividirem os mesmos endereços físicos para suas chamadas de sistema, com isso, se o sistema operacional base for sucetível a algum ataque, uma aplicação maliciosa pode danificar o sistema operacional base, e com isso, prejudicar todas as outras instâncias virtuais desse sistema. Esse tipo de virtualização consome menos memória que as demais, pois usa apenas uma instância física de sistema operacional. Neste tipo de virtualização, os clientes só tem a possibilidade de criar VMs exclusivamente do mesmo tipo do sistema operacional base;}
 		
 		\item{Virtualização do tipo 1: este tipo de virtualização executa diretamente sobre o hardware, neste caso o virtualizador irá gerar abstrações de hardware completas para poder hospedar um sistema operacional qualquer. Isto cria um consumo extra de memória, pois cada instância irá ter seu próprio sistema operacional em memória. Este tipo de virtualização, possui a melhor performance de uso do processador dentre os tipos aqui apresentados. Neste tipo de virtualização, os clientes podem escolher seus próprios sistemas operacionais para serem instaladas nas VMs;}
 		
@@ -228,13 +242,13 @@
 	
 	\subsection{Virtualizadores}
 	
-	O virtualizador é responsável pela gerência dos recursos de hardware e fornecimento desses recursos para as máquinas virtuais. O responsável de fato pela gerência, criação e destruição das máquinas virtuais, é o \textit{Virtual Machine Monitor} (VMM), em português, monitor de máquina virtual \cite{vmware2007}. Portanto, toda vez que uma VM é criada, antes, é criado um VMM, e este passa a gerenciar a VM, e destruí-la quando necessário. Logo, existe um VMM para cada VM.  
+	O virtualizador é responsável pela gerência dos recursos de hardware e fornecimento desses recursos para as máquinas virtuais. O responsável de fato pela gerência, criação e destruição das máquinas virtuais, é o \textit{Virtual Machine Monitor} (VMM)\abreviatura{VMM}{\textit{Virtual Machine Monitor}} \cite{vmware2007}. Portanto, toda vez que uma VM é criada, antes, é criado um VMM, e este passa a gerenciar a VM, e destruí-la quando necessário. Logo, existe um VMM para cada VM.  
 	
 	O Xen \cite{xenProject2015} é um virtualizador do tipo 1 de código aberto disponibilizado pela Citrix \cite{citrix2015}, que da suporte as arquiteturas x86 \cite{x86}, x86 64 \cite{x8664}, IA32 \cite{IA32}, IA64 \cite{IA64} e PowerPC \cite{POWERPC}. 
-	As VMs instanciadas com esse virtualizador, são denominadas de domínio sem privilégios (DomU) \cite{xenProject2015domu}, além disso, existe uma VM que cuida de todo o fluxo de entrada e saída de dados dos DomU, que é denominada de domínio de controle (Dom0) \cite{xenProject2015dom0}. 
+	As VMs instanciadas com esse virtualizador, são denominadas de domínio sem privilégios (DomU) \cite{xenProject2015domu}. Além disso, existe uma VM que cuida de todo o fluxo de entrada e saída de dados dos DomU, que é denominada de domínio de controle (Dom0) \cite{xenProject2015dom0}. 
 	Além de intermediar o acesso a entrada e saída de dados dos DomU, o Dom0 também fornece uma série de comandos para destruir, criar ou modificar cada DomU. Esses comandos de gerência disponibilizados no Dom0, são nativos da biblioteca XL \cite{xenProject2015xl}, porém, são de difícil usabilidade. O Xapi \cite{xenProject2015xapi}, é uma abstração para esses comandos que torna mais simples o uso dos recursos de criação de VMs, clusters e migração de VMs entre servidores de um mesmo cluster.
 	
-	O KVM \cite{kvm2015} assim como o Xen, é um virtualizador do tipo 1 de código aberto. Suportado pela Red Hat \cite{redhat2015}, o KVM é uma extenção do kernel do linux que permite a criação e gerência de VMs. O KVM usa o QEMU \cite{qemu2015} para emular o hardware que as VMs instanciadas irão usar. Um dos diferenciais do KVM é o fato dele não se preocupar com a gestão de diferentes servidores presentes em cluster, não tendo assim, qualquer custo de processamento para gerência dos servidores em um cluster. Usar esta abordagem no controle dos clusters, torna o KVM dependente de uma ferramenta de orquestração que dê suporte a gerência de servidores dentro de um cluster.  
+	O KVM \cite{kvm2015} assim como o Xen, é um virtualizador do tipo 1 de código aberto. Suportado pela Red Hat \cite{redhat2015}. O KVM é uma extenção do kernel do linux que permite a criação e gerência de VMs. O KVM usa o QEMU \cite{qemu2015} para emular o hardware que as VMs instanciadas irão usar. Um dos diferenciais do KVM é o fato dele não se preocupar com a gestão de diferentes servidores presentes em cluster, não tendo assim, qualquer custo de processamento para gerência dos servidores em um cluster. Usar esta abordagem no controle dos clusters, torna o KVM dependente de uma ferramenta de orquestração que dê suporte a gerência de servidores dentro de um cluster.  
 	
 	O ESXi \cite{esxi2015} é um virtualizador de código fechado e licença gratuíta que foi desenvolvido pela VMware \cite{vmware2015}. Tem suporte apenas para arquiteturas x86 de 32 e 64 bits. É um virtualizador do tipo 1. Este virtualizador é usado no vSphere que é uma ferramenta de criação de ambientes de nuvem criada pela VMware. O ESXi só permite a migração de VMs para diferentes servidores em sua versão comercial.
 	
@@ -263,27 +277,27 @@
 	Dentre os virtualizadores analizados, será utilizado neste trabalho o Xen devido a ser um virtualizador de código aberto e suportado por uma comunidade amplamente ativa. O fato do Xen ter seu código aberto, possibilita que toda uma comunidade interaja e possa contribuir com melhorias tanto na documentação quanto em correções de \textit{bugs} e evolução de suas funcionalidades.
 	
 	\section{Orquestração de ambientes de computação em nuvem} 
-	As ferramentas de orquestração na nuvem servem para abstrair do administrador toda a parte de interação com os virtualizadores, serviços de armazenamento, dispositivos de redes e outros. Permitindo que o administrador não precise de amplos conhecimentos nas tecnologias de virtualização, rede, armazenamento e outras utilizadas para se criar o ambiente de nuvem.
+	As ferramentas de orquestração na nuvem servem para abstrair do administrador toda a parte de interação com os virtualizadores, serviços de armazenamento, dispositivos de redes e outros. Deste modo, permite-se que o administrador não precise de amplos conhecimentos nas tecnologias de virtualização, rede, armazenamento e outras utilizadas para se criar o ambiente de nuvem.
 	
 	Essas abstrações proporcionadas pelas ferramentas de orquestração tornam possível que o administrador da nuvem possa delimitar recursos físicos para cada usuário facilmente. Assim como também possibilita que usuários sem conhecimento nenhum de computação possam criar suas próprias máquinas virtuais.
 	
 	\subsection{Ferramentas de orquestração} 
 	
-	Seguindo a análise realizada no trabalho \cite{tccgabriel2015}, foram análizadas as seguintes ferramentas de orquestração para uso no decorrer deste trabalho.
+	Seguindo a análise realizada no trabalho \cite{tccgabriel2015}, foram verificadas as seguintes ferramentas de orquestração para uso no decorrer deste trabalho.
 	
 	\begin{itemize}
 		
-		\item CloudStack: o cloudStack \cite{cloudstack2015} é uma ferramenta de orquestração de código aberto, suportada pela fundação Apache \cite{apache2015} e desenvolvida em java. O cloudStack da suporte para virtualizadores como KVM, VM-ware , Xen e Hyper-V \cite{hyper-v2015}. Esta ferramenta da suporte aos sistemas de arquivos iSCSI \cite{iscsi2015} e NFS \cite{nfs2015};
+		\item Apache CloudStack: o Apache CloudStack \cite{cloudstack2015} é uma ferramenta de orquestração de código aberto, suportada pela fundação Apache \cite{apache2015} e desenvolvida em java. O Apache CloudStack da suporte para virtualizadores como KVM, VM-ware , Xen e Hyper-V \cite{hyper-v2015}. Esta ferramenta da suporte aos sistemas de arquivos \textit{Internet Small Computer System Interface} (iSCSI) \abreviatura{iSCSI}{\textit{Internet Small Computer System Interface}} \cite{iscsi2015} e \textit{Network File System} (NFS) \abreviatura{NFS}{\textit{Network File System}} \cite{nfs2015};
 		
-		\item Eucalyptus: o Eucalyptus \cite{eucalyptus2015}, assim como o CloudStack, é uma ferramenta de orquestração de ambientes de computação em nuvem de código aberto. Suportada pela HP \cite{hp2015} e desenvolvida em java e C. O Eucalyptus, usa o Walrus como sistema de arquivo e da suporte aos virtualizadores KVM, XenServer e VMware;  
+		\item Eucalyptus: o Eucalyptus \cite{eucalyptus2015}, assim como o Apache CloudStack, é uma ferramenta de orquestração de ambientes de computação em nuvem. Suportada pela HP \cite{hp2015} e desenvolvida em java e C. O Eucalyptus, usa o Walrus como sistema de arquivo e tem suporte ao virtualizador KVM;  
 		
-		\item OpenStack: O OpenStack \cite{openstack2015}, da suporte aos mesmos virtualizadores que o CloudStack, é uma ferramenta de código aberto desenvolvida em Python. Suporta os sistemas de arquivo Swift e Cinder.  
+		\item OpenStack: O OpenStack \cite{openstack2015}, da suporte aos mesmos virtualizadores que o Apache CloudStack, é uma ferramenta de código aberto desenvolvida em Python. Suporta os sistemas de arquivo Swift e Cinder.  
 		
 	\end{itemize}
 	
 	\begin{table}[h]
 		\centering
-		\caption{Comparação entre ferramentas de orquestração analizadas}
+		\caption{Comparação entre ferramentas de orquestração analisadas}
 		\label{orchestration}
 		\small
 		\begin{tabular}{|l|c|l|l|}
@@ -291,19 +305,19 @@
 			& \multicolumn{1}{l|}{Linguagem Suportada} & Sistema de Arquivos & Tipo de Licensa \\ \hline
 			CloudStack & Java                                     & iSCSI , NFS         & Código aberto   \\ \hline
 			OpenStack  & Python                                   & Swift , Cinder      & Código aberto   \\ \hline
-			Eucalyptus & Java , C                                 & Walrus              & Código aberto   \\ \hline
+			Eucalyptus & Java , C                                 & Walrus              & Código fechado   \\ \hline
 		\end{tabular}
 	\end{table}
 	
 	
 	
-	Dentre essas ferramentas de orquestração em nuvem, foi optado o uso do CloudStack devida a uma série de motivos, tais como:
+	Dentre essas ferramentas de orquestração em nuvem, foi optado o uso do Apache CloudStack devida a uma série de motivos, tais como:
 	\begin{itemize}
 		
 		\item	Suportado por uma fundação e uma comunidade amplamente ativa;
 		\item	Possui uma documentação detalhada;
 		\item	É codificada em java que é uma linguagem de programação bem conhecida para futuras extensões;
-		\item	Da suporte para sistemas de arquivos conhecidos, o que diminui o tempo que seria gasto com familiarizações com novos conceitos;
+		\item	Tem suporte para sistemas de arquivos conhecidos;
 		\item	É uma ferramenta de código aberto, o que possibilita um melhor conhecimento da ferramenta e implantação de melhorias. 
 		
 	\end{itemize}
@@ -311,22 +325,22 @@
 	
 	\section{Monitoramento de ambientes de computação em nuvem} 
 	
-	Nesta seção, serão abordadas as dificuldades relacionadas ao monitoramento na nuvem, sua importância, as características que o monitoramento deve possuir e algumas ferramentas que realizam monitoramento de ambientes de computação em nuvem. 
+	Nesta seção serão abordadas as dificuldades relacionadas ao monitoramento na nuvem, sua importância, as características que o monitoramento deve possuir e algumas ferramentas que realizam monitoramento de ambientes de computação em nuvem. 
 	
 	%definicao de monitoramento%
 	
-	\subsection{Características de ferramentas de monitoramento na nuvem}
+	\subsection{Características de ferramentas de monitoramento para ambientes de computação em nuvem}
 	
-	Segundo \citeonline{aceto2012cloud} existem 11 características que uma ferramenta de monitoramento na nuvem deve possuir para ter um funcionamento correto e sem degradar os serviços fornecidos:
+	Segundo \citeonline{aceto2012cloud} existem 11 características que uma ferramenta de monitoramento para ambientes de computação em nuvem deve possuir para ter um funcionamento correto e sem degradar os serviços fornecidos:
 	\begin{enumerate}
-		\item Escalabilidade: a ferramenta pode ser considerada escalável se ela consegue suportar uma larga quantidade de objetos a serem monitorados \cite{clayman2010monitoring}. Na nuvem, tal característica tem importância devida a grande gama de componentes que podem existir;
+		\item Escalabilidade: a ferramenta pode ser considerada escalável se ela consegue suportar uma larga quantidade de objetos a serem monitorados \cite{clayman2010monitoring}. Na nuvem, tal característica tem importância devido a grande gama de componentes que podem existir;
 		\item Elasticidade: para uma ferramenta ser considerada elástica, ela deve conseguir suportar mudanças ocorridas no ambiente monitorado, tais como novos objetos para serem monitorados ou objetos deixando de ser monitorados \cite{clayman2010monitoring}. Isto é de fundamental importância para ambientes de nuvem, pois o ambiente vive em contínua mudança com a adição e remoção de recursos dinamicamente;
 		\item {Adaptabilidade: uma ferramenta de monitoramento é adaptável, se ela consegue se ajustar a mudanças de cargas impostas ao ambiente sem que este seja penalizado e mantendo o seu serviço de monitoramento ativo e funcionando corretamente \cite{clayman2010monitoring}. Para realizar o monitoramento do ambiente, a ferramenta consome recursos de rede, armazenamento e processamento. A ferramenta deve se ajustar para consumir menos recursos em ocasiões que o ambiente se encontra sobrecarregado;}
 		\item Pontualidade: a ferramenta pode ser considerada pontual, se ela é capaz de relatar eventos que acontecem no ambiente, como perda repentina de um recurso, ou sobrecarga de outro, em tempo hábil para estes serem tratados \cite{wang2011flexible};
 		\item Autonomia: para a ferramenta ser considerada autônoma, ela deve ser capaz de se gerenciar, conseguindo responder a mudanças repentinas do ambiente sem a necessidade de uma outra entidade a supervisionando. Ao mesmo tempo em que torna a complexidade do seu funcionamento discreta para usuários e gerentes do ambiente;
 		\item Abrangente: uma ferramenta de monitoramento é abrangente, se ela consegue monitorar diferentes tipos de recursos e capturar diferentes métricas destes recursos \cite{hasselmeyer2010towards}. Isto é importante, já que ambientes de nuvem costumam ser heterogêneos;
 		\item Extensividade: a ferramenta pode ser considerada extensível, se ela suporta a adição de novas métricas para monitorar, sem a necessidade de modificações no código fonte da ferramenta.
-		\item Não intrusiva: para a ferramenta não ser considerada intrusiva, ela deve poder ser implantada no ambiente sem precisar de modificações significativas deste \cite{katsaros2011building};
+		\item Não intrusiva: para a ferramenta não ser considerada intrusiva, ela deve poder ser implantada no ambiente sem precisar de modificações significativas neste \cite{katsaros2011building};
 		\item Confiabilidade: uma ferramenta de monitoramento é dita confiável, se mesmo com falhas em diversos componentes, ela ainda continua fornecendo seu serviço normalmente com os componentes que ainda lhe restam \cite{laprie2008dependability};
 		\item Disponibilidade: a ferramenta de monitoramento deve estar disponível sempre que os seus serviços forem solicitados. Isto é importante para ambientes da nuvem, pois estes estão em constante atividade \cite{shirey2007internet};
 		\item Precisão: a ferramenta é considerada precisa se as informações disponibilizadas pela ferramenta contem valores que expressem o mais aproximadamente possível o estado em que o objeto monitorado se encontra no momento que a medida foi realizada. 
@@ -347,7 +361,7 @@
 		em ambientes de computação em nuvem muito carregados, a presença do monitoramento pode acarretar em sobre carga de processamento, e acabar comprometendo o funcionamento de todo o ambiente;
 		
 		\item{Garantir autonomia da ferramenta:}
-		esta demanda a possível exis-tência de um laço que irá receber informações do ambiente de tempos em tempos (a própria ferramenta que deve obter essas informações), processar essas informações e repassar as ações que cada nodo deve executar (no caso de uma ferramenta distribuída). Deve-se realizar este processo tentando gerar o menor impacto possível no ambiente;
+		esta demanda a possível exis-tência de um laço que irá receber informações do ambiente de tempos em tempos (a própria ferramenta que deve obter essas informações), processar essas informações e repassar as ações que cada nodo deve executar (no caso de uma ferramenta distribuída);
 		
 		\item{Heterogeneidade do ambiente:}
 		 ambiente de computação em nuvem possui inúmeros dispositivos com diferentes arquiteturas e tecnologias. Deve-se conseguir prover suporte de monitoramento para cada um desses dispositivos e ainda manter um bom isolamento entre eles;
@@ -357,7 +371,7 @@
 		
 	\end{itemize}
 	
-	O monitoramento na nuvem é de grande importância tanto para os clientes quanto para os fornecedores de serviços na nuvem. O monitoramento é um meio para se garantir um melhor controle dos dispositivos de hardware e das aplicações que são executadas nos ambientes de nuvem \cite{aceto2012cloud}. 
+	O monitoramento na nuvem é de grande importância tanto para os clientes quanto para os fornecedores de serviços de nuvem. O monitoramento é um meio para se garantir um melhor controle dos dispositivos de hardware e das aplicações que são executadas nos ambientes de nuvem \cite{aceto2012cloud}. 
 	
 	O constante monitoramento do ambiente, auxilia na garantia da qualidade do serviço prestado para os usuários do ambiente, como por exemplo: disponibilidade e tempo de resposta das aplicações hospedadas. Para os fornecedores de serviços, o monitoramento é um modo de mensurar os recursos utilizados pelo usuário e então poder ser cobrada uma taxa referente ao uso dos mesmos \cite{aceto2012cloud}. Para ambos os casos, o monitoramento auxilia na prevenção e até mesmo correção de desvios no termo de prestação de serviços acordado por usuário e provedor \cite{aceto2012cloud}.   
 	
@@ -372,16 +386,16 @@
 		
 		\item Zenoss: O Zenoss \cite{zenoss2015} é uma ferramenta opensource escrita em Java com suporte a diversos virtualizadores, como por exemplo, KVM, XenServer e VMware. Usuários do CloudStack, tem a possibilidade de usar o Zenoss ao instalar a extensão \cite{CSzenPack2015}, usuários de OpenStack podem usar a extensão \cite{OSzenPack2015}.  Estas extensões ficam limitadas pelas funcionalidades disponibilizadas através das APIs das ferramentas de orquestração;
 		
-		\item Nimbus: a Nimbus \cite{nimbus2015} é uma ferramenta de criação e gerência de ambientes de computação em nuvem, Suporta virtualizadores como Xen ou KVM e da suporte para monitoramento do ambiente através do protocolo SNMP\cite{snmp2015}. Esta ferramenta é voltada especialmente para projetos relacionados a comunidade científica. A Nimbus visa autonomia no monitoramento tanto de aplicações do ambiente quanto na infraestrutura como um todo, no caso, ela não suporta monitoramento de clusters, apesar de monitorar aplicações sendo executadas nas VMs. 
+		\item Nimbus: a Nimbus \cite{nimbus2015} é uma ferramenta de criação e gerência de ambientes de computação em nuvem, Suporta virtualizadores como Xen ou KVM e da suporte para monitoramento do ambiente através do\textit{ Simple Network Management Protocol} (SNMP) \abreviatura{SNMP}{\textit{Simple Network Management Protocol}}\cite{snmp2015}. Esta ferramenta é voltada especialmente para projetos relacionados a comunidade científica. A Nimbus visa autonomia no monitoramento tanto de aplicações do ambiente quanto na infraestrutura como um todo, no caso, ela não suporta monitoramento de clusters, apesar de monitorar aplicações sendo executadas nas VMs. 
 		
-		\item Zabbix: o Zabbix \cite{zabbix2015} é uma ferramenta de monitoramento de infraestrutura e aplicações. Esta ferramenta da suporte para abordagens multi agente ou sem nenhum agente (centralizado). Esta ferramenta é compatível com vCenter \cite{vCenter2015} permitindo monitoramento destes ambientes. Além de ser compatível com o vCenter, o Zabbix permite o monitoramento de qualquer dispositivo de hardware que suporte IPMI \cite{IPMI2015} e dispositivos que suportem SNMP, conseguindo capturar as mesmas métricas suportadas por ambos os protocolos IPMI e SNMP. Usuários de CloudStack podem usar o Zabbix através a extensão \cite{zabbix-cloudstack2015} e usuários de OpenStack através da extensão \cite{zabbix-openstack2015} 
+		\item Zabbix: o Zabbix \cite{zabbix2015} é uma ferramenta de monitoramento de infraestrutura e aplicações. Esta ferramenta da suporte para abordagens multi agente ou sem nenhum agente (centralizado). Esta ferramenta é compatível com vCenter \cite{vCenter2015} permitindo monitoramento destes ambientes. Além de ser compatível com o vCenter, o Zabbix permite o monitoramento de qualquer dispositivo de hardware que suporte \textit{Intelligent Platform Management Interface} (IPMI) \abreviatura{IPMI}{\textit{Intelligent Platform Management Interface}} \cite{IPMI2015} e dispositivos que suportem SNMP, conseguindo capturar as mesmas métricas suportadas por ambos os protocolos IPMI e SNMP. Usuários de CloudStack podem usar o Zabbix através a extensão \cite{zabbix-cloudstack2015} e usuários de OpenStack através da extensão \cite{zabbix-openstack2015} 
 		
 		\item Icinga: o Icinga \cite{icinga2015} é uma ferramenta que pode ser instalada em qualquer distribuição Linux. Nesta ferramenta, o usuário deve especificar o que deve ser monitorado antes de inicializar a ferramenta, ou seja, qualquer novo item a ser monitorado, irá requerer uma reinicialização da ferramenta. Assim como o Nagios, esta ferramenta promete uma fácil extensibilidade, possibilitando que os usuários criem plugins para expandir o funcionamento da ferramenta, além de suportar todos os plugins desenvolvidos para o Nagios. Esta ferramenta monitora serviços de rede e consumo de recursos de hardware, como CPU e memória. Ela possui uma extensão para usuário do OpenStack \cite{icingaOpenstack2015}, usuários de CloudStack não tem suporte ainda para uso do Icinga e acabam adotando o Nagios como substituto já que ambas as ferramentas são similares.
 	\end{itemize}
 	
 	\begin{table}[h]
 		\centering
-		\caption{Características suportadas pelas ferramentas analisadas}
+		\caption{Características suportadas pelas ferramentas analisadas em \cite{aceto2013cloud}}
 		\label{comparacaoFerramentas}
 		\begin{tabular}{|l|c|c|c|c|c|}
 			\hline
@@ -401,11 +415,16 @@
 	\end{table}
 	
 
-	Dentre as ferramentas analisadas, todas suportam monitoramento de recursos de hardware usando protocolos padrões de monitoramento como SNMP e IPMI, além de usar estes protocolos, usam também APIs (Interface de programação de aplicações) de ferramentas de orquestração. Uma característica em comum dessas ferramentas, é a abordagem de coletar os dados e armazená-los de modo histórico. Todas usam o mesmo conceito de ter uma entidade centralizada que de tempos em tempos, envia mensagens para os nodos que estão nos servidores físicos coletarem os dados e enviarem para o nó central. 
+	Dentre as ferramentas analisadas, todas suportam monitoramento de recursos de hardware usando protocolos padrões de monitoramento como SNMP e IPMI, além de usar estes protocolos, usam também APIs de ferramentas de orquestração. Uma característica em comum dessas ferramentas, é a abordagem de coletar os dados e armazená-los de modo histórico. Todas usam o mesmo conceito de ter uma entidade centralizada que de tempos em tempos, envia mensagens para os nodos que estão nos servidores físicos coletarem os dados e enviarem para o nó central. 
 	
 	Como mostrado na tabela \ref{comparacaoFerramentas}, as ferramentas analisadas não dão suporte a inúmeras das características abortadas em \cite{aceto2012cloud}, isso se deve pelo fato de que as ferramentas em si não interagem diretamente com os Virtualizadores dos ambientes de computação em nuvem e sim com APIs das ferramentas de orquestração. Essas APIs por muitas vezes são incompletas e inconsistentes. Outro ponto que as ferramentas adotam é a inserção de agentes dentro das máquinas virtuais para coletar os dados de cada máquina virtual e então juntar esses dados para obter as métricas de todo o ambiente, o que torna a ferramenta intrusiva.
 	
-	A proposta deste trabalho será de criar uma ferramenta que suporte essas características. A ferramenta irá usar chamadas de sistema dos Virtualizadores para conseguir obter os dados dos ambientes em vez de usar APIs das ferramentas de orquestração. Outra abordagem diferente da ferramenta proposta neste trabalho, será uma inversão do paradigma adotado pelas ferramentas analisadas, que é o fato de um nodo central fazer requisições para os nodos folhas coletarem os dados e retornarem estes para o nodo central. A proposta deste trabalho consiste em os nodos folhas enviarem periodicamente os dados coletados para o nodo central sem o nodo central precisar requisitar, isso gera um menor fluxo de rede e torna a ferramenta menos impactante para o ambiente. 
+	A proposta deste trabalho será de criar uma ferramenta que suporte as características apresentadas na Tabela 3 e seção 3.4.1. A ferramenta irá usar a API dos Virtualizadores para conseguir obter os dados dos ambientes em vez de usar APIs das ferramentas de orquestração. Outra abordagem diferente da ferramenta proposta neste trabalho, será uma inversão do paradigma adotado pelas ferramentas analisadas, que é o fato de um nodo central fazer requisições para os nodos folhas coletarem os dados e retornarem estes para o nodo central.
+	
+	 A proposta deste trabalho consiste em os nodos folhas enviarem periodicamente os dados coletados para o nodo central sem o nodo central precisar requisitar, isso gera um menor fluxo de rede e torna a ferramenta menos impactante para o ambiente. Outro diferencial da proposta deste trabalho será a autonomia da ferramenta. A ferramenta irá se ajustar continuamente ao ambiente de computação em nuvem que ela está monitorando, deixando de monitorar recursos removidos ou passando a monitorar novos recursos.
+	 
+	 A ferramenta de monitoramento proposta será uma extensão
+	 para o Apache CloudStack. O Apache CloudStack conhece todo o ambiente onde ele foi instalado, possibilitando que suas extensões também conheçam o ambiente. Com estas informações a ferramenta poderá a detectar mudanças no ambiente de computação em nuvem e então se auto ajustar para realizar o monitoramento do mesmo.
 	
 	\chapter{Trabalhos relacionados}
 	
@@ -421,17 +440,17 @@
 			\item Coletor de dados: coleta os dados de uso de recursos de uma única VM e guarda no repositório local.
 		\end{itemize}
 	
-	Principais características abordadas no modelo de \cite{katsaros2012self} é a elasticidade e acurácia, o modelo permite reconfigurar todas as métricas de monitoramento sem a necessidade de reiniciar o sistema ou proporcionar algum impacto de desempenho para o ambiente. Principal problema encontrado, cada instancia de máquina virtual irá gerar uma instancia de coletor de dados e repositório local, o que gera um uso extra de memória, sem falar que é uma solução invasiva, pois insere software dentro da VM do usuário.
+	As principais características abordadas no modelo de \cite{katsaros2012self} é a elasticidade e acurácia, o modelo permite reconfigurar todas as métricas de monitoramento sem a necessidade de reiniciar o sistema ou proporcionar algum impacto de desempenho para o ambiente. Principal problema encontrado, cada instancia de máquina virtual irá gerar uma instancia de coletor de dados e repositório local, o que gera um uso extra de memória, sem falar que é uma solução invasiva, pois insere software dentro da VM do usuário.
 	
-	\citeonline{andreozzi2005gridice} propõem um modelo de monitoramento de serviços distribuídos. O modelo proposto é dividido em 5 módulos independentes para facilitar extensões e manutenção. É apresentado um módulo de coleta de dados que usa sensores (o tipo de sensor ou como são implementados não é especificado) para medir trafego de rede, desempenho do serviço monitorado, disponibilidade do mesmo e uso de recursos físicos. O segundo módulo é o responsável por analisar quais dados são mais interessantes para cada tipo de serviço, para tal fim foi usado o Globus MDS \cite{globus2015} para fazer a análise dos dados capturados e classificá-los . O terceiro módulo armazena cada tipo de dados em uma base de dados relacional, no caso o postgreSQL \cite{postgre2015}. O quarto módulo serve para informar quando algum serviço está sobrecarregado/inacessível. E o ultimo módulo é responsável pela apresentação dos dados através de uma página web.
+	\citeonline{andreozzi2005gridice} propõem um modelo de monitoramento de serviços distribuídos. O modelo proposto é dividido em 5 módulos independentes para facilitar extensões e manutenção. É apresentado um módulo de coleta de dados que usa sensores (o tipo de sensor ou como são implementados não é especificado) para medir tráfego de rede, desempenho do serviço monitorado, disponibilidade do mesmo e uso de recursos físicos. O segundo módulo é o responsável por analisar quais dados são mais interessantes para cada tipo de serviço, para tal fim foi usado o Globus MDS \cite{globus2015} para fazer a análise dos dados capturados e classificá-los . O terceiro módulo armazena cada tipo de dados em uma base de dados relacional, no caso o postgreSQL \cite{postgre2015}. O quarto módulo serve para informar quando algum serviço está sobrecarregado/inacessível. E o ultimo módulo é responsável pela apresentação dos dados através de uma página web.
 	
-	Este modelo foi feito com intenção de monitorar serviços web e informar aos usuários as condições de cada serviço. O banco de dados para persistência dos dados separa cada tipo de dado em tabelas diferentes para agilizar consultas. O diferencial deste modelo é o fato de conseguir peneirar os dados não relevantes para cada tipo de serviço e não armazenar tal dado, porem ele ainda continua monitorando tal tipo de dado.
+	Este modelo foi feito com a intenção de monitorar serviços web e informar aos usuários as condições de cada serviço. O banco de dados para persistência dos dados separa cada tipo de dado em tabelas diferentes para agilizar consultas. O diferencial deste modelo é o fato de conseguir peneirar os dados não relevantes para cada tipo de serviço e não armazenar tal dado, porem ele ainda continua monitorando tal tipo de dado.
 	
-	O modelo apresentado por \cite{andreozzi2005gridice} permite adições de novos módulos e métricas de monitoramento, sendo que novos módulos requerem a reinicialização do sistema e novas métricas não precisam de reinicialização. Usa banco de dados relacional para persistir os dados e persiste apenas dados considerados relativos. A visualização dos dados pode ser feita usando um histórico de 1, 5 e 15 minutos, históricos superiores a esses intervalos não são descartados.
+	O modelo apresentado por \cite{andreozzi2005gridice} permite adições de novos módulos e métricas de monitoramento, sendo que novos módulos requerem a reinicialização do sistema e novas métricas não precisam de reinicialização. Usa banco de dados relacional para persistir os dados e persiste apenas dados considerados relevantes. A visualização dos dados pode ser feita usando um histórico de 1, 5 e 15 minutos, históricos superiores a esses intervalos não são descartados.
 	
 	\citeonline{shao2010runtime} propõem um modelo de monitoramento baseado em agentes que opera em todas as camadas de computação em nuvem e tem como principal característica balancear a capacidade de monitoramento da ferramenta com o aumento ou redução da carga dos servidores, de modo a ajustar a coleta de dados baseado na carga do ambiente. A ferramenta realiza isso medindo a carga do ambiente e ajustando a frequência de obtenção dos dados, ambiente pouco carregado, aumenta a frequência e vice-versa.
 	
-	Para realizar a coleta de dados de cada VM, são instanciados agentes (Aplicações Java), dentro de cada máquina virtual, ou seja, cada máquina virtual vai ter uma JVM executando um agente para obter os dados da VM. Este agente por sua vez, utiliza uma biblioteca nativa escrita em C \cite{sigar2015}.
+	Para realizar a coleta de dados de cada VM, são instanciados agentes (Aplicações Java), dentro de cada máquina virtual, ou seja, cada máquina virtual vai ter uma \textit{Java Virtual Machine} (JVM) \abreviatura{JVM}{\textit{Java Virtual Machine}} executando um agente para obter os dados da VM. Este agente por sua vez, utiliza uma biblioteca nativa escrita em C \cite{sigar2015}.
 	
 	O balanceamento da carga do ambiente com a coleta de dados da ferramenta ocorre de modo manual, usando uma ferramenta do Java 6 \textit{hotswap} que permite trocar uma classe java por uma outra versão dessa mesma classe em tempo de execução, assim se torna possível alterar os agentes em tempo de execução de forma a possibilitar um melhor controle de consumo de recursos pela ferramenta. A persistência dos dados ocorre num banco de dados relacional onde não são separados tipos de dados como no trabalho anterior. 
 	
@@ -451,18 +470,16 @@
 		\end{tabular}
 	\end{table}
 	
-	Dentre os trabalhos analisados, todos optam por uma abordagem de banco de dados relacional para a persistência dos dados coletados, talvez uma abordagem não relacional seja mais adequada para esse tipo de problema pois bancos não relacionais tendem a se tornar mais rápidos que relacionais quando o volume de dados se torna grande. Uma diferenca desses trabalhos em relação as ferramentas mostradas, é o fato que eles propõem um modelo em que os dados coletados por cada nodo são enviados para um repositório periodicamente em vez de uma entidade central solicitar que tais nodos enviem os dados, como é feito nas ferramentas analisadas. Além disso, um problema encontrado nos modelos propostos é o fato de como eles obtém os dados das máquinas virtuais. Usando métodos invasivos de inserção de scripts ou aplicações dentro das máquinas virtuais dos usuários, além desses métodos serem invasivos, eles são pouco práticos, pois acabam ficando presos ao sistema operacional que o usuário escolher, um script para obter dados num Unix por exemplo, vai ser diferente do script de um Windows.
+	Como mostrado na Tabela 4 dentre os trabalhos analisados, todos optam por uma abordagem de banco de dados relacional para a persistência dos dados coletados, talvez uma abordagem não relacional seja mais adequada para esse tipo de problema pois bancos não relacionais tendem a se tornar mais rápidos que relacionais quando o volume de dados se torna grande \cite{li2013performance}. Uma diferenca desses trabalhos em relação as ferramentas mostradas, é o fato que eles propõem um modelo em que os dados coletados por cada nodo são enviados para um repositório periodicamente em vez de uma entidade central solicitar que tais nodos enviem os dados, como é feito nas ferramentas analisadas. Além disso, um problema encontrado nos modelos propostos é o fato de como eles obtém os dados das máquinas virtuais. Usando métodos invasivos de inserção de scripts ou aplicações dentro das máquinas virtuais dos usuários, além desses métodos serem invasivos, eles são pouco práticos, pois acabam ficando presos ao sistema operacional que o usuário escolher, um script para obter dados num Unix por exemplo, vai ser diferente do script de um Windows.
 	
 	Além disso, como mostrado na Tabela 4 todas as propostas tendem a manter um histórico dos dados armazenados, porém não disponibilizam um meio de configurar por quanto tempo o usuário gostaria que os dados ficassem armazenados. Outra coisa apontada na Tabela 4 é o uso de um filtro de métricas pela proposta de \cite{andreozzi2005gridice} que permite otimizar a coleta de dados do ambiente sem deixar de capturar a essência do comportamento do mesmo. 
 	
 	\chapter{Proposta}
 	
-	Conforme apresentado por Aceto et al. em \cite{aceto2012cloud}
-	o cenário de ferramentas de monitoramento para ambientes de computação em nuvem não atende as necessidades de gerência, seja por
-	falta de precisão nos resultados do monitoramento, falta de extensibilidade da aplicação ou o fato de injetarem código nas máquinas virtuais
-	dos usuários.
-	A proposta deste trabalho consiste na criação de uma plataforma de monitoramento de ambientes de computação em nuvem que possa
-	atender às características de monitoramento elencadas em \cite{aceto2013cloud} de modo autônomo e sem prejudicar o ambiente e usuários. Deste	modo, será utilizada uma arquitetura orientada a serviços, onde cada	serviço é responsável por garantir uma funcionalidade da ferramenta, sendo possível a adição de novos serviços em tempo de execução para complementar a plataforma de monitoramento de ambientes de computação em nuvem em nível de IaaS. Além disso, o uso de agentes para realizar a configuração autônoma do componente de monitoramento, permite que a plataforma se ajuste autonomamente ao comportamento do ambiente, possibilitando um melhor uso de recursos.
+	Conforme apresentado por Aceto et al. em \cite{aceto2012cloud},
+	o cenário de ferramentas de monitoramento para ambientes de computação em nuvem não atende as necessidades de gerência, seja por falta de precisão nos resultados do monitoramento, falta de extensibilidade da aplicação ou o fato de injetarem código nas máquinas virtuais dos usuários.
+	
+	A proposta deste trabalho consiste na criação de uma plataforma de monitoramento de ambientes de computação em nuvem que possa atender às características de monitoramento elencadas em \cite{aceto2013cloud} de modo autônomo e sem prejudicar o ambiente de computação em nuvem e seus usuários. Deste	modo, será utilizada uma arquitetura orientada a serviços, onde cada	serviço é responsável por garantir uma funcionalidade da ferramenta, sendo possível a adição de novos serviços em tempo de execução para complementar a plataforma de monitoramento de ambientes de computação em nuvem em nível de IaaS. Além disso, o uso de agentes para realizar a configuração autônoma do componente de monitoramento, permite que a plataforma se ajuste autonomamente ao comportamento do ambiente, possibilitando um melhor uso de recursos.
 
 \section{ARQUITETURA DA PLATAFORMA DE MONITORAMENTO}
 	
@@ -478,7 +495,7 @@
 		\item Componente de rede - responsável por toda a configuração de rede do ambiente.
 	\end{itemize}
 	
-	A plataforma proposta neste trabalho pode ser vista como um sexto elemento da ferramenta de orquestração que será a responsável por gerenciar o monitoramento das máquinas virtuais e servidores do ambiente. Ao fim da implantação da plataforma de monitoramento, a distribuição dos elementos que compõe a ferramenta de orquestração ficará como ilustrado na Figura 1.
+	A plataforma proposta neste trabalho pode ser vista como um sexto elemento da ferramenta de orquestração que será a responsável por gerenciar o monitoramento das máquinas virtuais e servidores do ambiente de nuvem. Ao fim da implantação da plataforma de monitoramento, a distribuição dos elementos que compõe a ferramenta de orquestração ficará como ilustrado na Figura 1.
 	
 	\begin{figure}[h]
 		
@@ -526,7 +543,7 @@
 		\end{figure}
 		
 		Após ter obtido os dados, os serviços do componente de monitoramento realizam o envio dos mesmos para um repositório de armazenamento através do componente de armazenamento. Os dados obtidos
-		serão organizados no formato \textit{JavaScript Object Notation} (JSON), um exemplo dos dados coletados pode ser encontrado nas Figuras 4 e 5. Como ilustrado nas Figuras 4 e 5, cada JSON contem 6 propriedades:
+		serão organizados no formato \textit{JavaScript Object Notation} (JSON) \abreviatura{JSON}{\textit{JavaScript Object Notation}}, um exemplo dos dados coletados pode ser encontrado nas Figuras 4 e 5. Como ilustrado nas Figuras 4 e 5, cada JSON contem 6 propriedades:
 		
 		\begin{enumerate}
 			\item \textit{resourceType} - o tipo de recurso coletado;
@@ -559,7 +576,7 @@
 		
 		O serviço de captura de dados irá conter uma aplicação que através da API do virtualizador obtém as métricas de consumo ou alocação de recursos para as máquinas virtuais e desempenho dos servidores físicos como ilustrado na Figura 6. Deste modo, o serviço de captura de dados garante que não seja necessário a injeção de qualquer tipo de código nas máquinas virtuais dos usuários ao mesmo tempo em que caso algum novo dispositivo de hardware seja inserido no servidor, este possa ser monitorado por algum serviço de monitoramento existente no ambiente, pois esse dispositivo só poderá ser usado após ser reconhecido pelo virtualizador, que por sua vez irá disponibilizar o acesso aos recursos do dispositivo através da sua API. 
 		
-		O serviço de captura de dados deverá se cadastrar na plataforma de monitoramento	disponibilizando as métricas que este suporta. O serviço de captura de dados também deverá verificar se o servidor que foi designado para ser	monitorado está ativo (isto deverá ser feito toda vez que o serviço for	coletar as métricas do servidor); se o servidor não estiver disponível, o serviço deverá remover esse servidor da sua lista de servidores para monitorar. Além do cadastro, o serviço de captura de dados deverá disponibilizar os seguintes endpoints que irão dar forma a seguinte Uniform Resource Locator (URL), em português, localizador padrão de recursos \textit{''http://ip-serviço:8080/$<$endpoint$>$''}:
+		O serviço de captura de dados deverá se cadastrar na plataforma de monitoramento	disponibilizando as métricas que este suporta. O serviço de captura de dados também deverá verificar se o servidor que foi designado para ser	monitorado está ativo (isto deverá ser feito toda vez que o serviço for	coletar as métricas do servidor); se o servidor não estiver disponível, o serviço deverá remover esse servidor da sua lista de servidores para monitorar. Além do cadastro, o serviço de captura de dados deverá disponibilizar os seguintes endpoints que irão dar forma a seguinte \textit{Uniform Resource Locator} (URL) \abreviatura{URL}{\textit{Uniform Resource Locator}} \textit{''http://ip-serviço:8080/$<$endpoint$>$''}:
 		
 		\begin{itemize}
 			\item \textit{timeSpent} - retorna o tempo médio que o serviço leva para coletar os dados de cada servidor que ele é responsável;
@@ -581,10 +598,10 @@
 		
 		\subsection{Componente de armazenamento Ocomponente}
 		
-		Ocomponente de armazenamento será constituído de uma aplicação e uma base de dados como como ilustrado na Figura 7. Este componente realiza o armazenamento e gerência dos dados oriundos do monitoramento através de uma aplicação que recebe requisições HTTP (Hypertext Transfer Protocol), em português, protocolo de transferência de hipertexto, contendo um JSON com as informações sobre uma máquina virtual ou servidor para persistir no banco de dados. Além disso, a aplicação disponibiliza métodos para consultar informações sobre o ambiente monitorado, como: recursos utilizados por máquinas virtuais, recursos alocados e utilizados dos servidores físicos, percentual de recursos ociosos em um cluster e outros. 
+		Ocomponente de armazenamento será constituído de uma aplicação e uma base de dados como como ilustrado na Figura 7. Este componente realiza o armazenamento e gerência dos dados oriundos do monitoramento através de uma aplicação que recebe requisições \textit{Hypertext Transfer Protocol} (HTTP) \abreviatura{HTTP}{\textit{Hypertext Transfer Protocol}} contendo um JSON com as informações sobre uma máquina virtual ou servidor para persistir no banco de dados. Além disso, a aplicação disponibiliza métodos para consultar informações sobre o ambiente monitorado, como: recursos utilizados por máquinas virtuais, recursos alocados e utilizados dos servidores físicos, percentual de recursos ociosos em um cluster e outros. 
 		
-		Ambientes de computação em nuvem possuem milhares de máquinas virtuais, servidores e outros componentes como dispositivos de rede e armazenamento. Deste modo, como modelo de banco de dados será utilizado uma base de dados não relacional orientada a documentos, visto que esses tipos de banco de dados possuem um desempenho melhor em leitura e escrita num grandes volumes de dados como apresentado em \cite{li2013performance}. Para a modelagem do banco de dados não relacional foi criado um modelo \textit{Enhanced Entity-Relantionship}
-		(EER), em português, entidade relacional estendido, ilustrado na Figura 8. O modelo definem 7 entidades:
+		Ambientes de computação em nuvem possuem milhares de máquinas virtuais, servidores e outros componentes como dispositivos de rede e armazenamento. Deste modo, como modelo de banco de dados será utilizado uma base de dados não relacional orientada a documentos, visto que esses tipos de banco de dados possuem um desempenho melhor em leitura e escrita num grandes volumes de dados como apresentado em \cite{li2013performance}. Para a modelagem do banco de dados não relacional foi criado um modelo \textit{Enhanced Entity-Relantionship} 
+		(EER)\abreviatura{EER}{\textit{Enhanced Entity-Relantionship}} ilustrado na Figura 8. O modelo definem 7 entidades:
 		
 		\begin{enumerate}
 			\item \textit{Host} - entidade que irá conter informações relativas a um servidor;
@@ -815,7 +832,7 @@
 	HTTP e a representação de objeto JSON para troca de mensagens, o que permite que a implementação dos serviços seja independente de linguagem de programação, ou seja, pode-se ter serviços em diferentes
 	linguagens de programação, como Java, C, Perl e outras. Isto torna
 	a plataforma receptível para qualquer tipo de extensão em qualquer
-	linguagem e hardware.
+	linguagem e \textit{hardware}.
 	
 	\begin{figure}[H]
 		\centering
@@ -824,9 +841,133 @@
 		\caption{Fluxo de distribuição de servidores para serviços de captura de dados}
 	\end{figure}
 	
+	\chapter{Implementação}
 	
+	Este capítulo trata da implementação da plataforma de monitoramento na plataforma de orquestração Apache CloudStack desde as tecnologias usadas até o desenvolvimento da plataforma autônoma de	monitoramento e a integração com o orquestrador. Parte do que será descrito neste capítulo já existia de outros trabalhos e foi reaproveitado para integração com o Apache CloudStack.
 	
+	Como linguagem de programação foi utilizada o Java \cite{java2015} por ser a mesma linguagem utilizada pelo Apache CloudStack, além de ser bem dominada pelo autor desta proposta, o que poupa	tempo com aprendizado de novas linguagens de programação. Para fazer tanto a gerência das instâncias dos novos objetos criados pela plataforma de monitoramento, e a utilização de instâncias de objetos criados pelo Apache CloudStack, foi utilizado o Spring Framework \cite{spring2015}.
+	
+	Para realizar a coleta de informações dos servidores e de suas máquinas virtuais, foi utilizada a API do virtualizador Xen \cite{xenProject2015}. Após a coleta das informações, foi utilizado o MongoDB \cite{mongo2015} para realizar a persistência dos dados capturados por ser uma base de dados não relacional bem conhecida e de fácil usabilidade. Por fim, para realizar a criação de \textit{webservices} por onde seria possível fazer o	acesso às aplicações, foi utilizado o Spring Boot \cite{boot2015} pelo fato de ser uma tecnologia de rápido aprendizado e de desenvolvimento ágil.
+	
+	A Figura 13 ilustra a hierarquia de projetos que foram usados/criados para a realização deste trabalho. Como podemos ver, não existem setas ligando o Java e o Spring, pois ambas as tecnologias estão presentes em todos os projetos, logo não há a necessidade de uma ligação em cada projeto com estas tecnologias. Na Figura 13, as setas em vermelho representam relações de dependência de compilação entre projetos, ou seja, o projeto filho herda do projeto pai, somente parâmetros de configuração de compilação e não classes.
+	
+	As setas pretas por sua vez, indicam dependências de classes ou de funcionalidades, ou seja, o projeto filho depende de uma ou mais classes do projeto pai ou de um ou mais serviços do projeto pai. Serviços neste caso são requisições HTTP que uma aplicação de um projeto faz para outra aplicação de outro projeto.
+	
+	Outra observação sobre a Figura 13 é a existência do MySQL \cite{mysql2015}, mesmo ele não tendo sido citado como uma tecnologia utilizada na plataforma, isto ocorre pelo fato que ele é utilizado por um projeto que não foi criado juntamente com a plataforma de monitoramento, assim não se teve nenhuma iteração com a tecnologia MySQL. Porém a figura contêm ela apenas para evidenciar sua existência no projeto como um todo.
+	
+	\begin{figure}[H]
+		\hspace*{-1cm}
+		\includegraphics[scale=0.85]{figuras/hierarquia}  % leia abaixo
+		\label{fig:hierarquia}
+		\caption{Hierarquia de projetos da plataforma autônoma de monitoramento}
+	\end{figure}
+	
+	Dentre os projetos já existentes e utilizados temos:
+	
+	\begin{itemize}
+		\item Autonomic platform, Autonomic algorithms commons e Autonomic administration algorithms - estes projetos foram meramente utilizados apenas para realizar a compilação da plataforma;
 		
+		\item Autonomic plugin common - foi utilizado deste projeto, instâncias
+		das classes \textit{HostService} - responsável por disponibilizar uma lista
+		com todos os servidores ativos do ambiente; \textit{HttpUtils} - que realiza requisições HTTP POST e GET; \textit{SshUtils} - que realiza comandos em \textit{secure shell} num servidor ou máquina virtual qualquer; \textit{AutonomiccsSystemVmDeploymentService} - essa classe é responsável por realizar a procura de um servidor no ambiente para fazer a hospedagem de uma máquina virtual de sistema e instanciar uma máquina virtual de sistema num servidor escolhido para hospedar os serviços de monitoramento e agentes de configuração.
+		
+	\end{itemize}
+	
+	\section{PROJETOS CRIADOS PARA A IMPLEMENTAÇÃO DA PLATAFORMA DE MONITORAMENTO}
+	
+	Esta seção descreve cada projeto que compõem a plataforma autônoma de monitoramento.
+	
+	\subsection{Autonomic monitoring pojo common}
+	
+	Este projeto serve para padronizar as estruturas dos \textit{Plain Old Java Objects} (POJO) \abreviatura{POJO}{\textit{Plain Old Java Objects}}, que são objetos javas simples, sem lógica, com apenas métodos \textit{get} e \textit{set} e o construtor padrão do Java, sua única função é de armazenar e transportar variáveis. Estas estruturas são descritas no modelo entidade relacional apresentado na Figura 8.
+
+	\subsection{Autonomic monitoring storage system manager}
+	
+	Este projeto tem como objetivo criar uma máquina virtual no	ambiente, instalar o MongoDB e a aplicação de armazenamento nesta	máquina virtual, além de verificar periodicamente se a máquina virtual e a aplicação estão funcionando normalmente.
+	
+	Para hospedar a máquina virtual criada, primeiramente será preciso de um servidor com capacidade suficiente para suportar a máquina virtual. Deste modo é utilizado o método \textit{searchForRandomHostInCloudToDeployAutonomiccsSystemVm} da \textit{classeAutonomiccsSystemVmDeploymentService}, que irá	a procurar por um servidor qualquer no ambiente que suporte uma máquina virtual de sistema. Tendo o servidor para hospedar a máquina virtual, o próximo passo é subir a
+	máquina virtual no servidor usando o método \textit{deploySystemVmWithJava} também da classe \textit{AutonomiccsSystemVmDeploymentService}, que	irá alocar e iniciar a máquina virtual no servidor informado por parâmetro e instalar o Java nesta máquina virtual, depois disso irá retornar a instância que representa a máquina virtual recentemente criada.
+	
+	Com a máquina virtual executando no servidor, é instalada a	aplicação de armazenamento. Esta instalação ocorre através de comandos \textit{secure shell} usando a classe \textit{SshUtils}, o endereço de IP\abreviatura{IP}{\textit{Internet Protocol}} da máquina virtual de sistema e uma chave de criptografia que foi configurada no \textit{template} da máquina virtual de sistema. Após ter instalado a aplicação de armazenamento na máquina virtual e ter configurado ela como serviço no sistema operacional da VM, esta então é reiniciada. Esta VM jamais poderá ser destruída, pois isso acarretaria na	perda de todo o histórico de monitoramento do ambiente.
+	
+	Para verificar se a máquina virtual e a aplicação ainda estão em
+	operação, é analisado o estado da máquina virtual no Apache CloudStack, se o estado estiver como Running, então são enviados pings para as portas 8080(aplicação), 27017(MongoDB) e 22 (ssh), se algum desses pings não retornar, então será feita a reinicialização da máquina	virtual. Se o estado estiver diferente de Running, então será a feita a tentativa de inicialização da máquina virtual. Em caso de nenhuma das tentativas funcionarem, então será destruída a máquina virtual e instanciada uma nova. Para evitar transtornos de perda de dados, deverá ser criada uma rotina de backup da base de dados e outra rotina de restauração na nova máquina virtual criada.
+	
+	\subsection{Autonomic monitoring data collector system manager}
+	
+	Este projeto é similar ao anterior, o que difere são as aplicações que serão instaladas na máquina virtual de sistema, em vez de instalar a aplicação de armazenamento, será instalada a aplicação de coleta de	dados, além disto, este projeto irá permitir que existam mais de uma máquina virtual de coleta de dados no ambiente. Para realizar o monitoramento do funcionamento das máquinas virtuais, será feito um processo similar ao do projeto anterior, diferindo que nestas VMs, a porta 27017 não será monitorada, e caso a máquina virtual não responda ou não possa ser reinicializada, a mesma poderá ser então destruída e dar espaço para uma outra máquina virtual.
+	
+	\subsection{Autonomic monitoring agent data collector configuration}
+	
+	Este projeto é o responsável por realizar as ações do agente de configuração especificado no capítulo de proposta na seção 4.2.3, além de ser onde é implementado o Algoritmo 1. Este projeto contem duas classes principais \textit{DataCollectorConfigurationAgent} e \textit{DataCollectorConfigurationAgentService}
+	
+	Na classe DataCollectorConfigurationAgentService é onde foram implementados todos os métodos usados pelo agente que foram especificados no capítulo de proposta seção 4.2.3. Para popular sua lista de serviços de captura de dados esta classe irá fazer requisições \textit{HTTP GET} periódicas para a aplicação de armazenamento da plataforma.
+	
+	A classe \textit{DataCollectorConfigurationAgent} irá a usar os métodos implementados pela classe \textit{DataCollectorConfigurationAgentService} para criar um método que implemente o Algoritmo 1. Esta classe que fará o papel do agente de configuração de serviços de coleta de dados proposto. É usado o \textit{Spring Schedule} para fazer a execução periódica do método implementado por esta classe, assim emulando o ciclo de vida de um agente que atua constantemente no ambiente.
+	
+	\subsection{Autonomic monitoring agent host distribution}
+	
+	Este projeto trata da implementação do agente de distribuição de servidores para serviços de captura de dados proposto. Assim como no projeto anterior, foram criadas duas classes para a implementação	deste agente, a classe \textit{HostDistributionAgent} e a classe \textit{HostDistributionAgentService}.
+	
+	O \textit{HostDistributionAgentService} trata de implementar todos os
+	métodos especificados no Algoritmo 2. Para fazer a detecção de novos servidores adicionados no ambiente de computação em nuvem, esta classe
+	usa uma instância da classe \textit{HostService} do projeto \textit{Autonomic plugin common} que provê um serviço de obtenção de uma lista com todos os servidores ativos existentes no ambiente de computação em nuvem.
+	
+	A classe \textit{HostDistributionAgent} usa uma instância da classe \textit{HostDistributionAgentService} para realizar a implementação do Algoritmo	2, além de usar o \textit{Spring Schedule} para fazer a execução periódica do Algoritmo 2, e assim emular o ciclo de vida de um agente.
+	
+	\subsection{Autonomic monitoring data collector application}
+	
+	Este projeto é responsável pela coleta dos dados do ambiente, para isso ele irá usar a XAPI do Xen, esta API permite a coleta de inúmeros dados das máquinas virtuais e do servidor. Para ter acesso à API, é preciso fornecer um usuário com permissão de administrador e sua senha no servidor. A API retorna um documento XML como resposta às requisições.
+	
+	Neste projeto existe a classe \textit{DataCollectorEndPoints} que é responsável por tratar os \textit{EndPoints} do servidor \textit{REST} do serviço de captura de dados para o agente de configuração poder requisitar e atualizar	as variáveis deste serviço. Este projeto também possui a classe \textit{CaptureService} que irá fazer uso da API do Xen para consultar os dados de cada servidor e máquina virtual pelo qual este serviço é responsável.
+	
+	A classe \textit{CaptureService} também implementa a interface do Spring \textit{InitializingBean}, esta interface provê o método afterPropertiesSet, este
+	método é executado logo após a criação do objeto que é gerenciado pelo \textit{Spring}. É neste método que o serviço irá se cadastrar na base de dados da plataforma e poderá então ser configurado corretamente pelos agentes da plataforma.
+	
+	\subsection{Autonomic monitoring storage application}
+	
+	Este projeto é responsável pela criação do serviço de armazenamento da plataforma, assim como por instalar corretamente o MongoDB na VM onde a aplicação for instalada.
+	
+	Este projeto possui a classe \textit{StorageApplicationEndPoint} que irá tratar as requisições HTTP GET e POST feitas para esta aplicação. A classe \textit{StorageService} trata da realização de consultas e persistências	na base de dados através da classe \textit{StorageDao}. Além disso, esta classe	implementa o \textit{InitializingBean} e realiza a instalação do MongoDB no método \textit{afterPropertiesSet}, caso necessário.
+	
+	Para realizar a instala¸ao do MongoDB é usada uma instância da classe \textit{ShellCommandUtils} para a execução de um \textit{ShellScript} que	foi inserido na máquina virtual na hora da instalação da aplicação na mesma pelo \textit{Autonomic monitoring storage system manager}.
+	
+	A classe \textit{StorageDAO} é quem irá fazer a comunicação direta com a base de dados usando para isso a API Java do MongoDB.
+	
+	\chapter{CONCLUSÃO}
+	
+	Este trabalho de conclusão de curso resultou na criação de um modelo de plataforma de monitoramento de ambientes de computação em nuvem autônoma que pode ser implementada em qualquer ferramenta de orquestração. Contudo, como validação foi criado um plugin, que implementa a proposta e a introduz na ferramenta de orquestração Apache CloudStack.
+	
+	Foi desenvolvido um plugin para o Apache CloudStack que permite o monitoramento autônomo e criação de um histórico de métricas relativo a alocação e uso de recursos em ambientes orquestrados pelo Apache CloudStack. Para isto foi incluído no fluxo de inicialização do	Apache CloudStack, funções que irão criar e instanciar os serviços e agentes necessários para o funcionamento da plataforma de monitoramento autônoma. A integração da plataforma de monitoramento com o Apache CloudStack se deu através do uso de projetos já existentes que continham inúmeras abstrações para uso de funções do Apache CloudStack. Outro ponto sobre a implementação foi o uso da API do	Xen para a coleta dos dados das máquinas virtuais e servidores.
+	
+	O uso de agentes para a configuração autônoma do ambiente resulta num melhor uso dos recursos computacionais para realizar o monitoramento do ambiente sem prejuízos na acurácia dos resultados. Entretanto, devido ao prazo para conclusão do presente trabalho, não foi possível realizar experimentos e mensurar a eficiência, acurácia e outros aspectos da ferramenta proposta.
+	
+	Este trabalho possui as seguintes contribuições:
+	\begin{itemize}
+		
+		\item Criação de um modelo para uma plataforma de monitoramento	que pode ser replicado em outras ferramentas de orquestração;
+		
+		\item Extensão de uma ferramenta de código livre para aplicação e experimentação da proposta;
+		
+		\item Criação de base de código que pode ser usado para futuras pesquisas na área de monitoramento de ambientes de computação em nuvem.
+		
+	\end{itemize}		
+	
+	Em uma breve comparação deste trabalho com outras ferramentas de monitoramento de ambientes de computação em nuvem, tem-se como principal ponto a autonomia da ferramenta desta proposta em relação a das demais soluções existentes. Enquanto as soluções atuais necessitam que os administradores do ambiente realizem ajustes em seus parâmetros para melhor adequar a ferramenta ao ambiente, esta proposta independe de administradores para alcançar tal façanha, atribuindo esta responsabilidade aos agentes modelados.
+	
+	Como trabalho futuros têm-se as seguintes atividades:
+	
+	\begin{itemize}
+		\item Melhorar o código fonte desenvolvido com documentação e test cases;
+		
+		\item Disponibilizar a implementação da plataforma a comunidade;
+		
+		\item Realizar testes comparando esta solução com as já existentes;
+		
+		\item Criar um artigo científico com a proposta desta plataforma.
+	\end{itemize}
+	
+	
 	\bibliographystyle{ufscThesis/ufsc-alf}
 	\bibliography{bibliografia}
 	

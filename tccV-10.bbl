@@ -249,6 +249,12 @@ Acesso em 18 de novembro de 2015.
 Dispon{\'\i}vel em:
   $<$http://windows.microsoft.com/pt-br/windows-vista/what-is-internet-small-computer-system-interface-iscsi$>$.}
 
+\bibitem[MongoDB. 2016]{mongo2015}
+\abntrefinfo{MongoDB.}{MONGODB.}{2016}
+{MONGODB. \textbf{MongoDB}. 2016.
+Acesso em 6 de junho de 2016.
+Dispon{\'\i}vel em: $<$https://docs.mongodb.com$>$.}
+
 \bibitem[Nagios 2015]{nagios2015}
 \abntrefinfo{Nagios}{NAGIOS}{2015}
 {NAGIOS. \textbf{Nagios}. 2015.
@@ -289,11 +295,35 @@ Acesso em 30 de outubro de 2015.
 Dispon{\'\i}vel em:
   $<$http://wiki.zenoss.org/ZenPack:OpenStack\_(Provider\_View)$>$.}
 
+\bibitem[Oracle. 2015]{java2015}
+\abntrefinfo{Oracle.}{ORACLE.}{2015a}
+{ORACLE. \textbf{Java}. 2015.
+Acesso em 6 de junho de 2016.
+Dispon{\'\i}vel em: $<$https://www.java.com/pt\_BR/about/whatis\_java.jsp$>$.}
+
+\bibitem[Oracle. 2015]{mysql2015}
+\abntrefinfo{Oracle.}{ORACLE.}{2015b}
+{ORACLE. \textbf{MySQL}. 2015.
+Acesso em 6 de junho de 2016.
+Dispon{\'\i}vel em: $<$http://dev.mysql.com/doc$>$.}
+
 \bibitem[Oracle. 2015]{virtualbox2015}
-\abntrefinfo{Oracle.}{ORACLE.}{2015}
+\abntrefinfo{Oracle.}{ORACLE.}{2015c}
 {ORACLE. \textbf{VirtualBox}. 2015.
 Acesso em 10 de novembro de 2015.
 Dispon{\'\i}vel em: $<$https://www.virtualbox.org/wiki/Documentation$>$.}
+
+\bibitem[Pivotal. 2016]{boot2015}
+\abntrefinfo{Pivotal.}{PIVOTAL.}{2016a}
+{PIVOTAL. \textbf{Spring Boot}. 2016.
+Acesso em 6 de junho de 2016.
+Dispon{\'\i}vel em: $<$http://projects.spring.io/springboot/$>$.}
+
+\bibitem[Pivotal. 2016]{spring2015}
+\abntrefinfo{Pivotal.}{PIVOTAL.}{2016b}
+{PIVOTAL. \textbf{Spring Framework}. 2016.
+Acesso em 6 de junho de 2016.
+Dispon{\'\i}vel em: $<$https://spring.io/projects$>$.}
 
 \bibitem[Popek e Goldberg 1974]{popek1974formal}
 \abntrefinfo{Popek e Goldberg}{POPEK; GOLDBERG}{1974}
