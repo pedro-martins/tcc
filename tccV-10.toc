@@ -31,10 +31,10 @@
 \contentsline {section}{\numberline {5.1}PROJETOS CRIADOS PARA A IMPLEMENTA\c C\~AO DA PLATAFORMA DE MONITORAMENTO}{63}
 \contentsline {subsection}{\numberline {5.1.1}Autonomic monitoring pojo common}{63}
 \contentsline {subsection}{\numberline {5.1.2}Autonomic monitoring storage system manager}{63}
-\contentsline {subsection}{\numberline {5.1.3}Autonomic monitoring data collector system manager}{64}
-\contentsline {subsection}{\numberline {5.1.4}Autonomic monitoring agent data collector configuration}{65}
-\contentsline {subsection}{\numberline {5.1.5}Autonomic monitoring agent host distribution}{65}
-\contentsline {subsection}{\numberline {5.1.6}Autonomic monitoring data collector application}{66}
-\contentsline {subsection}{\numberline {5.1.7}Autonomic monitoring storage application}{66}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~AO}}{67}
-\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{69}
+\contentsline {subsection}{\numberline {5.1.3}Autonomic monitoring data collector system manager}{65}
+\contentsline {subsection}{\numberline {5.1.4}Autonomic monitoring agent data collector configuration}{66}
+\contentsline {subsection}{\numberline {5.1.5}Autonomic monitoring agent host distribution}{67}
+\contentsline {subsection}{\numberline {5.1.6}Autonomic monitoring data collector application}{68}
+\contentsline {subsection}{\numberline {5.1.7}Autonomic monitoring storage application}{69}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {CONCLUS\~AO}}{71}
+\contentsline {chapter}{\hspace {\espacosumario }REFER\^ENCIAS}{73}

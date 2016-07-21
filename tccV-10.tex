@@ -885,25 +885,52 @@
 	
 	Este projeto tem como objetivo criar uma máquina virtual no	ambiente, instalar o MongoDB e a aplicação de armazenamento nesta	máquina virtual, além de verificar periodicamente se a máquina virtual e a aplicação estão funcionando normalmente.
 	
-	Para hospedar a máquina virtual criada, primeiramente será preciso de um servidor com capacidade suficiente para suportar a máquina virtual. Deste modo é utilizado o método \textit{searchForRandomHostInCloudToDeployAutonomiccsSystemVm} da \textit{classeAutonomiccsSystemVmDeploymentService}, que irá	a procurar por um servidor qualquer no ambiente que suporte uma máquina virtual de sistema. Tendo o servidor para hospedar a máquina virtual, o próximo passo é subir a
-	máquina virtual no servidor usando o método \textit{deploySystemVmWithJava} também da classe \textit{AutonomiccsSystemVmDeploymentService}, que	irá alocar e iniciar a máquina virtual no servidor informado por parâmetro e instalar o Java nesta máquina virtual, depois disso irá retornar a instância que representa a máquina virtual recentemente criada.
+	Para hospedar a máquina virtual criada, primeiramente será preciso de um servidor com capacidade suficiente para suportar a máquina virtual. Deste modo é utilizado o método \textit{searchForRandomHostInCloudToDeployAutonomiccsSystemVm} da \textit{classeAutonomiccsSystemVmDeploymentService}, que irá	a procurar por um servidor qualquer no ambiente que suporte uma máquina virtual de sistema como ilustrado na Figura 14 número 1. Tendo o servidor para hospedar a máquina virtual, o próximo passo é subir a máquina virtual no servidor usando o método \textit{deploySystemVmWithJava} também da classe \textit{AutonomiccsSystemVmDeploymentService}, que	irá alocar e iniciar a máquina virtual no servidor informado por parâmetro e instalar o Java nesta máquina virtual, depois disso irá retornar a instância que representa a máquina virtual recentemente criada como ilustrado na Figura 14 número 2.
 	
 	Com a máquina virtual executando no servidor, é instalada a	aplicação de armazenamento. Esta instalação ocorre através de comandos \textit{secure shell} usando a classe \textit{SshUtils}, o endereço de IP\abreviatura{IP}{\textit{Internet Protocol}} da máquina virtual de sistema e uma chave de criptografia que foi configurada no \textit{template} da máquina virtual de sistema. Após ter instalado a aplicação de armazenamento na máquina virtual e ter configurado ela como serviço no sistema operacional da VM, esta então é reiniciada. Esta VM jamais poderá ser destruída, pois isso acarretaria na	perda de todo o histórico de monitoramento do ambiente.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=1]{figuras/criacaoSystemVMs}  % leia abaixo
+		\label{fig:criacaoSystemVMs}
+		\caption{Fluxo de criação de \textit{System VMs}}
+	\end{figure}
+	
 	Para verificar se a máquina virtual e a aplicação ainda estão em
-	operação, é analisado o estado da máquina virtual no Apache CloudStack, se o estado estiver como Running, então são enviados pings para as portas 8080(aplicação), 27017(MongoDB) e 22 (ssh), se algum desses pings não retornar, então será feita a reinicialização da máquina	virtual. Se o estado estiver diferente de Running, então será a feita a tentativa de inicialização da máquina virtual. Em caso de nenhuma das tentativas funcionarem, então será destruída a máquina virtual e instanciada uma nova. Para evitar transtornos de perda de dados, deverá ser criada uma rotina de backup da base de dados e outra rotina de restauração na nova máquina virtual criada.
+	operação como mostrado na Figura 15 número 1, é analisado o estado da máquina virtual no Apache CloudStack, se o estado estiver como Running, então são enviados pings para as portas 8080(aplicação), 27017(MongoDB) e 22 (ssh), se algum desses pings não retornar, então será feita a reinicialização da máquina	virtual como ilustrado na Figura 15 número 2. Se o estado estiver diferente de Running, então será a feita a tentativa de inicialização da máquina virtual. Em caso de nenhuma das tentativas funcionarem, então será destruída a máquina virtual e instanciada uma nova (Figura 15, número 3). Para evitar transtornos de perda de dados, deverá ser criada uma rotina de backup da base de dados e outra rotina de restauração na nova máquina virtual criada.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.85]{figuras/verificacaoVMArmazenamento}  % leia abaixo
+		\label{fig:verificacaoVMArmazenamento}
+		\caption{Fluxo de verificação da VM de armazenamento}
+	\end{figure}
 	
 	\subsection{Autonomic monitoring data collector system manager}
 	
-	Este projeto é similar ao anterior, o que difere são as aplicações que serão instaladas na máquina virtual de sistema, em vez de instalar a aplicação de armazenamento, será instalada a aplicação de coleta de	dados, além disto, este projeto irá permitir que existam mais de uma máquina virtual de coleta de dados no ambiente. Para realizar o monitoramento do funcionamento das máquinas virtuais, será feito um processo similar ao do projeto anterior, diferindo que nestas VMs, a porta 27017 não será monitorada, e caso a máquina virtual não responda ou não possa ser reinicializada, a mesma poderá ser então destruída e dar espaço para uma outra máquina virtual.
+	Este projeto é similar ao anterior, o que difere são as aplicações que serão instaladas na máquina virtual de sistema, em vez de instalar a aplicação de armazenamento, será instalada a aplicação de coleta de dados, além disto, este projeto irá permitir que existam mais de uma máquina virtual de coleta de dados no ambiente como ilustrado na Figura 16. Para realizar o monitoramento do funcionamento das máquinas virtuais, será feito um processo similar ao do projeto anterior, diferindo que nestas VMs, a porta 27017 não será monitorada, e caso a máquina virtual não responda ou não possa ser reinicializada, a mesma poderá ser então destruída e dar espaço para uma outra máquina virtual.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{figuras/verificacaoVMcoleta}  % leia abaixo
+		\label{fig:verificacaoVMcoleta}
+		\caption{Fluxo de verificação das VMs de coleta de dados}
+	\end{figure}
 	
 	\subsection{Autonomic monitoring agent data collector configuration}
 	
 	Este projeto é o responsável por realizar as ações do agente de configuração especificado no capítulo de proposta na seção 4.2.3, além de ser onde é implementado o Algoritmo 1. Este projeto contem duas classes principais \textit{DataCollectorConfigurationAgent} e \textit{DataCollectorConfigurationAgentService}
 	
-	Na classe DataCollectorConfigurationAgentService é onde foram implementados todos os métodos usados pelo agente que foram especificados no capítulo de proposta seção 4.2.3. Para popular sua lista de serviços de captura de dados esta classe irá fazer requisições \textit{HTTP GET} periódicas para a aplicação de armazenamento da plataforma.
+	Na classe DataCollectorConfigurationAgentService é onde foram implementados todos os métodos usados pelo agente que foram especificados no capítulo de proposta seção 4.2.3. Para popular sua lista de serviços de captura de dados esta classe irá fazer requisições \textit{HTTP GET} periódicas para a aplicação de armazenamento da plataforma como ilustrado na Figura 17 número 2.
 	
 	A classe \textit{DataCollectorConfigurationAgent} irá a usar os métodos implementados pela classe \textit{DataCollectorConfigurationAgentService} para criar um método que implemente o Algoritmo 1. Esta classe que fará o papel do agente de configuração de serviços de coleta de dados proposto. É usado o \textit{Spring Schedule} para fazer a execução periódica do método implementado por esta classe, assim emulando o ciclo de vida de um agente que atua constantemente no ambiente.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{figuras/ajustarFrequenciaCaptura}  % leia abaixo
+		\label{fig:ajustarFrequenciaCaptura}
+		\caption{Fluxo de ajuste da frequência de captura}
+	\end{figure}
 	
 	\subsection{Autonomic monitoring agent host distribution}
 	
@@ -911,18 +938,32 @@
 	
 	O \textit{HostDistributionAgentService} trata de implementar todos os
 	métodos especificados no Algoritmo 2. Para fazer a detecção de novos servidores adicionados no ambiente de computação em nuvem, esta classe
-	usa uma instância da classe \textit{HostService} do projeto \textit{Autonomic plugin common} que provê um serviço de obtenção de uma lista com todos os servidores ativos existentes no ambiente de computação em nuvem.
+	usa uma instância da classe \textit{HostService} do projeto \textit{Autonomic plugin common} que provê um serviço de obtenção de uma lista com todos os servidores ativos existentes no ambiente de computação em nuvem (Figura 18, número 1).
 	
 	A classe \textit{HostDistributionAgent} usa uma instância da classe \textit{HostDistributionAgentService} para realizar a implementação do Algoritmo	2, além de usar o \textit{Spring Schedule} para fazer a execução periódica do Algoritmo 2, e assim emular o ciclo de vida de um agente.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{figuras/ajustarServidores}  % leia abaixo
+		\label{fig:ajustarServidores}
+		\caption{Fluxo de ajuste da alocação de servidores para serviços de captura}
+	\end{figure}
+	
 	\subsection{Autonomic monitoring data collector application}
 	
-	Este projeto é responsável pela coleta dos dados do ambiente, para isso ele irá usar a XAPI do Xen, esta API permite a coleta de inúmeros dados das máquinas virtuais e do servidor. Para ter acesso à API, é preciso fornecer um usuário com permissão de administrador e sua senha no servidor. A API retorna um documento XML como resposta às requisições.
+	Este projeto é responsável pela coleta dos dados do ambiente, para isso ele irá usar a XAPI do Xen, esta API permite a coleta de inúmeros dados das máquinas virtuais e do servidor como mostrado na Figura 19 número 1. Para ter acesso à API, é preciso fornecer um usuário com permissão de administrador e sua senha no servidor. A API retorna um documento XML como resposta às requisições.
 	
 	Neste projeto existe a classe \textit{DataCollectorEndPoints} que é responsável por tratar os \textit{EndPoints} do servidor \textit{REST} do serviço de captura de dados para o agente de configuração poder requisitar e atualizar	as variáveis deste serviço. Este projeto também possui a classe \textit{CaptureService} que irá fazer uso da API do Xen para consultar os dados de cada servidor e máquina virtual pelo qual este serviço é responsável.
 	
 	A classe \textit{CaptureService} também implementa a interface do Spring \textit{InitializingBean}, esta interface provê o método afterPropertiesSet, este
 	método é executado logo após a criação do objeto que é gerenciado pelo \textit{Spring}. É neste método que o serviço irá se cadastrar na base de dados da plataforma e poderá então ser configurado corretamente pelos agentes da plataforma.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{figuras/capturaDados}  % leia abaixo
+		\label{fig:capturaDados}
+		\caption{Fluxo de coleta de dados}
+	\end{figure}
 	
 	\subsection{Autonomic monitoring storage application}
 	

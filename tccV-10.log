@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  21 JUL 2016 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  21 JUL 2016 18:01
 entering extended mode
 **./tccV-10.tex
 (tccV-10.tex
@@ -894,52 +894,113 @@ Overfull \hbox (50.41586pt too wide) in paragraph at lines 859--862
  []
 
 [62 <./figuras/hierarquia.png>]
-Overfull \hbox (7.70317pt too wide) in paragraph at lines 888--890
+Overfull \hbox (7.70317pt too wide) in paragraph at lines 888--889
 \OT1/cmr/m/it/10 Cloud-To-De-ployAu-to-no-mic-cs-Sys-temVm \OT1/cmr/m/n/10 da \
 OT1/cmr/m/it/10 clas-se-Au-to-no-mic-cs-Sys-temVm-
  []
 
+[63] <figuras/criacaoSystemVMs.png, id=251, 294.09875pt x 135.50626pt>
+File: figuras/criacaoSystemVMs.png Graphic file (type png)
 
-Overfull \hbox (8.04422pt too wide) in paragraph at lines 888--890
-\OT1/cmr/m/n/10 ira alo-car e ini-ciar a maquina vir-tual no ser-vi-dor in-fo
-r-mado por par^ametro
+<use figuras/criacaoSystemVMs.png>
+Package pdftex.def Info: figuras/criacaoSystemVMs.png used on input line 894.
+(pdftex.def)             Requested size: 294.09802pt x 135.5059pt.
+ [64 <./figuras/criacaoSystemVMs.png>]
+<figuras/verificacaoVMArmazenamento.png, id=256, 340.27126pt x 142.5325pt>
+File: figuras/verificacaoVMArmazenamento.png Graphic file (type png)
+
+<use figuras/verificacaoVMArmazenamento.png>
+Package pdftex.def Info: figuras/verificacaoVMArmazenamento.png used on input l
+ine 904.
+(pdftex.def)             Requested size: 289.23192pt x 121.15318pt.
+
+<figuras/verificacaoVMcoleta.png, id=257, 364.86313pt x 133.49875pt>
+File: figuras/verificacaoVMcoleta.png Graphic file (type png)
+
+<use figuras/verificacaoVMcoleta.png>
+Package pdftex.def Info: figuras/verificacaoVMcoleta.png used on input line 915
+.
+(pdftex.def)             Requested size: 328.37376pt x 120.14774pt.
+
+Overfull \hbox (21.08398pt too wide) in paragraph at lines 915--917
+ [][] 
  []
 
-[63]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-Overfull \hbox (5.3661pt too wide) in paragraph at lines 906--907
+ [65 <./figuras/verificacaoVMArmazenamento.png>]
+Overfull \hbox (5.3661pt too wide) in paragraph at lines 926--927
 \OT1/cmr/m/n/10 im-ple-men-ta-dos pela classe \OT1/cmr/m/it/10 Da-ta-Col-lec-to
 r-Con-fi-gu-ra-ti-o-nA-gent-Ser-vice \OT1/cmr/m/n/10 para
  []
 
+<figuras/ajustarFrequenciaCaptura.png, id=263, 383.4325pt x 226.8475pt>
+File: figuras/ajustarFrequenciaCaptura.png Graphic file (type png)
 
-Overfull \hbox (0.34315pt too wide) in paragraph at lines 916--917
-[]\OT1/cmr/m/n/10 A classe \OT1/cmr/m/it/10 Host-Dis-tri-bu-ti-o-nA-gent \OT1/c
-mr/m/n/10 usa uma inst^ancia da classe \OT1/cmr/m/it/10 Host-
+<use figuras/ajustarFrequenciaCaptura.png>
+Package pdftex.def Info: figuras/ajustarFrequenciaCaptura.png used on input lin
+e 930.
+(pdftex.def)             Requested size: 345.08606pt x 204.16086pt.
+
+Overfull \hbox (37.79628pt too wide) in paragraph at lines 930--932
+ [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
-Overfull \hbox (4.19087pt too wide) in paragraph at lines 924--926
+ [66 <./figuras/verificacaoVMcoleta.png>]
+Overfull \hbox (0.34315pt too wide) in paragraph at lines 943--944
+[]\OT1/cmr/m/n/10 A classe \OT1/cmr/m/it/10 Host-Dis-tri-bu-ti-o-nA-gent \OT1/c
+mr/m/n/10 usa uma inst^ancia da classe \OT1/cmr/m/it/10 Host-
+ []
+
+<figuras/ajustarServidores.png, id=268, 383.93437pt x 197.23688pt>
+File: figuras/ajustarServidores.png Graphic file (type png)
+
+<use figuras/ajustarServidores.png>
+Package pdftex.def Info: figuras/ajustarServidores.png used on input line 947.
+(pdftex.def)             Requested size: 345.53773pt x 177.51152pt.
+
+Overfull \hbox (38.24796pt too wide) in paragraph at lines 947--949
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67 <./figuras/ajustarFrequenciaCaptura.png>]
+Overfull \hbox (4.19087pt too wide) in paragraph at lines 958--960
 []\OT1/cmr/m/n/10 A classe \OT1/cmr/m/it/10 Cap-tu-re-Ser-vice \OT1/cmr/m/n/10 
 tambem im-ple-menta a in-ter-face do Spring
  []
 
-[66]
-Cap\'{\i }tulo 6.
-[67
+<figuras/capturaDados.png, id=273, 367.3725pt x 174.6525pt>
+File: figuras/capturaDados.png Graphic file (type png)
 
-] (tccV-10.bbl [68]
+<use figuras/capturaDados.png>
+Package pdftex.def Info: figuras/capturaDados.png used on input line 963.
+(pdftex.def)             Requested size: 330.63217pt x 157.18579pt.
+
+Overfull \hbox (23.34239pt too wide) in paragraph at lines 963--965
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68 <./figuras/ajustarServidores.png>] [69 <./figuras/capturaDados.png>] [70
+
+]
+Cap\'{\i }tulo 6.
+[71] (tccV-10.bbl [72]
 Overfull \hbox (55.93324pt too wide) in paragraph at lines 83--87
 \OML/cmm/m/it/10 <$\OT1/cmr/m/n/10 http://www.intel.com/content/dam/www/public/
 us/en/documents/manuals/64- 
  []
 
-[69
+[73
 
 ]
 Overfull \hbox (3.09966pt too wide) in paragraph at lines 90--94
@@ -947,22 +1008,22 @@ Overfull \hbox (3.09966pt too wide) in paragraph at lines 90--94
 ssors/architectures- 
  []
 
-[70] [71] [72] [73] [74])
+[74] [75] [76] [77] [78])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[75] (tccV-10.aux) )
+[79] (tccV-10.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level
 (\end occurred when \ifnum on line 78 was incomplete) 
 Here is how much of TeX's memory you used:
- 6668 strings out of 493335
- 98887 string characters out of 3139231
- 197264 words of memory out of 3000000
- 10032 multiletter control sequences out of 15000+200000
+ 6704 strings out of 493335
+ 100033 string characters out of 3139231
+ 197342 words of memory out of 3000000
+ 10062 multiletter control sequences out of 15000+200000
  6522 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,32p,1181b,2496s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -973,9 +1034,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on tccV-10.pdf (77 pages, 1499221 bytes).
+Output written on tccV-10.pdf (81 pages, 1537337 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
+ 340 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,3 +12,9 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Fluxo de configura\c c\~ao da frequ\^encia de captura dos servi\c cos do componente de monitoramento}}{59}
 \contentsline {figure}{\numberline {12}{\ignorespaces Fluxo de distribui\c c\~ao de servidores para servi\c cos de captura de dados}}{60}
 \contentsline {figure}{\numberline {13}{\ignorespaces Hierarquia de projetos da plataforma aut\^onoma de monitoramento}}{62}
+\contentsline {figure}{\numberline {14}{\ignorespaces Fluxo de cria\c c\~ao de \textit {System VMs}}}{64}
+\contentsline {figure}{\numberline {15}{\ignorespaces Fluxo de verifica\c c\~ao da VM de armazenamento}}{65}
+\contentsline {figure}{\numberline {16}{\ignorespaces Fluxo de verifica\c c\~ao das VMs de coleta de dados}}{66}
+\contentsline {figure}{\numberline {17}{\ignorespaces Fluxo de ajuste da frequ\^encia de captura}}{67}
+\contentsline {figure}{\numberline {18}{\ignorespaces Fluxo de ajuste da aloca\c c\~ao de servidores para servi\c cos de captura}}{68}
+\contentsline {figure}{\numberline {19}{\ignorespaces Fluxo de coleta de dados}}{69}
