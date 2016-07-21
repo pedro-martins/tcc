@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  21 JUL 2016 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.18)  21 JUL 2016 15:44
 entering extended mode
 **./tccV-10.tex
 (tccV-10.tex
@@ -492,13 +492,7 @@ Overfull \hbox (3.33333pt too wide) in paragraph at lines 77--78
 
 [2] [3
 
-] [4]
-Overfull \hbox (2.4885pt too wide) in paragraph at lines 82--82
-[]\OT1/cmr/m/n/10 Atualmente as fer-ra-men-tas de or-ques-trac~ao de am-bi-en-
-tes de com-putac~ao
- []
-
-[5
+] [4] [5
 
 
 ] [6
@@ -569,11 +563,15 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [17
 
 
-] [18] [19]
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+[19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-Overfull \hbox (2.1274pt too wide) in paragraph at lines 149--150
+Overfull \hbox (2.1274pt too wide) in paragraph at lines 151--152
 \OT1/cmr/m/n/10 de um am-bi-ente de nu-vem que forneca in-fra-es-tru-tura como
  servico; 
  []
@@ -586,34 +584,34 @@ Cap\'{\i }tulo 2.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Overfull \hbox (2.51988pt too wide) in paragraph at lines 251--252
+Overfull \hbox (2.51988pt too wide) in paragraph at lines 255--256
 \OT1/cmr/m/n/10 gra-tuito de codigo aberto su-por-tado pela Ca-no-ni-cal (\OT1
 /cmr/m/n/8 CA-NO-NI-CAL\OT1/cmr/m/n/10 , 2015).
  []
 
 
-Overfull \hbox (1.3307pt too wide) in paragraph at lines 253--254
+Overfull \hbox (1.3307pt too wide) in paragraph at lines 257--258
 []\OT1/cmr/m/n/10 VirtualBox (\OT1/cmr/m/n/8 ORA-CLE.\OT1/cmr/m/n/10 , 2015c) 
 e um vir-tu-a-li-za-dor de codigo aberto
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 270.
+(Font)              <9> on input line 274.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 270.
+(Font)              <6> on input line 274.
 [28]
-Overfull \hbox (25.81454pt too wide) in paragraph at lines 299--306
+Overfull \hbox (25.81454pt too wide) in paragraph at lines 303--310
  [][] 
  []
 
 [29] [30]
-Overfull \hbox (0.74158pt too wide) in paragraph at lines 339--340
+Overfull \hbox (0.74158pt too wide) in paragraph at lines 343--344
 \OT1/cmr/m/n/10 ficac~oes sig-ni-fi-ca-ti-vas neste (\OT1/cmr/m/n/8 KAT-SA-ROS
 ; KU-BERT; GAL-LIZO\OT1/cmr/m/n/10 , 2011); 
  []
 
 
-Overfull \hbox (5.29419pt too wide) in paragraph at lines 340--341
+Overfull \hbox (5.29419pt too wide) in paragraph at lines 344--345
 []\OT1/cmr/m/n/10 Confiabilidade: uma fer-ra-menta de mo-ni-to-ra-mento e dita
  confiavel,
  []
@@ -623,7 +621,7 @@ Overfull \hbox (5.29419pt too wide) in paragraph at lines 340--341
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.38576pt too wide) in paragraph at lines 414--415
+Overfull \hbox (3.38576pt too wide) in paragraph at lines 418--419
 []\OT1/cmr/m/n/10 Dentre as fer-ra-men-tas ana-li-sa-das, to-das su-por-tam mo-
 ni-to-ra-mento
  []
@@ -642,7 +640,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [38]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 453.
+               Default added (so using `tbp') on input line 457.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -657,7 +655,7 @@ File: figuras/ferramentaOrquestracao.png Graphic file (type png)
 
 <use figuras/ferramentaOrquestracao.png>
 Package pdftex.def Info: figuras/ferramentaOrquestracao.png used on input line 
-500.
+504.
 (pdftex.def)             Requested size: 199.24388pt x 104.38972pt.
  [42 <./figuras/ferramentaOrquestracao.png>] <figuras/ambienteComPlataforma.png
 , id=151, 186.19562pt x 240.9pt>
@@ -665,7 +663,7 @@ File: figuras/ambienteComPlataforma.png Graphic file (type png)
 
 <use figuras/ambienteComPlataforma.png>
 Package pdftex.def Info: figuras/ambienteComPlataforma.png used on input line 5
-27.
+31.
 (pdftex.def)             Requested size: 186.19516pt x 240.8994pt.
 
 <figuras/componenteMonitoramento.png, id=152, 192.21812pt x 152.57pt>
@@ -673,7 +671,7 @@ File: figuras/componenteMonitoramento.png Graphic file (type png)
 
 <use figuras/componenteMonitoramento.png>
 Package pdftex.def Info: figuras/componenteMonitoramento.png used on input line
- 536.
+ 540.
 (pdftex.def)             Requested size: 192.21764pt x 152.56963pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -682,10 +680,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figuras/json1.png, id=157, 396.48125pt x 78.2925pt>
 File: figuras/json1.png Graphic file (type png)
  <use figuras/json1.png>
-Package pdftex.def Info: figuras/json1.png used on input line 557.
+Package pdftex.def Info: figuras/json1.png used on input line 561.
 (pdftex.def)             Requested size: 317.18542pt x 62.63406pt.
 
-Overfull \hbox (9.89565pt too wide) in paragraph at lines 557--559
+Overfull \hbox (9.89565pt too wide) in paragraph at lines 561--563
  [][] 
  []
 
@@ -696,10 +694,10 @@ Underfull \vbox (badness 4872) has occurred while \output is active []
 <figuras/json2.png, id=162, 394.97563pt x 73.77562pt>
 File: figuras/json2.png Graphic file (type png)
  <use figuras/json2.png>
-Package pdftex.def Info: figuras/json2.png used on input line 566.
+Package pdftex.def Info: figuras/json2.png used on input line 570.
 (pdftex.def)             Requested size: 315.98093pt x 59.02055pt.
 
-Overfull \hbox (8.69115pt too wide) in paragraph at lines 566--568
+Overfull \hbox (8.69115pt too wide) in paragraph at lines 570--572
  [][] 
  []
 
@@ -708,16 +706,16 @@ Overfull \hbox (8.69115pt too wide) in paragraph at lines 566--568
 File: figuras/servicoCaptura.png Graphic file (type png)
 
 <use figuras/servicoCaptura.png>
-Package pdftex.def Info: figuras/servicoCaptura.png used on input line 590.
+Package pdftex.def Info: figuras/servicoCaptura.png used on input line 594.
 (pdftex.def)             Requested size: 174.15019pt x 91.34102pt.
 
-Overfull \hbox (9.94128pt too wide) in paragraph at lines 597--598
+Overfull \hbox (9.94128pt too wide) in paragraph at lines 601--602
 []\OT1/cmr/m/n/10 Ocomponente de ar-ma-ze-na-mento sera cons-titudo de uma a
 plicac~ao
  []
 
 [46 <./figuras/servicoCaptura.png>]
-Overfull \hbox (13.69125pt too wide) in paragraph at lines 599--601
+Overfull \hbox (13.69125pt too wide) in paragraph at lines 603--605
 []\OT1/cmr/m/n/10 Ambientes de com-putac~ao em nu-vem pos-suem mi-lha-res de m
 aquinas
  []
@@ -726,7 +724,7 @@ Overfull \hbox (13.69125pt too wide) in paragraph at lines 599--601
 File: figuras/armazenamento.png Graphic file (type png)
 
 <use figuras/armazenamento.png>
-Package pdftex.def Info: figuras/armazenamento.png used on input line 616.
+Package pdftex.def Info: figuras/armazenamento.png used on input line 620.
 (pdftex.def)             Requested size: 135.00403pt x 95.85788pt.
 
 
@@ -736,10 +734,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figuras/modeloRelacional.png Graphic file (type png)
 
 <use figuras/modeloRelacional.png>
-Package pdftex.def Info: figuras/modeloRelacional.png used on input line 624.
+Package pdftex.def Info: figuras/modeloRelacional.png used on input line 628.
 (pdftex.def)             Requested size: 359.08824pt x 236.68205pt.
 
-Overfull \hbox (51.79846pt too wide) in paragraph at lines 624--626
+Overfull \hbox (51.79846pt too wide) in paragraph at lines 628--630
 [][]
  []
 
@@ -751,26 +749,26 @@ File: figuras/componenteConfiguracao.png Graphic file (type png)
 
 <use figuras/componenteConfiguracao.png>
 Package pdftex.def Info: figuras/componenteConfiguracao.png used on input line 
-636.
+640.
 (pdftex.def)             Requested size: 110.41222pt x 73.77542pt.
  [47]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [48 <./figuras/armazenamento.png>] [49 <./figuras/modeloRelacional.png>]
-Overfull \hbox (2.46078pt too wide) in paragraph at lines 660--661
+Overfull \hbox (2.46078pt too wide) in paragraph at lines 664--665
 \OT1/cmr/m/n/10 dos va-lo-res de cada tipo de metrica co-le-tada num pas-sado 
 proximo; 
  []
 
 
-Overfull \hbox (1.05739pt too wide) in paragraph at lines 665--666
+Overfull \hbox (1.05739pt too wide) in paragraph at lines 669--670
 []\OT1/cmr/bx/n/10 frequ^enciaInicial\OT1/cmr/m/n/10 ()[Linha: 13] - metodo qu
 e re-torna a frequ^encia
  []
 
 
-Overfull \hbox (8.23262pt too wide) in paragraph at lines 666--667
+Overfull \hbox (8.23262pt too wide) in paragraph at lines 670--671
 []\OT1/cmr/bx/n/10 nMetricas\OT1/cmr/m/n/10 ()[Linha: 12] - metodo que re-torn
 a o numero de metricas
  []
@@ -779,15 +777,15 @@ a o numero de metricas
 File: figuras/algoritmo1.png Graphic file (type png)
 
 <use figuras/algoritmo1.png>
-Package pdftex.def Info: figuras/algoritmo1.png used on input line 672.
+Package pdftex.def Info: figuras/algoritmo1.png used on input line 676.
 (pdftex.def)             Requested size: 344.48965pt x 230.3624pt.
 
-Overfull \hbox (10.96935pt too wide) in paragraph at lines 671--674
+Overfull \hbox (10.96935pt too wide) in paragraph at lines 675--678
  |  [] 
  []
 
 [50 <./figuras/componenteConfiguracao.png>]
-Overfull \hbox (1.02455pt too wide) in paragraph at lines 676--678
+Overfull \hbox (1.02455pt too wide) in paragraph at lines 680--682
 []\OT1/cmr/m/n/10 Para re-a-li-zar o ajuste da frequ^encia fo-ram de-fi-ni-das 
 tr^es Formulas
  []
@@ -796,10 +794,10 @@ tr^es Formulas
 File: figuras/formula1.png Graphic file (type png)
 
 <use figuras/formula1.png>
-Package pdftex.def Info: figuras/formula1.png used on input line 696.
+Package pdftex.def Info: figuras/formula1.png used on input line 700.
 (pdftex.def)             Requested size: 307.14987pt x 32.22061pt.
 
-Overfull \hbox (2.0823pt too wide) in paragraph at lines 695--698
+Overfull \hbox (2.0823pt too wide) in paragraph at lines 699--702
  |  [] 
  []
 
@@ -808,10 +806,10 @@ Overfull \hbox (2.0823pt too wide) in paragraph at lines 695--698
 File: figuras/formula3.png Graphic file (type png)
 
 <use figuras/formula3.png>
-Package pdftex.def Info: figuras/formula3.png used on input line 709.
+Package pdftex.def Info: figuras/formula3.png used on input line 713.
 (pdftex.def)             Requested size: 271.91797pt x 23.48792pt.
 
-Overfull \hbox (0.99362pt too wide) in paragraph at lines 708--711
+Overfull \hbox (0.99362pt too wide) in paragraph at lines 712--715
  |  [] 
  []
 
@@ -819,10 +817,10 @@ Overfull \hbox (0.99362pt too wide) in paragraph at lines 708--711
 File: figuras/formula2.png Graphic file (type png)
 
 <use figuras/formula2.png>
-Package pdftex.def Info: figuras/formula2.png used on input line 727.
+Package pdftex.def Info: figuras/formula2.png used on input line 731.
 (pdftex.def)             Requested size: 314.37692pt x 22.88567pt.
 
-Overfull \hbox (0.77345pt too wide) in paragraph at lines 726--729
+Overfull \hbox (0.77345pt too wide) in paragraph at lines 730--733
  |  [] 
  []
 
@@ -831,13 +829,13 @@ Overfull \hbox (0.77345pt too wide) in paragraph at lines 726--729
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
-Overfull \hbox (1.73854pt too wide) in paragraph at lines 741--742
+Overfull \hbox (1.73854pt too wide) in paragraph at lines 745--746
 \OT1/cmr/m/n/10 apro-vei-tar ao maximo a ca-pa-ci-dade de pro-ces-sa-mento de 
 ou-tros servicos,
  []
 
 [54]
-Overfull \hbox (2.01625pt too wide) in paragraph at lines 764--766
+Overfull \hbox (2.01625pt too wide) in paragraph at lines 768--770
 \OT1/cmr/m/n/10 sado por par^ametro e que es-teja den-tro da lista de servicos
  tambem
  []
@@ -846,7 +844,7 @@ Overfull \hbox (2.01625pt too wide) in paragraph at lines 764--766
 File: figuras/algoritmo2.png Graphic file (type png)
 
 <use figuras/algoritmo2.png>
-Package pdftex.def Info: figuras/algoritmo2.png used on input line 781.
+Package pdftex.def Info: figuras/algoritmo2.png used on input line 785.
 (pdftex.def)             Requested size: 323.70859pt x 529.97868pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -860,21 +858,21 @@ Overfull \vbox (32.05544pt too high) has occurred while \output is active []
 File: figuras/fluxoCaptura.png Graphic file (type png)
 
 <use figuras/fluxoCaptura.png>
-Package pdftex.def Info: figuras/fluxoCaptura.png used on input line 804.
+Package pdftex.def Info: figuras/fluxoCaptura.png used on input line 808.
 (pdftex.def)             Requested size: 278.94022pt x 80.80132pt.
  [58 <./figuras/fluxoCaptura.png>]
 <figuras/fluxoConf.png, id=229, 395.4775pt x 143.53625pt>
 File: figuras/fluxoConf.png Graphic file (type png)
 
 <use figuras/fluxoConf.png>
-Package pdftex.def Info: figuras/fluxoConf.png used on input line 813.
+Package pdftex.def Info: figuras/fluxoConf.png used on input line 817.
 (pdftex.def)             Requested size: 276.83235pt x 100.47467pt.
  [59 <./figuras/fluxoConf.png>]
 <figuras/fluxoPersist.png, id=235, 302.63063pt x 143.03438pt>
 File: figuras/fluxoPersist.png Graphic file (type png)
 
 <use figuras/fluxoPersist.png>
-Package pdftex.def Info: figuras/fluxoPersist.png used on input line 835.
+Package pdftex.def Info: figuras/fluxoPersist.png used on input line 839.
 (pdftex.def)             Requested size: 302.62988pt x 143.03401pt.
  [60 <./figuras/fluxoPersist.png>]
 Cap\'{\i }tulo 5.
@@ -888,21 +886,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figuras/hierarquia.png Graphic file (type png)
 
 <use figuras/hierarquia.png>
-Package pdftex.def Info: figuras/hierarquia.png used on input line 856.
+Package pdftex.def Info: figuras/hierarquia.png used on input line 860.
 (pdftex.def)             Requested size: 383.93617pt x 322.5064pt.
 
-Overfull \hbox (50.41586pt too wide) in paragraph at lines 855--858
+Overfull \hbox (50.41586pt too wide) in paragraph at lines 859--862
 []|  []
  []
 
 [62 <./figuras/hierarquia.png>]
-Overfull \hbox (7.70317pt too wide) in paragraph at lines 884--886
+Overfull \hbox (7.70317pt too wide) in paragraph at lines 888--890
 \OT1/cmr/m/it/10 Cloud-To-De-ployAu-to-no-mic-cs-Sys-temVm \OT1/cmr/m/n/10 da \
 OT1/cmr/m/it/10 clas-se-Au-to-no-mic-cs-Sys-temVm-
  []
 
 
-Overfull \hbox (8.04422pt too wide) in paragraph at lines 884--886
+Overfull \hbox (8.04422pt too wide) in paragraph at lines 888--890
 \OT1/cmr/m/n/10 ira alo-car e ini-ciar a maquina vir-tual no ser-vi-dor in-fo
 r-mado por par^ametro
  []
@@ -911,13 +909,13 @@ r-mado por par^ametro
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64]
-Overfull \hbox (5.3661pt too wide) in paragraph at lines 902--903
+Overfull \hbox (5.3661pt too wide) in paragraph at lines 906--907
 \OT1/cmr/m/n/10 im-ple-men-ta-dos pela classe \OT1/cmr/m/it/10 Da-ta-Col-lec-to
 r-Con-fi-gu-ra-ti-o-nA-gent-Ser-vice \OT1/cmr/m/n/10 para
  []
 
 
-Overfull \hbox (0.34315pt too wide) in paragraph at lines 912--913
+Overfull \hbox (0.34315pt too wide) in paragraph at lines 916--917
 []\OT1/cmr/m/n/10 A classe \OT1/cmr/m/it/10 Host-Dis-tri-bu-ti-o-nA-gent \OT1/c
 mr/m/n/10 usa uma inst^ancia da classe \OT1/cmr/m/it/10 Host-
  []
@@ -926,7 +924,7 @@ mr/m/n/10 usa uma inst^ancia da classe \OT1/cmr/m/it/10 Host-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
-Overfull \hbox (4.19087pt too wide) in paragraph at lines 920--922
+Overfull \hbox (4.19087pt too wide) in paragraph at lines 924--926
 []\OT1/cmr/m/n/10 A classe \OT1/cmr/m/it/10 Cap-tu-re-Ser-vice \OT1/cmr/m/n/10 
 tambem im-ple-menta a in-ter-face do Spring
  []
@@ -961,10 +959,10 @@ ssors/architectures-
 ### bottom level
 (\end occurred when \ifnum on line 78 was incomplete) 
 Here is how much of TeX's memory you used:
- 6667 strings out of 493335
- 98879 string characters out of 3139231
- 197254 words of memory out of 3000000
- 10031 multiletter control sequences out of 15000+200000
+ 6668 strings out of 493335
+ 98887 string characters out of 3139231
+ 197264 words of memory out of 3000000
+ 10032 multiletter control sequences out of 15000+200000
  6522 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,32p,1181b,2496s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -975,7 +973,7 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on tccV-10.pdf (77 pages, 1491870 bytes).
+Output written on tccV-10.pdf (77 pages, 1499221 bytes).
 PDF statistics:
  315 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

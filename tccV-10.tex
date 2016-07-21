@@ -343,11 +343,11 @@
 		\item Não intrusiva: para a ferramenta não ser considerada intrusiva, ela deve poder ser implantada no ambiente sem precisar de modificações significativas neste \cite{katsaros2011building};
 		\item Confiabilidade: uma ferramenta de monitoramento é dita confiável, se mesmo com falhas em diversos componentes, ela ainda continua fornecendo seu serviço normalmente com os componentes que ainda lhe restam \cite{laprie2008dependability};
 		\item Disponibilidade: a ferramenta de monitoramento deve estar disponível sempre que os seus serviços forem solicitados. Isto é importante para ambientes da nuvem, pois estes estão em constante atividade \cite{shirey2007internet};
-		\item Precisão: a ferramenta é considerada precisa se as informações disponibilizadas pela ferramenta contem valores que expressem o mais aproximadamente possível o estado em que o objeto monitorado se encontra no momento que a medida foi realizada. 
+		\item Precisão: a ferramenta é considerada precisa se as informações disponibilizadas pela ferramenta contêm valores que expressem o mais aproximadamente possível o estado em que o objeto monitorado se encontra no momento que a medida foi realizada. 
 		
 	\end{enumerate}
 	
-	Além das características levantadas por \cite{aceto2012cloud}, também são apontadas algumas dificuldades na área de monitoramento da nuvem.
+	Além das características levantadas por \cite{aceto2012cloud}, também são descritas algumas dificuldades na área de monitoramento da nuvem.
 	\begin{itemize}
 		
 		
@@ -355,10 +355,10 @@
 		a nuvem possui diversos usuários, assim como componentes e um grande tráfego de rede. Com isso, algumas horas de monitoramento contínuo, podem gerar Tera Bytes de informações para serem armazenadas; 
 		
 		\item{Mudança constante do ambiente:}
-		devida a elasticidade de um ambiente de computação em nuvem, as métricas a serem monitoradas podem mudar a qualquer momento, pode haver a necessidade de monitorar um novo elemento que não estava previsto; 
+		devido a elasticidade de um ambiente de computação em nuvem, as métricas a serem monitoradas podem mudar a qualquer momento, pode haver a necessidade de monitorar um novo elemento que não estava previsto; 
 		
 		\item{Sensibilidade de ambientes carregados:}
-		em ambientes de computação em nuvem muito carregados, a presença do monitoramento pode acarretar em sobre carga de processamento, e acabar comprometendo o funcionamento de todo o ambiente;
+		em ambientes de computação em nuvem muito carregados, a presença do monitoramento pode acarretar em sobrecarga de processamento, e acabar comprometendo o funcionamento de todo o ambiente;
 		
 		\item{Garantir autonomia da ferramenta:}
 		esta demanda a possível exis-tência de um laço que irá receber informações do ambiente de tempos em tempos (a própria ferramenta que deve obter essas informações), processar essas informações e repassar as ações que cada nodo deve executar (no caso de uma ferramenta distribuída);
@@ -388,7 +388,7 @@
 		
 		\item Nimbus: a Nimbus \cite{nimbus2015} é uma ferramenta de criação e gerência de ambientes de computação em nuvem, Suporta virtualizadores como Xen ou KVM e da suporte para monitoramento do ambiente através do\textit{ Simple Network Management Protocol} (SNMP) \abreviatura{SNMP}{\textit{Simple Network Management Protocol}}\cite{snmp2015}. Esta ferramenta é voltada especialmente para projetos relacionados a comunidade científica. A Nimbus visa autonomia no monitoramento tanto de aplicações do ambiente quanto na infraestrutura como um todo, no caso, ela não suporta monitoramento de clusters, apesar de monitorar aplicações sendo executadas nas VMs. 
 		
-		\item Zabbix: o Zabbix \cite{zabbix2015} é uma ferramenta de monitoramento de infraestrutura e aplicações. Esta ferramenta da suporte para abordagens multi agente ou sem nenhum agente (centralizado). Esta ferramenta é compatível com vCenter \cite{vCenter2015} permitindo monitoramento destes ambientes. Além de ser compatível com o vCenter, o Zabbix permite o monitoramento de qualquer dispositivo de hardware que suporte \textit{Intelligent Platform Management Interface} (IPMI) \abreviatura{IPMI}{\textit{Intelligent Platform Management Interface}} \cite{IPMI2015} e dispositivos que suportem SNMP, conseguindo capturar as mesmas métricas suportadas por ambos os protocolos IPMI e SNMP. Usuários de CloudStack podem usar o Zabbix através a extensão \cite{zabbix-cloudstack2015} e usuários de OpenStack através da extensão \cite{zabbix-openstack2015} 
+		\item Zabbix: o Zabbix \cite{zabbix2015} é uma ferramenta de monitoramento de infraestrutura e aplicações. Esta ferramenta da suporte para abordagens multi agente ou sem nenhum agente (centralizado). Esta ferramenta é compatível com vCenter \cite{vCenter2015} permitindo monitoramento destes ambientes. Além de ser compatível com o vCenter, o Zabbix permite o monitoramento de qualquer dispositivo de hardware que suporte \textit{Intelligent Platform Management Interface} (IPMI) \abreviatura{IPMI}{\textit{Intelligent Platform Management Interface}} \cite{IPMI2015} e dispositivos que suportem SNMP, conseguindo capturar as mesmas métricas suportadas por ambos os protocolos IPMI e SNMP. Usuários de CloudStack podem usar o Zabbix através da extensão \cite{zabbix-cloudstack2015} e usuários de OpenStack através da extensão \cite{zabbix-openstack2015} 
 		
 		\item Icinga: o Icinga \cite{icinga2015} é uma ferramenta que pode ser instalada em qualquer distribuição Linux. Nesta ferramenta, o usuário deve especificar o que deve ser monitorado antes de inicializar a ferramenta, ou seja, qualquer novo item a ser monitorado, irá requerer uma reinicialização da ferramenta. Assim como o Nagios, esta ferramenta promete uma fácil extensibilidade, possibilitando que os usuários criem plugins para expandir o funcionamento da ferramenta, além de suportar todos os plugins desenvolvidos para o Nagios. Esta ferramenta monitora serviços de rede e consumo de recursos de hardware, como CPU e memória. Ela possui uma extensão para usuário do OpenStack \cite{icingaOpenstack2015}, usuários de CloudStack não tem suporte ainda para uso do Icinga e acabam adotando o Nagios como substituto já que ambas as ferramentas são similares.
 	\end{itemize}
@@ -417,9 +417,9 @@
 
 	Dentre as ferramentas analisadas, todas suportam monitoramento de recursos de hardware usando protocolos padrões de monitoramento como SNMP e IPMI, além de usar estes protocolos, usam também APIs de ferramentas de orquestração. Uma característica em comum dessas ferramentas, é a abordagem de coletar os dados e armazená-los de modo histórico. Todas usam o mesmo conceito de ter uma entidade centralizada que de tempos em tempos, envia mensagens para os nodos que estão nos servidores físicos coletarem os dados e enviarem para o nó central. 
 	
-	Como mostrado na tabela \ref{comparacaoFerramentas}, as ferramentas analisadas não dão suporte a inúmeras das características abortadas em \cite{aceto2012cloud}, isso se deve pelo fato de que as ferramentas em si não interagem diretamente com os Virtualizadores dos ambientes de computação em nuvem e sim com APIs das ferramentas de orquestração. Essas APIs por muitas vezes são incompletas e inconsistentes. Outro ponto que as ferramentas adotam é a inserção de agentes dentro das máquinas virtuais para coletar os dados de cada máquina virtual e então juntar esses dados para obter as métricas de todo o ambiente, o que torna a ferramenta intrusiva.
+	Como apresentado na tabela \ref{comparacaoFerramentas}, as ferramentas analisadas não dão suporte a inúmeras das características abortadas em \cite{aceto2012cloud}, isso acontece porque as ferramentas em si não interagem diretamente com os Virtualizadores dos ambientes de computação em nuvem e sim com APIs das ferramentas de orquestração. Essas APIs muitas vezes são incompletas e inconsistentes, ou seja, não disponibilizam alguns tipos de métricas e alguns dados coletados não são condizentes com o real estado dos elementos monitorados. Outro ponto que as ferramentas adotam é a inserção de agentes dentro das máquinas virtuais para coletar os dados de cada máquina virtual e então juntar esses dados para obter as métricas de todo o ambiente, o que torna a ferramenta intrusiva.
 	
-	A proposta deste trabalho será de criar uma ferramenta que suporte as características apresentadas na Tabela 3 e seção 3.4.1. A ferramenta irá usar a API dos Virtualizadores para conseguir obter os dados dos ambientes em vez de usar APIs das ferramentas de orquestração. Outra abordagem diferente da ferramenta proposta neste trabalho, será uma inversão do paradigma adotado pelas ferramentas analisadas, que é o fato de um nodo central fazer requisições para os nodos folhas coletarem os dados e retornarem estes para o nodo central.
+	A proposta deste trabalho será de criar uma ferramenta que suporte as características apresentadas na Tabela 3 e seção 2.4.1. A ferramenta irá usar a API dos Virtualizadores para conseguir obter os dados dos ambientes em vez de usar APIs das ferramentas de orquestração. Outra abordagem diferente da ferramenta proposta neste trabalho, será uma inversão do paradigma adotado pelas ferramentas analisadas, que é o fato de um nodo central fazer requisições para os nodos folhas coletarem os dados e retornarem estes para o nodo central.
 	
 	 A proposta deste trabalho consiste em os nodos folhas enviarem periodicamente os dados coletados para o nodo central sem o nodo central precisar requisitar, isso gera um menor fluxo de rede e torna a ferramenta menos impactante para o ambiente. Outro diferencial da proposta deste trabalho será a autonomia da ferramenta. A ferramenta irá se ajustar continuamente ao ambiente de computação em nuvem que ela está monitorando, deixando de monitorar recursos removidos ou passando a monitorar novos recursos.
 	 
@@ -440,7 +440,7 @@
 			\item Coletor de dados: coleta os dados de uso de recursos de uma única VM e guarda no repositório local.
 		\end{itemize}
 	
-	As principais características abordadas no modelo de \cite{katsaros2012self} é a elasticidade e acurácia, o modelo permite reconfigurar todas as métricas de monitoramento sem a necessidade de reiniciar o sistema ou proporcionar algum impacto de desempenho para o ambiente. Principal problema encontrado, cada instancia de máquina virtual irá gerar uma instancia de coletor de dados e repositório local, o que gera um uso extra de memória, sem falar que é uma solução invasiva, pois insere software dentro da VM do usuário.
+	As principais características abordadas no modelo de \cite{katsaros2012self} é a elasticidade e acurácia, o modelo permite reconfigurar todas as métricas de monitoramento sem a necessidade de reiniciar o sistema ou proporcionar algum impacto de desempenho para o ambiente. O principal problema encontrado é que cada instancia de máquina virtual irá gerar uma instancia de coletor de dados e repositório local, o que gera um uso extra de memória; é uma solução invasiva, pois insere software dentro da VM do usuário.
 	
 	\citeonline{andreozzi2005gridice} propõem um modelo de monitoramento de serviços distribuídos. O modelo proposto é dividido em 5 módulos independentes para facilitar extensões e manutenção. É apresentado um módulo de coleta de dados que usa sensores (o tipo de sensor ou como são implementados não é especificado) para medir tráfego de rede, desempenho do serviço monitorado, disponibilidade do mesmo e uso de recursos físicos. O segundo módulo é o responsável por analisar quais dados são mais interessantes para cada tipo de serviço, para tal fim foi usado o Globus MDS \cite{globus2015} para fazer a análise dos dados capturados e classificá-los . O terceiro módulo armazena cada tipo de dados em uma base de dados relacional, no caso o postgreSQL \cite{postgre2015}. O quarto módulo serve para informar quando algum serviço está sobrecarregado/inacessível. E o ultimo módulo é responsável pela apresentação dos dados através de uma página web.
 	
@@ -448,7 +448,7 @@
 	
 	O modelo apresentado por \cite{andreozzi2005gridice} permite adições de novos módulos e métricas de monitoramento, sendo que novos módulos requerem a reinicialização do sistema e novas métricas não precisam de reinicialização. Usa banco de dados relacional para persistir os dados e persiste apenas dados considerados relevantes. A visualização dos dados pode ser feita usando um histórico de 1, 5 e 15 minutos, históricos superiores a esses intervalos não são descartados.
 	
-	\citeonline{shao2010runtime} propõem um modelo de monitoramento baseado em agentes que opera em todas as camadas de computação em nuvem e tem como principal característica balancear a capacidade de monitoramento da ferramenta com o aumento ou redução da carga dos servidores, de modo a ajustar a coleta de dados baseado na carga do ambiente. A ferramenta realiza isso medindo a carga do ambiente e ajustando a frequência de obtenção dos dados, ambiente pouco carregado, aumenta a frequência e vice-versa.
+	\citeonline{shao2010runtime} propõem um modelo de monitoramento baseado em agentes que opera em todas as camadas de computação em nuvem e tem como principal característica balancear a capacidade de monitoramento da ferramenta com o aumento ou redução da carga dos servidores, de modo a ajustar a coleta de dados baseado na carga do ambiente. A ferramenta realiza isso medindo a carga do ambiente e ajustando a frequência de obtenção dos dados, com o ambiente com pouca carga a frequência de coleta de dados aumenta e vice-versa.
 	
 	Para realizar a coleta de dados de cada VM, são instanciados agentes (Aplicações Java), dentro de cada máquina virtual, ou seja, cada máquina virtual vai ter uma \textit{Java Virtual Machine} (JVM) \abreviatura{JVM}{\textit{Java Virtual Machine}} executando um agente para obter os dados da VM. Este agente por sua vez, utiliza uma biblioteca nativa escrita em C \cite{sigar2015}.
 	
@@ -512,8 +512,8 @@
 	Nesta sessão sã descritos os elementos existentes na plataforma
 	de monitoramento, como eles são constituídos e qual papel de cada um.
 	Ilustrada na Figura 2, a plataforma de monitoramento é composta de
-	3 componentes, o componente de monitoramento, de configuração e de
-	armazenamento que são descritos nas subseções que se seguem.
+	3 componentes: o componente de monitoramento, de configuração e de
+	armazenamento.
 	
 	\subsection{Componente de Monitoramento}
 	
@@ -550,7 +550,7 @@
 			\item \textit{resourceUsage} - o quanto deste tipo de recurso a máquina virtual está usando no momento da coleta;
 			\item \textit{virtualMachineName} - o identificador da máquina virtual monitorada;
 			\item \textit{timestamp} - a data em que ocorreu a coleta;
-			\item \textit{host} - o servidor cuja máquina virtual esta sendo executada;
+			\item \textit{host} - o servidor cuja máquina virtual está sendo executada;
 			\item \textit{cluster} - o cluster onde o servidor da máquina virtual se encontra.
 		\end{enumerate}
 		
@@ -583,8 +583,8 @@
 			\item \textit{hosts} - retorna todos os servidores monitorados pelo serviço;
 			\item \textit{addHost/host} - adiciona um servidor para ser monitorado pelo serviço;
 			\item \textit{removeHost} - remove um servidor qualquer da lista de servidores monitorados pelo serviço;
-			\item \textit{setDataRetriveInterval/value} - altera o valor do intervalo entre coletas de dados;
-			\item \textit{getDataRetriveInterval} - retorna o valor do intervalo entre coletas de dados.
+			\item \textit{setDataRetrieveInterval/value} - altera o valor do intervalo entre coletas de dados;
+			\item \textit{getDataRetrieveInterval} - retorna o valor do intervalo entre coletas de dados.
 		\end{itemize}
 		
 		\begin{figure}[H]
@@ -606,11 +606,11 @@
 		\begin{enumerate}
 			\item \textit{Host} - entidade que irá conter informações relativas a um servidor;
 			\item \textit{VM} - entidade que irá armazenar informações de máquinas virtuais;
-			\item \textit{HostResource} - esta entidade que armazena dados relativos ao monitoramento de servidores;
+			\item \textit{HostResource} - esta entidade armazena dados relativos ao monitoramento de servidores;
 			\item \textit{VMResource} - esta entidade irá armazenar os dados obtidos ao monitorar máquinas virtuais;
 			\item \textit{ServiceRegistry} - entidade responsável por armazenar o registro de cada tipo de serviço de captura de dados da plataforma;
 			\item \textit{HostActivity} - entidade que irá armazenar um histórico de atividades dos servidores, se foram ligados ou desligados e quando isto ocorreu;
-			\item \textit{ServiceSupport} - esta entidade armazena as características dos	serviços, os virtualizadores e métricas que eles suportam;
+			\item \textit{ServiceSupport} - esta entidade armazena as características dos	serviços, os virtualizadores e métricas que eles suportam.
 		\end{enumerate}
 		
 		\begin{figure}[h]
